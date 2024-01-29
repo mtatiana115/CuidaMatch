@@ -1,0 +1,75 @@
+@import url(../css/pages.css);
+
+body{
+    background: rgb(214, 206, 206);
+}
+
+.band {
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+  
+    @media (min-width: 30em) {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    @media (min-width: 60em) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .card-blog {
+    background: linear-gradient(
+      25deg,
+      rgba(0, 107, 192, 1) 0%,
+      rgba(0, 91, 113, 1) 0%,
+      rgba(101, 51, 172, 1) 79%,
+      rgba(147, 62, 216, 1) 86%
+    );
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 90%;
+  
+    &:hover {
+      top: -2px;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    article {
+      padding: 20px;
+      flex: 1;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #fff;
+    }
+  
+    /* estilo de las imagenes */
+    .thumb {
+      padding-bottom: 60%;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  
+  .item-1 {
+    @media (min-width: 60em) {
+      grid-column: 1 / span 2;
+  
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }

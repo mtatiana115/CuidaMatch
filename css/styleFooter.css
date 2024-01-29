@@ -1,0 +1,39 @@
+footer {
+  background: rgb(0, 107, 192);
+  background: linear-gradient(
+    25deg,
+    rgba(0, 107, 192, 1) 0%,
+    rgba(0, 91, 113, 1) 0%,
+    rgba(101, 51, 172, 1) 79%,
+    rgba(147, 62, 216, 1) 86%
+  );
+  
+
+}
+
+.cont-cartas {
+  overflow: hidden;
+  height: auto;
+  margin: auto;
+}
+
+.cont-cartas .card {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  width: calc(100% * 12);
+}
+
+.parte2 {
+  border-top: 1px solid white;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+    transform: translateX(100vw);
+  }
+}

@@ -1,0 +1,124 @@
+    <div class="cont-cartas d-flex gap-4">
+        <div class="card p-2 m-3">
+          <div class="card-body p-2">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+
+        <div class="card p-2 m-3">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+
+        <div class="card p-2 m-3">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+
+        <div class="card p-2 m-3">
+          <div class="card-body p-2">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+
+        <div class="card p-2 m-3">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+
+        <div class="card p-2 m-3">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="parte2 p-3">
+        <h4>¡Suscríbete para no perderte las novedades!</h4>
+        <div class="d-flex flex-column flex-sm-row w-1 gap-3 m-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input
+            id="newsletter1"
+            type="text"
+            class="form-control"
+            placeholder="Email address"
+          />
+          <button class="btn btn-primary" type="button">Subscribe</button>
+        </div>
+        <span id="descripcion"
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+          voluptates cupiditate nihil natus? Nulla totam ea repellendus
+          reprehenderit sint, placeat eligendi! Mollitia voluptatibus, quos amet
+          ad eos officiis autem non, ducimus neque dolore esse saepe deleniti
+          facilis magni consequatur, illum ex est itaque repudiandae et! Debitis
+          possimus quae iusto cum quibusdam eaque cumque veniam delectus ullam
+          nesciunt nostrum, dicta rerum totam voluptatem itaque error, soluta
+          pariatur saepe, dolor ipsam ex?
+        </span>
+      </div>
+
+      <div>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+      </div>

@@ -1,0 +1,50 @@
+#logo {
+  height: 5%;
+  width: 5%;
+}
+
+/* menu desplegable */
+#offcanvasNavbar {
+  background: rgb(0, 107, 192);
+  background: linear-gradient(
+    25deg,
+    rgba(0, 107, 192, 1) 0%,
+    rgba(0, 91, 113, 1) 0%,
+    rgba(101, 51, 172, 1) 79%,
+    rgba(147, 62, 216, 1) 86%
+  );
+  box-shadow: 0 0 10px (0, 0, 0, 0.2);
+  height: 60%;
+  color: #fff;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  -ms-border-radius: 0 0 20px 20px;
+  -o-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+}
+/* clases */
+/* barra header */
+.header nav {
+  background: rgb(0, 107, 192);
+  background: linear-gradient(
+    25deg,
+    rgba(0, 107, 192, 1) 0%,
+    rgba(0, 91, 113, 1) 0%,
+    rgba(101, 51, 172, 1) 79%,
+    rgba(147, 62, 216, 1) 86%
+  );
+}
+
+.header .navbar .navbar-brand {
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+.container-fluid a {
+  color: #fff;
+  text-align: start;
+}
+
+.nav-item a {
+  color: #fff;
+}

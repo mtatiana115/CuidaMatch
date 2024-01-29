@@ -1,0 +1,19 @@
+@import url("../../css/generalize.css");
+@import url("../../css/styleHeader.css");
+@import url("../../css/styleFooter.css");
+
+
+body{
+  height: 100vh;
+  overflow: auto;
+  background: rgb(73, 137, 255);
+}
+
+.content {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }

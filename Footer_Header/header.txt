@@ -1,0 +1,74 @@
+ <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <div>
+            <img src="../multimedia/logo.png" alt="logo" id="logo" />
+            <a class="navbar-brand" href="#">CuidaMatch</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENÚ</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active btnSesion"
+                    aria-current="page"
+                    href="#"
+                    >Inicia sesión</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btnRegistro" href="#" target="_blank"
+                    >Regístrate</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/about.html" target="_blank"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/blog.html" target="_blank"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/terms.html" target="_blank"
+                    >Términos y condiciones</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="../pages/policies.html"
+                    target="_blank"
+                    >Políticas</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
