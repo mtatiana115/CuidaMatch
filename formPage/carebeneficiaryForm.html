@@ -47,7 +47,7 @@
 					</div>
 					<div class="input-data">
 						<label for="cityCarebeneficiary">Where will the service be taken?</label>
-						<br>
+
 						<select id="cityCarebeneficiary" name="city" placeholder="City:" required>
 							<option value="">--Select a city--</option>
 							<option value="barranquilla">Barranquilla</option>
@@ -70,7 +70,7 @@
 					</div>
 					<div class="input-data">
 						<label for="genderCarebeneficiary">Beneficiary gender</label>
-						<br>
+
 						<select id="genderCarebeneficiary" name="gender" required>
 							<option value="">--Select an option--</option>
 							<option value="female">Female</option>
@@ -79,7 +79,7 @@
 					</div>
 					<div class="input-data">
 						<label for="scheduleCarebeneficiary">You need a service for</label>
-						<br>
+
 						<select id="scheduleCarebeneficiary" name="schedule" required>
 							<option value="">--Select an option--</option>
 							<option value="hourlyWork">Hourly work</option>
@@ -90,14 +90,62 @@
 					<div class="input-data textarea">
 						<label for="experienceCarebeneficiary">Tell us about the beneficiary, such as their challenges
 							or service requirements.</label>
-						<br>
+
 						<textarea id="experienceCarebeneficiary"></textarea>
 					</div>
-					<div class="input-data">
+					<div id="opciones_Cuidado">
 						<label for="skillsCarebeneficiary">Select your needs and requirements to take the
 							service:</label>
-						<br>
-						<select id="skillsCarebeneficiary" name="skills" multiple>
+
+						<label for="driving"><input type="checkbox" name="driving" id="driving">
+							Driving
+						</label>
+						<label for="healthProfessional"><input type="checkbox" name="healthProfessional" id="healthProfessional">
+							health Professional
+						</label>
+						<label for="limitedMobility"><input type="checkbox" name="limitedMobility" id="limitedMobility">
+							limited Mobility
+						</label>
+						<label for="ownVehicle"><input type="checkbox" name="ownVehicle" id="ownVehicle">
+							own Vehicle
+						</label>
+						<label for="cooking"><input type="checkbox" name="cooking" id="cooking">
+							Cooking
+						</label>
+						<label for="woundCare"><input type="checkbox" name="woundCare" id="woundCare">
+							wound Care
+						</label>
+						<label for="hygieneServices"><input type="checkbox" name="hygieneServices" id="hygieneServices">
+							hygiene Services
+						</label>
+						<label for="firstAid"><input type="checkbox" name="firstAid" id="firstAid">
+							first Aid
+						</label>
+						<label for="emotionalSupport"><input type="checkbox" name="emotionalSupport" id="emotionalSupport">
+							emotional Support
+						</label>
+						<label for="accompanimentToAppointments"><input type="checkbox" name="accompanimentToAppointments" id="accompanimentToAppointments">
+							accompaniment To Appointments
+						</label>
+						<label for="constantCompanionship"><input type="checkbox" name="constantCompanionship" id="constantCompanionship">
+							constant Companionship
+						</label>
+						<label for="medicationAdministration"><input type="checkbox" name="medicationAdministration" id="medicationAdministration">
+							medication Administration
+						</label>
+						<label for="nutrition"><input type="checkbox" name="nutrition" id="nutrition">
+							Nutrition
+						</label>
+						<label for="recreationalCompanionship"><input type="checkbox" name="recreationalCompanionship" id="recreationalCompanionship">
+							recreational Companionship
+						</label>
+						<label for="palliativeCare"><input type="checkbox" name="palliativeCare" id="palliativeCare">
+							palliative Care
+						</label>
+						<label for="postOperativeCare"><input type="checkbox" name="postOperativeCare" id="postOperativeCare">
+							post Operative Care
+						</label>
+						<!-- <select id="skillsCarebeneficiary" name="skills" multiple>
 							<option value="driving">Driving</option>
 							<option value="healthProfessional">Health Professional</option>
 							<option value="limitedMobility">Limited Mobility</option>
@@ -122,9 +170,8 @@
 							</option>
 							<option value="palliativeCare">Palliative Care</option>
 							<option value="postOperativeCare">Post-Operative Care</option>
-						</select>
+						</select> -->
 					</div>
-					<br />
 					<div class="submit-btn">
 						<div class="input-data">
 							<button class="inner" type="button"></button>
