@@ -21,10 +21,11 @@ footer {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   width: calc(100% * 12);
-}
-
-.parte2 {
-  border-top: 1px solid white;
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 250px;
+  max-width: 250px;
+  overflow-y: auto;
 }
 
 @keyframes scroll {
@@ -36,4 +37,8 @@ footer {
     -webkit-transform: translateX(100vw);
     transform: translateX(100vw);
   }
+}
+
+.parte2 {
+  border-top: 1px solid white;
 }
