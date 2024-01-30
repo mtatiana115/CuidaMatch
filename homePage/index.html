@@ -1,165 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/homePage.css"/>
-    <title>CuidaMatch | Elección por tu salud</title>
-  </head>
 
-  <body>
-    <div class="preloader">
-      <img src="../multimedia/logo.png" alt="logo-app" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/homePage.css" />
+  <title>CuidaMatch | Elección por tu salud</title>
+</head>
+
+<body>
+  <div class="preloader">
+    <img src="../multimedia/logo.png" alt="logo-app" />
+  </div>
+
+  <header class="header">
+
+  </header>
+  <!-- Estos son los modales -->
+  <div class="modal fade" id="registromodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Regístrate
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="cboxCuidador" class="form-label"><input type="checkbox" value="cuidadorCbox"
+                  id="cboxCuidador">Soy cuidador</label>
+            </div>
+            <div class="mb-3">
+              <label for="cboxCliente" class="form-label"><input type="checkbox" value="clienteCbox"
+                  id="cboxCliente">Soy cliente</label>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn boton" data-bs-dismiss="modal">
+                Cancelar
+              </button>
+              <button type="button" class="btn boton">Enviar</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
     </div>
+  </div>
 
-    <header class="header">
-      
-    </header>
-    <!-- Estos son los modales -->
-    <div
-      class="modal fade"
-      id="registromodal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Regístrate
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="cuidador" class="form-label"
-                  >Soy cuidador</label
-                >
-                <input
-                  type="button"
-                  class="form-control"
-                  id="cuidador"
-                  aria-describedby="option"
-                />
+  <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Iniciar sesión
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
               </div>
-              <div class="mb-3">
-                <label for="cliente" class="form-label"
-                  >Soy cliente</label
-                >
-                <input
-                  type="button"
-                  class="form-control"
-                  id="cliente"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn boton" data-bs-dismiss="modal">
-              Cancelar
-            </button>
-            <button type="button" class="btn boton">Enviar</button>
-          </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn boton" data-bs-dismiss="modal">
+            Cancelar
+          </button>
+          <button type="button" class="btn boton">Ingresar</button>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Aquí terminan los modales -->
 
-    <div
-      class="modal fade"
-      id="loginmodal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Iniciar sesión
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn boton" data-bs-dismiss="modal">
-              Cancelar
-            </button>
-            <button type="button" class="btn boton">Ingresar</button>
-          </div>
-        </div>
-      </div>
+  <main>
+    <div class="login">
+      <h1>Elección por tu salud.</h1>
+      <button class="boton" type="button" data-bs-toggle="modal" data-bs-target="#registromodal">Regístrate</button>
+      <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#loginmodal">
+        Iniciar sesión
+      </button>
     </div>
-    <!-- Aquí terminan los modales -->
+  </main>
 
-    <main>
-      <div class="login">
-        <h1>Elección por tu salud.</h1>
-        <button class="boton" type="button" data-bs-toggle="modal" data-bs-target="#registromodal">Regístrate</button>
-        <button
-          type="button"
-          class="boton"
-          data-bs-toggle="modal"
-          data-bs-target="#loginmodal"
-        >
-          Iniciar sesión
-        </button>
-      </div>
-    </main>
+  <footer>
 
-    <footer>
-      
-    </footer>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="./js/script.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./js/script.js"></script>
+</body>
+
 </html>

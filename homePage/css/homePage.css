@@ -19,6 +19,12 @@ main .login {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    font-size: 25px;
+}
+
+main h1 {
+    font-size: 60px;
+    padding: 30px;
 }
 
 .boton {
