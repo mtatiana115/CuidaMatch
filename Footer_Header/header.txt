@@ -1,8 +1,8 @@
  <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <div class="img_title">
-            <img src="../multimedia/logo.png" alt="logo" id="logo" />
-            <a class="navbar-brand" href="#">CuidaMatch</a>
+            <img src="../multimedia/logo.png" alt="logo" id="logo"/>
+            <a class="navbar-brand" href="../homePage/index.html" target="_blank">CuidaMatch</a>
           </div>
           <button
             class="navbar-toggler"

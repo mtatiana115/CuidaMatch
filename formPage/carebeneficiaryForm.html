@@ -1,172 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/styleForm.css">
-		<title>Carebeneficiary</title>
-	</head>
-	<body>
-		<header></header>
 
-		<main>
-			<div class="preloader">
-				<img src="../multimedia/logo.png" alt="logo-app" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/styleForm.css">
+	<title>Carebeneficiary</title>
+</head>
+
+<body>
+	<header></header>
+	<div class="preloader">
+		<img src="../multimedia/logo.png" alt="logo-app" />
+	</div>
+	<main>
+		<div class="container">
+			<div class="text">
+				<h1>Care beneficiary registration</h1>
 			</div>
-			<div class="container">
-				<div class="text">
-					<h1>Care beneficiary registration</h1>
-				</div>
-				<form id="hvFormCarebeneficiary" action="" method="post">
-					<div class="form-row">
+			<form id="hvFormCarebeneficiary" action="" method="post">
+				<div class="form-row">
+					<div class="input-data">
+						<label for="yourPicCarebeneficiary">Beneficiary photo</label>
+						<input type="file" id="yourPicCarebeneficiary" name="yourPic" accept="image/*"
+							placeholder="Upload your photo" required />
+					</div>
+					<div class="input-data">
+						<label class="lbl" for="nameCarebeneficiary">Beneficiary full name</label>
+						<input class="input" type="text" id="nameCarebeneficiary" name="name" placeholder="Full Name"
+							required />
+					</div>
+					<div class="input-data">
+						<label class="lbl" for="emailCarebeneficiary">Contact email</label>
+						<input class="input" type="email" id="emailCarebeneficiary" name="email" placeholder="Email"
+							required>
+					</div>
+					<div class="input-data">
+						<label class="lbl" for="idNumberCarebeneficiary">Beneficiary ID Number</label>
+						<input class="input" type="number" id="idNumberCarebeneficiary" name="idNumber"
+							placeholder="ID Number" required />
+					</div>
+					<div class="input-data">
+						<label class="lbl" for="ageCarebeneficiary">Beneficiary Age</label>
+						<input class="input" type="number" id="ageCarebeneficiary" name="age" min="1" placeholder="Age"
+							required />
+					</div>
+					<div class="input-data">
+						<label for="cityCarebeneficiary">Where will the service be taken?</label>
+						<br>
+						<select id="cityCarebeneficiary" name="city" placeholder="City:" required>
+							<option value="">--Select a city--</option>
+							<option value="barranquilla">Barranquilla</option>
+							<option value="bogota">Bogotá</option>
+							<option value="bucaramanga">Bucaramanga</option>
+							<option value="cali">Cali</option>
+							<option value="cartagena">Cartagena</option>
+							<option value="cucuta">Cúcuta</option>
+							<option value="ibague">Ibagué</option>
+							<option value="manizales">Manizales</option>
+							<option value="medellin">Medellín</option>
+							<option value="pasto">Pasto</option>
+							<option value="pereira">Pereira</option>
+							<option value="popayan">Popayán</option>
+							<option value="santa-marta">Santa Marta</option>
+							<option value="villavicencio">Villavicencio</option>
+							<option value="otro">otro</option>
+							<!-- Agregar más ciudades según sea necesario -->
+						</select>
+					</div>
+					<div class="input-data">
+						<label for="genderCarebeneficiary">Beneficiary gender</label>
+						<br>
+						<select id="genderCarebeneficiary" name="gender" required>
+							<option value="">--Select an option--</option>
+							<option value="female">Female</option>
+							<option value="male">Male</option>
+						</select>
+					</div>
+					<div class="input-data">
+						<label for="scheduleCarebeneficiary">You need a service for</label>
+						<br>
+						<select id="scheduleCarebeneficiary" name="schedule" required>
+							<option value="">--Select an option--</option>
+							<option value="hourlyWork">Hourly work</option>
+							<option value="partTime">Part-time</option>
+							<option value="fullTime">Full-time</option>
+						</select>
+					</div>
+					<div class="input-data textarea">
+						<label for="experienceCarebeneficiary">Tell us about the beneficiary, such as their challenges
+							or service requirements.</label>
+						<br>
+						<textarea id="experienceCarebeneficiary"></textarea>
+					</div>
+					<div class="input-data">
+						<label for="skillsCarebeneficiary">Select your needs and requirements to take the
+							service:</label>
+						<br>
+						<select id="skillsCarebeneficiary" name="skills" multiple>
+							<option value="driving">Driving</option>
+							<option value="healthProfessional">Health Professional</option>
+							<option value="limitedMobility">Limited Mobility</option>
+							<option value="ownVehicle">Own Vehicle</option>
+							<option value="cooking">Cooking</option>
+							<option value="woundCare">Wound Care</option>
+							<option value="hygieneServices">Hygiene Services</option>
+							<option value="firstAid">First Aid</option>
+							<option value="emotionalSupport">Emotional Support</option>
+							<option value="accompanimentToAppointments">
+								Accompaniment to Appointments
+							</option>
+							<option value="constantCompanionship">
+								Constant Companionship
+							</option>
+							<option value="medicationAdministration">
+								Medication Administration
+							</option>
+							<option value="nutrition">Nutrition</option>
+							<option value="recreationalCompanionship">
+								Recreational Companionship
+							</option>
+							<option value="palliativeCare">Palliative Care</option>
+							<option value="postOperativeCare">Post-Operative Care</option>
+						</select>
+					</div>
+					<br />
+					<div class="submit-btn">
 						<div class="input-data">
-							<label for="yourPicCarebeneficiary">Beneficiary photo</label>
-							<input
-								type="file"
-								id="yourPicCarebeneficiary"
-								name="yourPic"
-								accept="image/*"
-								placeholder="Upload your photo"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label class="lbl" for="nameCarebeneficiary">Beneficiary full name</label>
-							<input
-								class="input"
-								type="text"
-								id="nameCarebeneficiary"
-								name="name"
-								placeholder="Full Name"
-								required
-							/>
-						</div>
-                        <div class="input-data">
-                            <label class="lbl" for="emailCarebeneficiary">Contact email</label>
-                            <input
-                                class="input"
-                                type="email"
-                                id="emailCarebeneficiary"
-                                name="email"
-                                placeholder="Email"
-                                required
-                            >
-                        </div>
-						<div class="input-data">
-							<label class="lbl" for="idNumberCarebeneficiary">Beneficiary ID Number</label>
-							<input
-								class="input"
-								type="number"
-								id="idNumberCarebeneficiary"
-								name="idNumber"
-								placeholder="ID Number"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label class="lbl" for="ageCarebeneficiary">Beneficiary Age</label>
-							<input
-								class="input"
-								type="number"
-								id="ageCarebeneficiary"
-								name="age"
-								min="1"
-								placeholder="Age"
-								required
-								
-							/>
-						</div>
-						<div class="input-data">
-                            <label for="cityCarebeneficiary">Where will the service be taken?</label>
-                            <br>
-							<select id="cityCarebeneficiary" name="city" placeholder="City:" required>
-								<option value="">--Select a city--</option>
-								<option value="barranquilla">Barranquilla</option>
-								<option value="bogota">Bogotá</option>
-								<option value="bucaramanga">Bucaramanga</option>
-								<option value="cali">Cali</option>
-								<option value="cartagena">Cartagena</option>
-								<option value="cucuta">Cúcuta</option>
-								<option value="ibague">Ibagué</option>
-								<option value="manizales">Manizales</option>
-								<option value="medellin">Medellín</option>
-								<option value="pasto">Pasto</option>
-								<option value="pereira">Pereira</option>
-								<option value="popayan">Popayán</option>
-								<option value="santa-marta">Santa Marta</option>
-								<option value="villavicencio">Villavicencio</option>
-								<option value="otro">otro</option>
-								<!-- Agregar más ciudades según sea necesario -->
-							</select>
-						</div>
-						<div class="input-data">
-							<label for="genderCarebeneficiary">Beneficiary gender</label>
-                            <br>
-							<select id="genderCarebeneficiary" name="gender" required>
-                                <option value="">--Select an option--</option>
-								<option value="female">Female</option>
-								<option value="male">Male</option>
-							</select>
-						</div>
-						<div class="input-data">
-							<label for="scheduleCarebeneficiary">You need a service for</label>
-                            <br>
-							<select id="scheduleCarebeneficiary" name="schedule" required>
-                                <option value="">--Select an option--</option>
-								<option value="hourlyWork">Hourly work</option>
-								<option value="partTime">Part-time</option>
-								<option value="fullTime">Full-time</option>
-							</select>
-						</div>
-						<div class="input-data textarea">
-							<label for="experienceCarebeneficiary">Tell us about the beneficiary, such as their challenges or service requirements.</label>
-                            <br>
-							<textarea id="experienceCarebeneficiary"></textarea>
-						</div>
-						<div class="input-data">
-							<label for="skillsCarebeneficiary">Select your needs and requirements to take the service:</label></label>
-                            <br>
-							<select id="skillsCarebeneficiary" name="skills" multiple>
-								<option value="driving">Driving</option>
-								<option value="healthProfessional">Health Professional</option>
-								<option value="limitedMobility">Limited Mobility</option>
-								<option value="ownVehicle">Own Vehicle</option>
-								<option value="cooking">Cooking</option>
-								<option value="woundCare">Wound Care</option>
-								<option value="hygieneServices">Hygiene Services</option>
-								<option value="firstAid">First Aid</option>
-								<option value="emotionalSupport">Emotional Support</option>
-								<option value="accompanimentToAppointments">
-									Accompaniment to Appointments
-								</option>
-								<option value="constantCompanionship">
-									Constant Companionship
-								</option>
-								<option value="medicationAdministration">
-									Medication Administration
-								</option>
-								<option value="nutrition">Nutrition</option>
-								<option value="recreationalCompanionship">
-									Recreational Companionship
-								</option>
-								<option value="palliativeCare">Palliative Care</option>
-								<option value="postOperativeCare">Post-Operative Care</option>
-							</select>
-						</div>
-						<br />
-						<div class="submit-btn">
-							<div class="input-data">
-								<button class="inner" type="button"></button>
-								<div class="inner"></div>
-								<input type="submit" value="submit" id="btn_submitCarebeneficiary"/>
-							</div>
+							<button class="inner" type="button"></button>
+							<div class="inner"></div>
+							<input type="submit" value="submit" id="btn_submitCarebeneficiary" />
 						</div>
 					</div>
-				</form>
-			</div>
-		</main>
+				</div>
+			</form>
+		</div>
+	</main>
 
-		<footer></footer>
-		<script src="./js/form.js"></script>
-	</body>
+	<footer></footer>
+	<script src="./js/form.js"></script>
+</body>
+
 </html>
