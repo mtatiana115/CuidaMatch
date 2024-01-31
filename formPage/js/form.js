@@ -1,4 +1,5 @@
-const urlBase = "http://localhost:3001/users";
+const urlBase = "http://localhost:3001/beneficiarios";
+let selectedSkillsList = [];
 
 //selectores
 //2. primero selecciono el form para estar escuchando cuando el usuario haga submit, los user para cuando el usuario haga eso obtener la info y agregarla
@@ -13,7 +14,7 @@ const idNumberCarebeneficiary = document.querySelector(
 );
 const ageCarebeneficiary = document.querySelector("#ageCarebeneficiary");
 const cityCarebeneficiary = document.querySelector("#cityCarebeneficiary");
-const genderCarebeneficiar = document.querySelector("#genderCarebeneficiary");
+const genderCarebeneficiary = document.querySelector("#genderCarebeneficiary");
 const scheduleCarebeneficiary = document.querySelector(
 	"#scheduleCarebeneficiary"
 );
@@ -21,9 +22,7 @@ const experienceCarebeneficiary = document.querySelector(
 	"#experienceCarebeneficiary"
 );
 const skillsCarebeneficiary = document.querySelector("#skillsCarebeneficiary");
-const btnSubmitCarebeneficiar = document.querySelector(
-	"#hvFormCarebeneficiary"
-);
+const hvFormCarebeneficiary = document.querySelector("#hvFormCarebeneficiary");
 
 //EVENTOS
 //cuando el usuario da submit
@@ -35,8 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	}, 1000);
 });
 
-btnSubmitCarebeneficiar.addEventListener("submit", (event) => {
+hvFormCarebeneficiary.addEventListener("submit", (event) => {
 	event.preventDefault();
+
+	const checkboxList = document.querySelectorAll(
+		'.checkbox-list input[name="skills"]'
+	);
+	selectedSkillsList = Array.from(checkboxList)
+		.filter((checkbox) => checkbox.checked)
+		.map((checkbox) => checkbox.value);
 
 	addUser();
 });
@@ -50,10 +56,11 @@ async function addUser() {
 		idCb: idNumberCarebeneficiary.value,
 		ageCb: ageCarebeneficiary.value,
 		cityCb: cityCarebeneficiary.value,
-		genderCb: genderCarebeneficiar.value,
+		genderCb: genderCarebeneficiary.value,
 		scheduleCb: scheduleCarebeneficiary.value,
 		experienceCb: experienceCarebeneficiary.value,
-		skillsCb: skillsCarebeneficiary.value,
+		skillsCb: selectedSkillsList,
+		id: idNumberCarebeneficiary.value,
 	};
 
 	//hago fetch para CREAR con POST
@@ -65,11 +72,14 @@ async function addUser() {
 		body: JSON.stringify(newUser),
 	});
 
+	const data = await response.json();
+	console.log(data);
 	// Obtengo el ID del nuevo usuario del input idNumberCarebeneficiary
 	const userId = idNumberCarebeneficiary.value;
 
 	//almaceno ID en localstorage
-	localStorage.setItem("userId:", userId);
+	localStorage.setItem("userId", userId);
+	window.location.href = "../profilePage/profile.html";
 }
 
 //creo una funcion para obtener los usuarios y que esta sea llamada al domcontentload
