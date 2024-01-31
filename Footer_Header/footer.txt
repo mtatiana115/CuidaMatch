@@ -105,20 +105,20 @@
       <div>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary">Home</a>
+            <a class="nav-link px-2 text-body-secondary" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary">Features</a>
+            <a class="nav-link px-2 text-body-secondary" href="../pages/about.html" target="_blank">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary">Pricing</a>
+            <a class="nav-link px-2 text-body-secondary" href="../pages/blog.html" target="_blank">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary">FAQs</a>
+            <a class="nav-link px-2 text-body-secondary" href="../pages/terms.html" target="_blank">Términos y condiciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary">About</a>
+            <a class="nav-link px-2 text-body-secondary" href="../pages/policies.html" target="_blank">Políticas</a>
           </li>
         </ul>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        <p class="text-center text-body-secondary">© 2024 CuidaMatch, Inc</p>
       </div>
