@@ -1,299 +1,410 @@
 {
-	"cuidadores": [],
-	"beneficiarios": [
-		{
-			"id": "001",
-			"profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
-			"nameCb": "Maria González",
-			"emailCb": "mariagonzalez@example.com",
-			"idCb": "112233",
-			"ageCb": "30",
-			"cityCb": "Bogotá",
-			"genderCb": "female",
-			"scheduleCb": "partTime",
-			"experienceCb": "Maria sufre de artritis y necesita apoyo constante. Requiere cuidado especializado y comprensión en su rutina diaria.",
-			"skillsCb": ["Post-Operative Care", "Emotional Support", "Cooking"]
-		},
-		{
-			"id": "002",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Juan Ramirez",
-			"emailCb": "juanramirez@example.com",
-			"idCb": "445566",
-			"ageCb": "28",
-			"cityCb": "Medellín",
-			"genderCb": "male",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Juan tiene diabetes y requiere atención constante. Necesita un cuidador comprensivo que lo ayude con sus necesidades diarias.",
-			"skillsCb": [
-				"Palliative Care",
-				"Medication Administration",
-				"Health Professional"
-			]
-		},
-		{
-			"id": "006",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Alejandro Mendoza",
-			"emailCb": "alejandro@example.com",
-			"idCb": "998877",
-			"ageCb": "42",
-			"cityCb": "Cali",
-			"genderCb": "male",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Alejandro padece de fibromialgia y requiere un cuidador que le brinde apoyo en sus actividades diarias, proporcionando alivio y compañía constante.",
-			"skillsCb": [
-				"Recreational Companionship",
-				"Wound Care",
-				"Emotional Support"
-			]
-		},
-		{
-			"id": "007",
-			"profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
-			"nameCb": "Valeria Rodriguez",
-			"emailCb": "valeria@example.com",
-			"idCb": "665544",
-			"ageCb": "25",
-			"cityCb": "Barranquilla",
-			"genderCb": "female",
-			"scheduleCb": "partTime",
-			"experienceCb": "Valeria vive con síndrome de fatiga crónica y necesita cuidados constantes. Busca un cuidador comprensivo y paciente para apoyarla en su día a día.",
-			"skillsCb": [
-				"Medication Administration",
-				"Constant Companionship",
-				"Emotional Support"
-			]
-		},
-		{
-			"id": "008",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Camila Herrera",
-			"emailCb": "camila@example.com",
-			"idCb": "112233",
-			"ageCb": "30",
-			"cityCb": "Cartagena",
-			"genderCb": "female",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Camila sufre de diabetes y requiere atención especializada. Busca un cuidador responsable para ayudarla en su cuidado diario.",
-			"skillsCb": [
-				"Post-Operative Care",
-				"Recreational Companionship",
-				"First Aid",
-				"Cooking"
-			]
-		},
-		{
-			"id": "009",
-			"profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
-			"nameCb": "Sergio Vargas",
-			"emailCb": "sergio@example.com",
-			"idCb": "334455",
-			"ageCb": "38",
-			"cityCb": "Bogotá",
-			"genderCb": "male",
-			"scheduleCb": "partTime",
-			"experienceCb": "Sergio tiene artritis reumatoide y requiere apoyo en sus actividades diarias. Busca un cuidador compasivo para brindarle la asistencia necesaria.",
-			"skillsCb": [
-				"Palliative Care",
-				"Medication Administration",
-				"Constant Companionship"
-			]
-		},
-		{
-			"id": "010",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Laura Sánchez",
-			"emailCb": "laura@example.com",
-			"idCb": "778899",
-			"ageCb": "23",
-			"cityCb": "Medellín",
-			"genderCb": "female",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Laura tiene fibromialgia y busca un cuidador comprensivo para ayudarla con su rutina diaria. Necesita apoyo en sus tareas cotidianas.",
-			"skillsCb": [
-				"Recreational Companionship",
-				"Emotional Support",
-				"Wound Care",
-				"Cooking"
-			]
-		},
-		{
-			"id": "011",
-			"profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
-			"nameCb": "Diego Alvarez",
-			"emailCb": "diego@example.com",
-			"idCb": "556677",
-			"ageCb": "35",
-			"cityCb": "Cali",
-			"genderCb": "male",
-			"scheduleCb": "partTime",
-			"experienceCb": "Diego tiene hipertensión y requiere un cuidador atento para controlar su salud. Necesita apoyo en la administración de medicamentos y seguimiento constante.",
-			"skillsCb": [
-				"Medication Administration",
-				"Palliative Care",
-				"Constant Companionship"
-			]
-		},
-		{
-			"id": "012",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Isabella Gómez",
-			"emailCb": "isabella@example.com",
-			"idCb": "112233",
-			"ageCb": "28",
-			"cityCb": "Barranquilla",
-			"genderCb": "female",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Isabella sufre de insomnio crónico y busca un cuidador que la apoye con técnicas de relajación. Necesita compañía constante para mejorar su calidad de vida.",
-			"skillsCb": [
-				"Recreational Companionship",
-				"Emotional Support",
-				"Cooking",
-				"Wound Care"
-			]
-		},
-		{
-			"id": "013",
-			"profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
-			"nameCb": "Andrés Herrera",
-			"emailCb": "andres@example.com",
-			"idCb": "334455",
-			"ageCb": "40",
-			"cityCb": "Medellín",
-			"genderCb": "male",
-			"scheduleCb": "partTime",
-			"experienceCb": "Andrés padece de artritis reumatoide y necesita un cuidador para ayudarlo con las tareas diarias. Busca apoyo y compañía constante.",
-			"skillsCb": [
-				"Palliative Care",
-				"Medication Administration",
-				"Constant Companionship"
-			]
-		},
-		{
-			"id": "014",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Daniela Castro",
-			"emailCb": "daniela@example.com",
-			"idCb": "778899",
-			"ageCb": "25",
-			"cityCb": "Cartagena",
-			"genderCb": "female",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Daniela requiere cuidado postoperatorio después de una cirugía reciente. Busca un cuidador comprensivo para asistirla durante su proceso de recuperación.",
-			"skillsCb": [
-				"Post-Operative Care",
-				"Recreational Companionship",
-				"First Aid",
-				"Cooking"
-			]
-		},
-		{
-			"id": "015",
-			"profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
-			"nameCb": "Carlos Ríos",
-			"emailCb": "carlos@example.com",
-			"idCb": "990011",
-			"ageCb": "32",
-			"cityCb": "Bogotá",
-			"genderCb": "male",
-			"scheduleCb": "partTime",
-			"experienceCb": "Carlos tiene limitación de movilidad y necesita un cuidador que lo asista con sus desplazamientos diarios. Busca apoyo en su movilización y actividades cotidianas.",
-			"skillsCb": [
-				"Limited Mobility",
-				"Constant Companionship",
-				"Medication Administration",
-				"Emotional Support"
-			]
-		},
-		{
-			"id": "016",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Ana María López",
-			"emailCb": "anamaria@example.com",
-			"idCb": "112233",
-			"ageCb": "27",
-			"cityCb": "Cali",
-			"genderCb": "female",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Ana María está en recuperación de una cirugía y necesita apoyo postoperatorio. Busca un cuidador comprensivo para ayudarla durante su proceso de curación.",
-			"skillsCb": [
-				"Post-Operative Care",
-				"Recreational Companionship",
-				"First Aid",
-				"Cooking"
-			]
-		},
-		{
-			"id": "017",
-			"profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
-			"nameCb": "Gabriel Torres",
-			"emailCb": "gabriel@example.com",
-			"idCb": "334455",
-			"ageCb": "33",
-			"cityCb": "Medellín",
-			"genderCb": "male",
-			"scheduleCb": "partTime",
-			"experienceCb": "Gabriel sufre de ansiedad y busca un cuidador que le brinde apoyo emocional constante. Necesita un compañero compasivo para ayudarlo en su día a día.",
-			"skillsCb": [
-				"Emotional Support",
-				"Recreational Companionship",
-				"Medication Administration"
-			]
-		},
-		{
-			"id": "018",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Liliana Gomez",
-			"emailCb": "liliana@example.com",
-			"idCb": "778899",
-			"ageCb": "45",
-			"cityCb": "Barranquilla",
-			"genderCb": "female",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Liliana necesita cuidado palliativo debido a una enfermedad terminal. Busca un cuidador comprensivo para brindarle apoyo en su último trayecto.",
-			"skillsCb": [
-				"Palliative Care",
-				"Constant Companionship",
-				"Emotional Support",
-				"Medication Administration"
-			]
-		},
-		{
-			"id": "019",
-			"profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
-			"nameCb": "Javier Vargas",
-			"emailCb": "javier@example.com",
-			"idCb": "990011",
-			"ageCb": "38",
-			"cityCb": "Cartagena",
-			"genderCb": "male",
-			"scheduleCb": "partTime",
-			"experienceCb": "Javier tiene diabetes y requiere cuidados específicos. Busca un cuidador responsable para ayudarlo con su rutina diaria y manejo de la enfermedad.",
-			"skillsCb": [
-				"Palliative Care",
-				"Medication Administration",
-				"Constant Companionship",
-				"Health Professional"
-			]
-		},
-		{
-			"id": "020",
-			"profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
-			"nameCb": "Silvia Rodríguez",
-			"emailCb": "silvia@example.com",
-			"idCb": "112233",
-			"ageCb": "29",
-			"cityCb": "Bogotá",
-			"genderCb": "female",
-			"scheduleCb": "fullTime",
-			"experienceCb": "Silvia está en recuperación después de un accidente y necesita apoyo en sus tareas diarias. Busca un cuidador compasivo para asistirla en su proceso de rehabilitación.",
-			"skillsCb": [
-				"Post-Operative Care",
-				"Recreational Companionship",
-				"Wound Care",
-				"Cooking"
-			]
-		}
-	]
+  "cuidadores": [
+    {
+      "id": "23456",
+      "profilePicCg": "C:\\fakepath\\imgagenr.webp",
+      "nameCg": "Tarzan",
+      "emailCg": "zan@gmail.com",
+      "idCg": "23456",
+      "ageCg": "90",
+      "cityCg": "ibague",
+      "genderCg": "male",
+      "scheduleCg": "fullTime",
+      "experienceCg": "tengo un problema para cocinar",
+      "skillsCg": [
+        "healthProfessional",
+        "cooking",
+        "firstAid",
+        "emotionalSupport",
+        "nutrition",
+        "palliativeCare"
+      ]
+    },
+    {
+      "id": "678",
+      "profilePicCg": "C:\\fakepath\\imgagenr.webp",
+      "nameCg": "diana",
+      "emailCg": "d@gmail.com",
+      "idCg": "678",
+      "ageCg": "67",
+      "cityCg": "villavicencio",
+      "genderCg": "female",
+      "scheduleCg": "fullTime",
+      "professionCg": "arquitecta",
+      "experienceCg": "cuidar a las personas",
+      "skillsCg": [
+        "limitedMobility",
+        "ownVehicle",
+        "cooking",
+        "hygieneServices",
+        "firstAid",
+        "emotionalSupport",
+        "accompanimentToAppointments"
+      ]
+    },
+    {
+      "id": "987",
+      "profilePicCg": "C:\\fakepath\\imgagenr.webp",
+      "nameCg": "manu",
+      "emailCg": "manu@gmail.com",
+      "idCg": "987",
+      "ageCg": "67",
+      "cityCg": "medellin",
+      "genderCg": "female",
+      "scheduleCg": "fullTime",
+      "professionCg": "enfermera",
+      "experienceCg": "cuidar pacientes",
+      "skillsCg": [
+        "ownVehicle",
+        "hygieneServices",
+        "accompanimentToAppointments",
+        "medicationAdministration",
+        "nutrition",
+        "palliativeCare",
+        "postOperativeCare"
+      ]
+    }
+  ],
+  "beneficiarios": [
+    {
+      "id": "001",
+      "profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
+      "nameCb": "Maria González",
+      "emailCb": "mariagonzalez@example.com",
+      "idCb": "112233",
+      "ageCb": "30",
+      "cityCb": "Bogotá",
+      "genderCb": "female",
+      "scheduleCb": "partTime",
+      "experienceCb": "Maria sufre de artritis y necesita apoyo constante. Requiere cuidado especializado y comprensión en su rutina diaria.",
+      "skillsCb": [
+        "Post-Operative Care",
+        "Emotional Support",
+        "Cooking"
+      ]
+    },
+    {
+      "id": "002",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Juan Ramirez",
+      "emailCb": "juanramirez@example.com",
+      "idCb": "445566",
+      "ageCb": "28",
+      "cityCb": "Medellín",
+      "genderCb": "male",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Juan tiene diabetes y requiere atención constante. Necesita un cuidador comprensivo que lo ayude con sus necesidades diarias.",
+      "skillsCb": [
+        "Palliative Care",
+        "Medication Administration",
+        "Health Professional"
+      ]
+    },
+    {
+      "id": "006",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Alejandro Mendoza",
+      "emailCb": "alejandro@example.com",
+      "idCb": "998877",
+      "ageCb": "42",
+      "cityCb": "Cali",
+      "genderCb": "male",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Alejandro padece de fibromialgia y requiere un cuidador que le brinde apoyo en sus actividades diarias, proporcionando alivio y compañía constante.",
+      "skillsCb": [
+        "Recreational Companionship",
+        "Wound Care",
+        "Emotional Support"
+      ]
+    },
+    {
+      "id": "007",
+      "profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
+      "nameCb": "Valeria Rodriguez",
+      "emailCb": "valeria@example.com",
+      "idCb": "665544",
+      "ageCb": "25",
+      "cityCb": "Barranquilla",
+      "genderCb": "female",
+      "scheduleCb": "partTime",
+      "experienceCb": "Valeria vive con síndrome de fatiga crónica y necesita cuidados constantes. Busca un cuidador comprensivo y paciente para apoyarla en su día a día.",
+      "skillsCb": [
+        "Medication Administration",
+        "Constant Companionship",
+        "Emotional Support"
+      ]
+    },
+    {
+      "id": "008",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Camila Herrera",
+      "emailCb": "camila@example.com",
+      "idCb": "112233",
+      "ageCb": "30",
+      "cityCb": "Cartagena",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Camila sufre de diabetes y requiere atención especializada. Busca un cuidador responsable para ayudarla en su cuidado diario.",
+      "skillsCb": [
+        "Post-Operative Care",
+        "Recreational Companionship",
+        "First Aid",
+        "Cooking"
+      ]
+    },
+    {
+      "id": "009",
+      "profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
+      "nameCb": "Sergio Vargas",
+      "emailCb": "sergio@example.com",
+      "idCb": "334455",
+      "ageCb": "38",
+      "cityCb": "Bogotá",
+      "genderCb": "male",
+      "scheduleCb": "partTime",
+      "experienceCb": "Sergio tiene artritis reumatoide y requiere apoyo en sus actividades diarias. Busca un cuidador compasivo para brindarle la asistencia necesaria.",
+      "skillsCb": [
+        "Palliative Care",
+        "Medication Administration",
+        "Constant Companionship"
+      ]
+    },
+    {
+      "id": "010",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Laura Sánchez",
+      "emailCb": "laura@example.com",
+      "idCb": "778899",
+      "ageCb": "23",
+      "cityCb": "Medellín",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Laura tiene fibromialgia y busca un cuidador comprensivo para ayudarla con su rutina diaria. Necesita apoyo en sus tareas cotidianas.",
+      "skillsCb": [
+        "Recreational Companionship",
+        "Emotional Support",
+        "Wound Care",
+        "Cooking"
+      ]
+    },
+    {
+      "id": "011",
+      "profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
+      "nameCb": "Diego Alvarez",
+      "emailCb": "diego@example.com",
+      "idCb": "556677",
+      "ageCb": "35",
+      "cityCb": "Cali",
+      "genderCb": "male",
+      "scheduleCb": "partTime",
+      "experienceCb": "Diego tiene hipertensión y requiere un cuidador atento para controlar su salud. Necesita apoyo en la administración de medicamentos y seguimiento constante.",
+      "skillsCb": [
+        "Medication Administration",
+        "Palliative Care",
+        "Constant Companionship"
+      ]
+    },
+    {
+      "id": "012",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Isabella Gómez",
+      "emailCb": "isabella@example.com",
+      "idCb": "112233",
+      "ageCb": "28",
+      "cityCb": "Barranquilla",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Isabella sufre de insomnio crónico y busca un cuidador que la apoye con técnicas de relajación. Necesita compañía constante para mejorar su calidad de vida.",
+      "skillsCb": [
+        "Recreational Companionship",
+        "Emotional Support",
+        "Cooking",
+        "Wound Care"
+      ]
+    },
+    {
+      "id": "013",
+      "profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
+      "nameCb": "Andrés Herrera",
+      "emailCb": "andres@example.com",
+      "idCb": "334455",
+      "ageCb": "40",
+      "cityCb": "Medellín",
+      "genderCb": "male",
+      "scheduleCb": "partTime",
+      "experienceCb": "Andrés padece de artritis reumatoide y necesita un cuidador para ayudarlo con las tareas diarias. Busca apoyo y compañía constante.",
+      "skillsCb": [
+        "Palliative Care",
+        "Medication Administration",
+        "Constant Companionship"
+      ]
+    },
+    {
+      "id": "014",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Daniela Castro",
+      "emailCb": "daniela@example.com",
+      "idCb": "778899",
+      "ageCb": "25",
+      "cityCb": "Cartagena",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Daniela requiere cuidado postoperatorio después de una cirugía reciente. Busca un cuidador comprensivo para asistirla durante su proceso de recuperación.",
+      "skillsCb": [
+        "Post-Operative Care",
+        "Recreational Companionship",
+        "First Aid",
+        "Cooking"
+      ]
+    },
+    {
+      "id": "015",
+      "profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
+      "nameCb": "Carlos Ríos",
+      "emailCb": "carlos@example.com",
+      "idCb": "990011",
+      "ageCb": "32",
+      "cityCb": "Bogotá",
+      "genderCb": "male",
+      "scheduleCb": "partTime",
+      "experienceCb": "Carlos tiene limitación de movilidad y necesita un cuidador que lo asista con sus desplazamientos diarios. Busca apoyo en su movilización y actividades cotidianas.",
+      "skillsCb": [
+        "Limited Mobility",
+        "Constant Companionship",
+        "Medication Administration",
+        "Emotional Support"
+      ]
+    },
+    {
+      "id": "016",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Ana María López",
+      "emailCb": "anamaria@example.com",
+      "idCb": "112233",
+      "ageCb": "27",
+      "cityCb": "Cali",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Ana María está en recuperación de una cirugía y necesita apoyo postoperatorio. Busca un cuidador comprensivo para ayudarla durante su proceso de curación.",
+      "skillsCb": [
+        "Post-Operative Care",
+        "Recreational Companionship",
+        "First Aid",
+        "Cooking"
+      ]
+    },
+    {
+      "id": "017",
+      "profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
+      "nameCb": "Gabriel Torres",
+      "emailCb": "gabriel@example.com",
+      "idCb": "334455",
+      "ageCb": "33",
+      "cityCb": "Medellín",
+      "genderCb": "male",
+      "scheduleCb": "partTime",
+      "experienceCb": "Gabriel sufre de ansiedad y busca un cuidador que le brinde apoyo emocional constante. Necesita un compañero compasivo para ayudarlo en su día a día.",
+      "skillsCb": [
+        "Emotional Support",
+        "Recreational Companionship",
+        "Medication Administration"
+      ]
+    },
+    {
+      "id": "018",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Liliana Gomez",
+      "emailCb": "liliana@example.com",
+      "idCb": "778899",
+      "ageCb": "45",
+      "cityCb": "Barranquilla",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Liliana necesita cuidado palliativo debido a una enfermedad terminal. Busca un cuidador comprensivo para brindarle apoyo en su último trayecto.",
+      "skillsCb": [
+        "Palliative Care",
+        "Constant Companionship",
+        "Emotional Support",
+        "Medication Administration"
+      ]
+    },
+    {
+      "id": "019",
+      "profilePicCb": "https://media.istockphoto.com/id/1387743677/es/foto/joven-india-sonriente-disfrutando-de-una-conversaci%C3%B3n-por-videollamada.jpg?s=1024x1024&w=is&k=20&c=YLhwhSVVPYZQitXWCpBAbRbzEdLDM4cEQ8blMYYBngI=",
+      "nameCb": "Javier Vargas",
+      "emailCb": "javier@example.com",
+      "idCb": "990011",
+      "ageCb": "38",
+      "cityCb": "Cartagena",
+      "genderCb": "male",
+      "scheduleCb": "partTime",
+      "experienceCb": "Javier tiene diabetes y requiere cuidados específicos. Busca un cuidador responsable para ayudarlo con su rutina diaria y manejo de la enfermedad.",
+      "skillsCb": [
+        "Palliative Care",
+        "Medication Administration",
+        "Constant Companionship",
+        "Health Professional"
+      ]
+    },
+    {
+      "id": "020",
+      "profilePicCb": "https://media.istockphoto.com/id/1368978700/es/foto/toma-con-c%C3%A1mara-web-de-un-joven-moreno-multirracial-mirando-a-la-c%C3%A1mara-y-sonriendo-pantalla.jpg?s=1024x1024&w=is&k=20&c=7MBK40CWI0z33-mQFVbEQww3PUxtaA9jERHKD-EVJOw=",
+      "nameCb": "Silvia Rodríguez",
+      "emailCb": "silvia@example.com",
+      "idCb": "112233",
+      "ageCb": "29",
+      "cityCb": "Bogotá",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Silvia está en recuperación después de un accidente y necesita apoyo en sus tareas diarias. Busca un cuidador compasivo para asistirla en su proceso de rehabilitación.",
+      "skillsCb": [
+        "Post-Operative Care",
+        "Recreational Companionship",
+        "Wound Care",
+        "Cooking"
+      ]
+    },
+    {
+      "id": "6748",
+      "profilePicCb": "C:\\fakepath\\imgagenr.webp",
+      "nameCb": "Tatiana",
+      "emailCb": "lo@gmail.com",
+      "idCb": "6748",
+      "ageCb": "98",
+      "cityCb": "cucuta",
+      "genderCb": "female",
+      "scheduleCb": "partTime",
+      "experienceCb": "",
+      "skillsCb": [
+        "healthProfessional",
+        "limitedMobility",
+        "ownVehicle",
+        "woundCare",
+        "hygieneServices",
+        "firstAid"
+      ]
+    },
+    {
+      "id": "12345",
+      "profilePicCb": "C:\\fakepath\\imgagenr.webp",
+      "nameCb": "Tatiana Maldonado",
+      "emailCb": "mtatiana115@gmail.com",
+      "idCb": "12345",
+      "ageCb": "76",
+      "cityCb": "medellin",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "bnamsabsxs\nxs\nxsx\ns\nxs\nxs\n",
+      "skillsCb": [
+        "healthProfessional",
+        "woundCare",
+        "firstAid",
+        "accompanimentToAppointments",
+        "medicationAdministration",
+        "nutrition",
+        "palliativeCare",
+        "postOperativeCare"
+      ]
+    }
+  ]
 }

@@ -37,6 +37,24 @@ document.addEventListener("DOMContentLoaded", function () {
 hvFormCarebeneficiary.addEventListener("submit", (event) => {
 	event.preventDefault();
 
+	validateUserId();
+});
+
+//validar Id
+async function validateUserId() {
+	const userId = idNumberCarebeneficiary.value;
+	const response = await fetch(urlBase);
+	const data = await response.json();
+	const isDuplicate = data.some((user) => user.idCb === userId);
+
+	if (isDuplicate) {
+		alert("El número Id ingresado ya existe.");
+	} else {
+		getSkillsList();
+	}
+}
+
+function getSkillsList() {
 	const checkboxList = document.querySelectorAll(
 		'.checkbox-list input[name="skills"]'
 	);
@@ -45,7 +63,7 @@ hvFormCarebeneficiary.addEventListener("submit", (event) => {
 		.map((checkbox) => checkbox.value);
 
 	addUser();
-});
+}
 
 //creo funcion y hago async fetch
 async function addUser() {
@@ -78,8 +96,8 @@ async function addUser() {
 	const userId = idNumberCarebeneficiary.value;
 
 	//almaceno ID en localstorage
-	localStorage.setItem("userId", userId);
-	window.location.href = "../profilePage/profile.html";
+	localStorage.setItem("userId", newUser.id);
+	window.location.href = "../profilePage/profileCarebeneficiary.html";
 }
 
 //creo una funcion para obtener los usuarios y que esta sea llamada al domcontentload
