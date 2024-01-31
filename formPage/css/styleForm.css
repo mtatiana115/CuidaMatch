@@ -30,13 +30,11 @@ body {
 	padding: 10px;
 	font-family: "Poppins", sans-serif;
 	background: rgb(0, 107, 192);
-  background: linear-gradient(
-    25deg,
-    rgba(0, 107, 192, 1) 0%,
-    rgba(0, 91, 113, 1) 0%,
-    rgba(101, 51, 172, 1) 79%,
-    rgba(147, 62, 216, 1) 86%
-  );
+	background: linear-gradient(25deg,
+			rgba(0, 107, 192, 1) 0%,
+			rgba(0, 91, 113, 1) 0%,
+			rgb(101, 51, 172) 79%,
+			rgba(147, 62, 216, 1) 86%);
 }
 
 .container {
@@ -102,6 +100,11 @@ select {
 	border-radius: 20px;
 }
 
+select option {
+	font-family: "Poppins", sans-serif;
+
+}
+
 .input-data input::placeholder {
 	color: #fff;
 	text-align: center;
@@ -164,7 +167,7 @@ select {
 	z-index: 2;
 }
 
-#opciones_Cuidado{
+#opciones_Cuidado {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
