@@ -33,14 +33,15 @@
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <a
-                    class="nav-link active btnSesion"
+                    class="nav-link  btnSesion"
                     aria-current="page"
                     href="#"
+                    data-bs-toggle="modal" data-bs-target="#loginmodal"
                     >Inicia sesión</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btnRegistro" href="#" target="_blank"
+                  <a class="nav-link btnRegistro" data-bs-toggle="modal" href="#" data-bs-target="#registromodal"
                     >Regístrate</a
                   >
                 </li>

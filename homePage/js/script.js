@@ -1,6 +1,10 @@
-import {exportar} from "../../Footer_Header/Insert.js";
+import { exportar } from "../../Footer_Header/Insert.js";
 
 exportar();
+
+const cboxCuidador = document.querySelector("#cboxCuidador");
+const cboxCliente = document.querySelector("#cboxCliente");
+const ir_Regristro = document.querySelector("#goRegistro");
 
 //preloader
 document.addEventListener("DOMContentLoaded", function () {
@@ -9,8 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	}, 1000);
 });
 
-const cboxCuidador = document.querySelector("#cboxCuidador");
-const cboxCliente = document.querySelector("#cboxCliente");
 
 cboxCuidador.addEventListener("change", function () {
 	if (cboxCuidador.checked) {
@@ -24,5 +26,23 @@ cboxCliente.addEventListener("change", function () {
 		cboxCuidador.disabled = true;
 	} else {
 		cboxCuidador.disabled = false;
+	}
+});
+
+ir_Regristro.addEventListener("click", function () {
+	if (cboxCliente.checked) {
+		window.location.href = "../formPage/carebeneficiaryForm.html";
+	}
+	else if (cboxCuidador.checked) {
+		window.location.href = "../formPage/caregiverForm.html";
+	}
+	else {
+		Swal.fire({
+			title: "Parece que no elegiste una opción",
+			text: "Inténtalo de nuevo",
+			icon: "question",
+			timer: 2000,
+			showConfirmButton: false
+		});
 	}
 });
