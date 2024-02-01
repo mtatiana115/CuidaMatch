@@ -1,14 +1,11 @@
 //obtener datos
 const url = "http://localhost:3001/beneficiarios";
 
-const container = document.querySelector("#container");
 const nameUser = document.querySelector("#nameUser");
 const ageDisplay = document.querySelector("#ageDisplay");
-const profession = document.querySelector("#profession");
 const city = document.querySelector("#city");
 const gender = document.querySelector("#gender");
 const workSchedule = document.querySelector("#workSchedule");
-const aboutMe = document.querySelector("#aboutMe");
 const skills = document.querySelector("#skills");
 const experience = document.querySelector("#experience");
 
@@ -44,7 +41,7 @@ async function getUser() {
 	console.log(userId);
 	try {
 		console.log(`${url}/${userId}`);
-		const response = await fetch(`${url}?idCg=${userId}`);
+		const response = await fetch(`${url}?idCb=${userId}`);
 		const data = await response.json();
 		console.log(data);
 
@@ -62,6 +59,11 @@ function actualizarPerfil(data) {
 		console.log("Actualizando:", data);
 		nameUser.textContent = data.nameCb;
 		ageDisplay.textContent = data.ageCb;
-		// profession.textContent = data.
+		city.textContent = data.cityCb;
+		experience.textContent = data.experienceCb;
+		gender.textContent = data.genderCb;
+		workSchedule.textContent = data.scheduleCb;
+		skills.textContent = data.skillsCb;
+		// como subir la foto
 	}
 }

@@ -405,6 +405,44 @@
         "palliativeCare",
         "postOperativeCare"
       ]
+    },
+    {
+      "id": "678954",
+      "profilePicCb": "C:\\fakepath\\imgagenr.webp",
+      "nameCb": "Julian",
+      "emailCb": "ju@gmail.com",
+      "idCb": "678954",
+      "ageCb": "80",
+      "cityCb": "pereira",
+      "genderCb": "male",
+      "scheduleCb": "partTime",
+      "experienceCb": "lksbsccd\ncd\ncd\ncd\ncd\n",
+      "skillsCb": [
+        "cooking",
+        "woundCare",
+        "hygieneServices",
+        "medicationAdministration",
+        "palliativeCare"
+      ]
+    },
+    {
+      "id": "6789546",
+      "profilePicCb": "C:\\fakepath\\imgagenr.webp",
+      "nameCb": "Julian",
+      "emailCb": "ju@gmail.com",
+      "idCb": "6789546",
+      "ageCb": "80",
+      "cityCb": "pereira",
+      "genderCb": "male",
+      "scheduleCb": "partTime",
+      "experienceCb": "lksbsccd\ncd\ncd\ncd\ncd\n",
+      "skillsCb": [
+        "cooking",
+        "woundCare",
+        "hygieneServices",
+        "medicationAdministration",
+        "palliativeCare"
+      ]
     }
   ]
 }
