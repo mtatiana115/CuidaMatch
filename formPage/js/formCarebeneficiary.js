@@ -9,6 +9,9 @@ const yourPicCarebeneficiary = document.querySelector(
 );
 const nameCarebeneficiary = document.querySelector("#nameCarebeneficiary");
 const emailCarebeneficiary = document.querySelector("#emailCarebeneficiary");
+const passwordCarebeneficiary = document.querySelector("#password");
+const confirmPasswordCarebeneficiary =
+	document.querySelector("#confirmPassword");
 const idNumberCarebeneficiary = document.querySelector(
 	"#idNumberCarebeneficiary"
 );
@@ -64,13 +67,13 @@ function getSkillsList() {
 
 	addUser();
 }
-console.log(selectedSkillsList);
+// console.log(selectedSkillsList);
 
 //creo funcion y hago async fetch
 async function addUser() {
 	console.log(yourPicCarebeneficiary.files);
-	const reader = new FileReader();
-	return;
+	// const reader = new FileReader();
+	// return;
 	const newUser = {
 		profilePicCb: yourPicCarebeneficiary.value,
 		nameCb: nameCarebeneficiary.value,

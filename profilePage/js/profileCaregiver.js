@@ -59,6 +59,7 @@ function actualizarPerfil(data) {
 		console.log("Usuario no encontrado");
 	} else {
 		console.log("Actualizando:", data);
+
 		nameUserCg.textContent = data.nameCg;
 		ageDisplayCg.textContent = data.ageCg;
 		cityCg.textContent = data.cityCg;
@@ -66,7 +67,9 @@ function actualizarPerfil(data) {
 		genderCg.textContent = data.genderCg;
 		professionCg.textContent = data.professionCg;
 		workScheduleCg.textContent = data.scheduleCg;
-		skillsCg.textContent = data.skillsCg;
+		data.skillsCg.forEach((element) => {
+			skillsCg.innerHTML += `<li>${element}</li>`;
+		});
 		//profilepic
 	}
 }

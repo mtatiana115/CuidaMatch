@@ -101,6 +101,41 @@
         "limitedMobility",
         "woundCare"
       ]
+    },
+    {
+      "id": "2345",
+      "profilePicCg": "C:\\fakepath\\imgagenr.webp",
+      "nameCg": "Naty",
+      "emailCg": "n@gmail.com",
+      "idCg": "2345",
+      "ageCg": "76",
+      "cityCg": "cali",
+      "genderCg": "female",
+      "scheduleCg": "partTime",
+      "professionCg": "cirujana",
+      "experienceCg": "kjfvfv\nv\nfv\nf\nv\nf",
+      "skillsCg": [
+        "healthProfessional",
+        "limitedMobility",
+        "ownVehicle"
+      ]
+    },
+    {
+      "id": "7654",
+      "profilePicCg": "C:\\fakepath\\imgagenr.webp",
+      "nameCg": "Sara",
+      "emailCg": "s@gmail.com",
+      "idCg": "7654",
+      "ageCg": "67",
+      "cityCg": "pereira",
+      "genderCg": "female",
+      "scheduleCg": "partTime",
+      "professionCg": "doctora",
+      "experienceCg": "mnxsjknxs\nsd\nsd\nsd",
+      "skillsCg": [
+        "healthProfessional",
+        "limitedMobility"
+      ]
     }
   ],
   "beneficiarios": [
@@ -528,6 +563,23 @@
         "emotionalSupport",
         "accompanimentToAppointments",
         "constantCompanionship"
+      ]
+    },
+    {
+      "id": "8888",
+      "profilePicCb": "C:\\fakepath\\imgagenr.webp",
+      "nameCb": "Luisa",
+      "emailCb": "lui@gmail.com",
+      "idCb": "8888",
+      "ageCb": "80",
+      "cityCb": "popayan",
+      "genderCb": "female",
+      "scheduleCb": "partTime",
+      "experienceCb": " m,s xs, sm,x sxsx\ns\nxsx\ns\nxc\nd\nvc\nsv\nc\nv\nxx\nz",
+      "skillsCb": [
+        "healthProfessional",
+        "limitedMobility",
+        "ownVehicle"
       ]
     }
   ]

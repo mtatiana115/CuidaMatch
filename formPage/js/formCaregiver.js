@@ -7,6 +7,10 @@ let selectedSkillsListCg = [];
 const yourPicCaregiver = document.querySelector("#yourPicCaregiver");
 const nameCaregiver = document.querySelector("#nameCaregiver");
 const emailCaregiver = document.querySelector("#emailCaregiver");
+const passwordCaregiver = document.querySelector("#passwordCaregiver");
+const confirmPasswordCaregiver = document.querySelector(
+	"#confirmPasswordCaregiver"
+);
 const idNumberCaregiver = document.querySelector("#idNumberCaregiver");
 const ageCaregiver = document.querySelector("#ageCaregiver");
 const cityCaregiver = document.querySelector("#cityCaregiver");
