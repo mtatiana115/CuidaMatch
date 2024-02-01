@@ -11,6 +11,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    #iconEn, #iconSp{
+        position: fixed;
+        z-index: 3;
+        right: 20px;
+        height: 7%;
+    }
+    #iconEn{
+        margin-top: 5%;
+    }
 }
 
 main .login {
@@ -40,3 +49,4 @@ main h1 {
     border: none;
     color: white;
 }
+

@@ -1,6 +1,6 @@
 //selectores
-const btnEspañol = document.getElementById("btnEspañol");
-const btnEnglish = document.getElementById("btnEnglish");
+const btnEspañol = document.getElementById("iconSp");
+const btnEnglish = document.getElementById("iconEn");
 
 const textoEnglish = document.querySelectorAll("h1,p,label,button,option");
 const inputs = document.querySelectorAll("input");
