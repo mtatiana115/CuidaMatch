@@ -53,6 +53,7 @@ async function getUser() {
 }
 
 function actualizarPerfil(data) {
+	console.log(data);
 	if (!data) {
 		console.log("Usuario no encontrado");
 	} else {
@@ -63,7 +64,9 @@ function actualizarPerfil(data) {
 		experience.textContent = data.experienceCb;
 		gender.textContent = data.genderCb;
 		workSchedule.textContent = data.scheduleCb;
-		skills.textContent = data.skillsCb;
+		data.skillsCb.forEach((element) => {
+			skills.innerHTML += `<li>${element}</li>`;
+		});
 		// como subir la foto
 	}
 }

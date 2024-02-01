@@ -64,9 +64,13 @@ function getSkillsList() {
 
 	addUser();
 }
+console.log(selectedSkillsList);
 
 //creo funcion y hago async fetch
 async function addUser() {
+	console.log(yourPicCarebeneficiary.files);
+	const reader = new FileReader();
+	return;
 	const newUser = {
 		profilePicCb: yourPicCarebeneficiary.value,
 		nameCb: nameCarebeneficiary.value,

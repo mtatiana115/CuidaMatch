@@ -63,6 +63,27 @@
         "palliativeCare",
         "postOperativeCare"
       ]
+    },
+    {
+      "id": "527283",
+      "profilePicCg": "C:\\fakepath\\imgagenr.webp",
+      "nameCg": "Lorena",
+      "emailCg": "lore@gmail.com",
+      "idCg": "527283",
+      "ageCg": "78",
+      "cityCg": "manizales",
+      "genderCg": "female",
+      "scheduleCg": "hourlyWork",
+      "professionCg": "Trabajadora social",
+      "experienceCg": "me gusta cuidar personas",
+      "skillsCg": [
+        "healthProfessional",
+        "cooking",
+        "woundCare",
+        "hygieneServices",
+        "accompanimentToAppointments",
+        "medicationAdministration"
+      ]
     }
   ],
   "beneficiarios": [
@@ -442,6 +463,54 @@
         "hygieneServices",
         "medicationAdministration",
         "palliativeCare"
+      ]
+    },
+    {
+      "id": "1232145",
+      "profilePicCb": "C:\\fakepath\\imgagenr.webp",
+      "nameCb": "Valeria Henao",
+      "emailCb": "vale@gmail.com",
+      "idCb": "1232145",
+      "ageCb": "45",
+      "cityCb": "manizales",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Soy una persona que necesita acompañamiento permanente",
+      "skillsCb": [
+        "healthProfessional",
+        "limitedMobility",
+        "ownVehicle",
+        "cooking",
+        "woundCare",
+        "hygieneServices",
+        "firstAid",
+        "emotionalSupport",
+        "accompanimentToAppointments",
+        "constantCompanionship"
+      ]
+    },
+    {
+      "id": "12321456",
+      "profilePicCb": "C:\\fakepath\\imgagenr.webp",
+      "nameCb": "Valeria Henao",
+      "emailCb": "vale@gmail.com",
+      "idCb": "12321456",
+      "ageCb": "45",
+      "cityCb": "manizales",
+      "genderCb": "female",
+      "scheduleCb": "fullTime",
+      "experienceCb": "Soy una persona que necesita acompañamiento permanente",
+      "skillsCb": [
+        "healthProfessional",
+        "limitedMobility",
+        "ownVehicle",
+        "cooking",
+        "woundCare",
+        "hygieneServices",
+        "firstAid",
+        "emotionalSupport",
+        "accompanimentToAppointments",
+        "constantCompanionship"
       ]
     }
   ]
