@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/styleForm.css" />
 		<link rel="icon" href="../multimedia/logo.png" />
-		<title>Caregiver</title>
+		<title>Registro del cuidador</title>
 	</head>
 
 	<body>
@@ -17,34 +17,36 @@
 			</div>
 			<div class="container">
 				<div class="text">
-					<h1>Caregiver registration</h1>
+					<h1>Registro del cuidador</h1>
 				</div>
 				<form id="hvFormCaregiver" action="" method="post">
 					<div class="form-row">
 						<div class="input-data">
-							<label for="yourPicCaregiver">Upload your photo</label>
+							<label for="yourPicCaregiver">Elije tu foto de perfil</label>
 							<input
 								type="file"
 								id="yourPicCaregiver"
 								name="yourPic"
 								accept="image/*"
-								placeholder="Upload your photo"
+								placeholder="Sube tu foto"
 								required
 							/>
 						</div>
 						<div class="input-data">
-							<label class="lbl" for="nameCaregiver">Your full name is</label>
+							<label class="lbl" for="nameCaregiver"
+								>Tu nombre completo es</label
+							>
 							<input
 								class="input"
 								type="text"
 								id="nameCaregiver"
 								name="name"
-								placeholder="Full Name"
+								placeholder="Nombre completo"
 								required
 							/>
 						</div>
 						<div class="input-data">
-							<label class="lbl" for="emailCaregiver">Your email is</label>
+							<label class="lbl" for="emailCaregiver">Tu email es</label>
 							<input
 								class="input"
 								type="email"
@@ -55,66 +57,66 @@
 							/>
 						</div>
 						<div class="input-data">
-							<label class="lbl" for="passwordCaregiver">Password</label>
+							<label class="lbl" for="passwordCaregiver"
+								>Ingresa una contraseña</label
+							>
 							<input
 								class="input"
 								type="password"
 								id="passwordCaregiver"
 								name="idNumber"
-								placeholder="ID Number"
+								placeholder="contraseña"
 								required
 							/>
 						</div>
 						<div class="input-data">
 							<label class="lbl" for="confirmPasswordCaregiver"
-								>Confirm password</label
+								>Confirma tu contraseña</label
 							>
 							<input
 								class="input"
 								type="password"
 								id="confirmPasswordCaregiver"
 								name="idNumber"
-								placeholder="ID Number"
+								placeholder="contraseña"
 								required
 							/>
 						</div>
 						<div class="input-data">
 							<label class="lbl" for="idNumberCaregiver"
-								>Your ID number is</label
+								>Numero de documento de identidad</label
 							>
 							<input
 								class="input"
 								type="number"
 								id="idNumberCaregiver"
 								name="idNumber"
-								placeholder="ID Number"
+								placeholder="ID"
 								required
 							/>
 						</div>
 						<div class="input-data">
-							<label class="lbl" for="ageCaregiver">Your age is</label>
+							<label class="lbl" for="ageCaregiver">Tu edad es</label>
 							<input
 								class="input"
 								type="number"
 								id="ageCaregiver"
 								name="age"
 								min="1"
-								placeholder="Age"
+								placeholder="Edad"
 								required
 							/>
 						</div>
 						<div class="input-data">
-							<label for="cityCaregiver"
-								>Where you will provide the service?</label
-							>
+							<label for="cityCaregiver">¿Dónde se prestará el servicio?</label>
 							<!-- <br> -->
 							<select
 								id="cityCaregiver"
 								name="city"
-								placeholder="City:"
+								placeholder="Ciudad"
 								required
 							>
-								<option value="">--Select a city--</option>
+								<option value="">--Selecciona una ciudad--</option>
 								<option value="barranquilla">Barranquilla</option>
 								<option value="bogota">Bogotá</option>
 								<option value="bucaramanga">Bucaramanga</option>
@@ -134,42 +136,50 @@
 							</select>
 						</div>
 						<div class="input-data">
-							<label for="genderCaregiver">You are</label>
+							<label for="genderCaregiver">Género</label>
 							<!-- <br> -->
 							<select id="genderCaregiver" name="gender" required>
-								<option value="">--Select your gender--</option>
-								<option value="female">Female</option>
-								<option value="male">Male</option>
+								<option value="">--Selecciona una opción--</option>
+								<option value="female">Femenino</option>
+								<option value="male">Masculino</option>
 							</select>
 						</div>
 						<div class="input-data">
-							<label for="scheduleCaregiver">Work schedule</label>
+							<label for="scheduleCaregiver"
+								>Selecciona la jornada laboral</label
+							>
 							<!-- <br> -->
 							<select id="scheduleCaregiver" name="schedule" required>
-								<option value="">--Select your work schedule--</option>
-								<option value="hourlyWork">Hourly work</option>
-								<option value="partTime">Part-time</option>
-								<option value="fullTime">Full-time</option>
+								<option value="">--Selecciona una opción--</option>
+								<option value="hourlyWork">Trabajo por horas</option>
+								<option value="partTime">Medio tiempo</option>
+								<option value="fullTime">Tiempo completo</option>
 							</select>
 						</div>
 						<div class="input-data textarea">
-							<label for="professionCaregiver">Your profession is:</label>
+							<label for="professionCaregiver"
+								>¿Cuál es tu profesión?
+								<nav></nav
+							></label>
 							<!-- <br> -->
 							<textarea class="profession" id="professionCaregiver"></textarea>
 						</div>
 						<div class="input-data textarea">
-							<label for="experienceCaregiver">About you:</label>
+							<label for="experienceCaregiver"
+								>Una descripción a cerca de ti</label
+							>
 							<!-- <br> -->
 							<textarea id="experienceCaregiver"></textarea>
 						</div>
 						<div id="opciones_Cuidado">
 							<label for="skillsCaregiver"
-								>Select your skills and interests for patient care:</label
+								>Segun tu experiencia, selecciona las áreas en las que puedes
+								brindar el servicio:</label
 							>
 							<div class="checkbox-list">
 								<label for="driving"
 									><input type="checkbox" value="driving" id="drivingC" />
-									Driving
+									Saber conducir
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -180,7 +190,7 @@
 										value="healthProfessional"
 										id="healthProfessionalC"
 									/>
-									health Professional
+									Profesional de la salud
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -191,7 +201,7 @@
 										value="limitedMobility"
 										id="limitedMobilityC"
 									/>
-									limited Mobility
+									Usuario con movilidad limitada
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -202,7 +212,7 @@
 										value="ownVehicle"
 										id="ownVehicleC"
 									/>
-									own Vehicle
+									Tengo vehículo propio
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -213,7 +223,7 @@
 										value="cooking"
 										id="cookingC"
 									/>
-									Cooking
+									Sé cocinar
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -224,7 +234,7 @@
 										value="woundCare"
 										id="woundCareC"
 									/>
-									wound Care
+									Cuidado de heridas
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -235,7 +245,7 @@
 										value="hygieneServices"
 										id="hygieneServicesC"
 									/>
-									hygiene Services
+									Servicios de higiene
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -246,7 +256,7 @@
 										value="firstAid"
 										id="firstAidC"
 									/>
-									first Aid
+									Primeros auxilios
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -257,7 +267,7 @@
 										value="emotionalSupport"
 										id="emotionalSupportC"
 									/>
-									emotional Support
+									Acompañamiento y soporte emocional
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -268,7 +278,7 @@
 										value="accompanimentToAppointments"
 										id="accompanimentToAppointmentsC"
 									/>
-									accompaniment To Appointments
+									Acompañamiento a citas
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -279,7 +289,7 @@
 										value="constantCompanionship"
 										id="constantCompanionshipC"
 									/>
-									constant Companionship
+									Compañía constante
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -290,7 +300,7 @@
 										value="medicationAdministration"
 										id="medicationAdministrationC"
 									/>
-									medication Administration
+									Administración de medicamentos
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -301,7 +311,7 @@
 										value="nutrition"
 										id="nutritionC"
 									/>
-									Nutrition
+									Nutrición
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -312,7 +322,7 @@
 										value="recreationalCompanionship"
 										id="recreationalCompanionshipC"
 									/>
-									recreational Companionship
+									Actividades lúdicas o fisioterapia
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -323,7 +333,7 @@
 										value="palliativeCare"
 										id="palliativeCareC"
 									/>
-									palliative Care
+									Cuidados paliativos
 								</label>
 							</div>
 							<div class="checkbox-list">
@@ -334,7 +344,7 @@
 										value="postOperativeCare"
 										id="postOperativeCareC"
 									/>
-									post Operative Care
+									Cuidados postoperatorios
 								</label>
 							</div>
 						</div>
