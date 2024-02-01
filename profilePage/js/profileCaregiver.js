@@ -47,12 +47,12 @@ async function getUser() {
 	console.log(userIdCaregiver);
 	try {
 		// console.log(`${url}/${userIdCaregiver}`);
-		const response = await fetch(`${url}?idCg=${userIdCaregiver}`);
+		const response = await fetch(`${url}/${userIdCaregiver}`);
 		const data = await response.json();
 		console.log(data);
 
 		//actualizar perfil despues de obtener los datos
-		actualizarPerfil(data[0]);
+		actualizarPerfil(data);
 	} catch (error) {
 		console.error("Error:", error);
 	}

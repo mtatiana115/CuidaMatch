@@ -43,16 +43,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function getUser() {
 	// const userId = "018";
+	// localStorage.setItem("userId", "002")
 	const userId = localStorage.getItem("userId");
 	console.log(userId);
 	try {
 		console.log(`${url}/${userId}`);
-		const response = await fetch(`${url}?idCb=${userId}`);
+		const response = await fetch(`${url}/${userId}`);
 		const data = await response.json();
 		console.log(data);
 
 		//actualizar perfil despues de obtener los datos
-		actualizarPerfil(data[0]);
+		actualizarPerfil(data);
 	} catch (error) {
 		console.error("Error:", error);
 	}
