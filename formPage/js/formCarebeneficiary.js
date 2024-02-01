@@ -78,6 +78,8 @@ async function addUser() {
 		profilePicCb: yourPicCarebeneficiary.value,
 		nameCb: nameCarebeneficiary.value,
 		emailCb: emailCarebeneficiary.value,
+		passwordCb: passwordCarebeneficiary.value,
+		confirmPasswordCb: confirmPasswordCarebeneficiary.value,
 		idCb: idNumberCarebeneficiary.value,
 		ageCb: ageCarebeneficiary.value,
 		cityCb: cityCarebeneficiary.value,
