@@ -16,17 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 cboxCuidador.addEventListener("change", function () {
 	if (cboxCuidador.checked) {
-		cboxCliente.disabled = true;
-	} else {
-		cboxCliente.disabled = false;
+		cboxCliente.checked = false;
 	}
 });
 cboxCliente.addEventListener("change", function () {
 	if (cboxCliente.checked) {
-		cboxCuidador.disabled = true;
-	} else {
-		cboxCuidador.disabled = false;
-	}
+		cboxCuidador.checked = false;
+	} 
 });
 
 ir_Regristro.addEventListener("click", function () {
@@ -46,3 +42,4 @@ ir_Regristro.addEventListener("click", function () {
 		});
 	}
 });
+

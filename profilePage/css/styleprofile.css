@@ -300,3 +300,12 @@ body {
 .icon {
 	margin: 0 20px;
 }
+
+.btn-regresar{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	text-decoration: none;
+	color: gray;
+	font-size: 50px;
+}
