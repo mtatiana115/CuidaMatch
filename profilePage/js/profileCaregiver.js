@@ -13,6 +13,10 @@ const experienceCg = document.querySelector("#experienceCg");
 
 //estrellas
 document.addEventListener("DOMContentLoaded", function () {
+	setTimeout(function () {
+		document.querySelector(".preloader").style.display = "none";
+	}, 1000);
+
 	const stars = document.querySelectorAll(".star");
 	const result = document.getElementById("result");
 
