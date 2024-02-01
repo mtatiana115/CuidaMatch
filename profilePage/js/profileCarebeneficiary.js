@@ -8,6 +8,7 @@ const gender = document.querySelector("#gender");
 const workSchedule = document.querySelector("#workSchedule");
 const skills = document.querySelector("#skills");
 const experience = document.querySelector("#experience");
+const imgprofile = document.querySelector("#imgprofile");
 
 //estrellas
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 async function getUser() {
+	// const userId = "018";
 	const userId = localStorage.getItem("userId");
 	console.log(userId);
 	try {
@@ -62,6 +64,7 @@ function actualizarPerfil(data) {
 		console.log("Usuario no encontrado");
 	} else {
 		console.log("Actualizando:", data);
+		imgprofile.src = data.profilePicCb;
 		nameUser.textContent = data.nameCb;
 		ageDisplay.textContent = data.ageCb;
 		city.textContent = data.cityCb;
