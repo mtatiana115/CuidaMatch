@@ -1,381 +1,381 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/styleForm.css" />
-		<link rel="icon" href="../multimedia/logo.png" />
-		<title>Registro beneficiario</title>
-	</head>
-	<body>
-		<header></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styleForm.css" />
+    <link rel="icon" href="../multimedia/logo.png" />
+    <title>Registro beneficiario</title>
+  </head>
+  <body>
+    <header></header>
 
-		<main>
-			<div class="preloader">
-				<img src="../multimedia/logo.png" alt="logo-app" />
-			</div>
-			<div class="container">
-				<div class="text">
-					<h1>Registro del beneficiario</h1>
-				</div>
-				<form id="hvFormCarebeneficiary" action="" method="post">
-					<div class="form-row">
-						<div class="input-data">
-							<label for="yourPicCarebeneficiary">Foto del beneficiario</label>
-							<input
-								type="file"
-								id="yourPicCarebeneficiary"
-								name="yourPic"
-								accept="image/*"
-								placeholder="Sube tu foto"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label class="lbl" for="nameCarebeneficiary"
-								>Nombre completo del beneficiario</label
-							>
-							<input
-								class="input"
-								type="text"
-								id="nameCarebeneficiary"
-								name="name"
-								placeholder="Nombre completo"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label class="lbl" for="emailCarebeneficiary"
-								>Correo de contacto</label
-							>
-							<input
-								class="input"
-								type="email"
-								id="emailCarebeneficiary"
-								name="email"
-								placeholder="Correo electrónico"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label class="lbl" for="password">Contraseña</label>
-							<input
-								class="input"
-								type="password"
-								id="password"
-								name="idNumber"
-								placeholder="Contraseña"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label class="lbl" for="confirmPassword"
-								>Confirmar contraseña</label
-							>
-							<input
-								class="input"
-								type="password"
-								id="confirmPassword"
-								name="idNumber"
-								placeholder="Confirmar contraseña"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label class="lbl" for="idNumberCarebeneficiary"
-								>Número de identificación del beneficiario</label
-							>
-							<input
-								class="input"
-								type="number"
-								id="idNumberCarebeneficiary"
-								name="idNumber"
-								placeholder="Número de identificación"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label class="lbl" for="ageCarebeneficiary"
-								>Edad del beneficiario</label
-							>
-							<input
-								class="input"
-								type="number"
-								id="ageCarebeneficiary"
-								name="age"
-								min="1"
-								placeholder="Edad"
-								required
-							/>
-						</div>
-						<div class="input-data">
-							<label for="cityCarebeneficiary"
-								>¿Dónde se prestará el servicio?</label
-							>
-							<select
-								id="cityCarebeneficiary"
-								name="city"
-								placeholder="Ciudad:"
-								required
-							>
-								<option value="">--Selecciona una ciudad--</option>
-								<option value="Barranquilla">Barranquilla</option>
-								<option value="Bogota">Bogotá</option>
-								<option value="Bucaramanga">Bucaramanga</option>
-								<option value="Cali">Cali</option>
-								<option value="Cartagena">Cartagena</option>
-								<option value="Cucuta">Cúcuta</option>
-								<option value="Ibague">Ibagué</option>
-								<option value="Manizales">Manizales</option>
-								<option value="Medellin">Medellín</option>
-								<option value="Pasto">Pasto</option>
-								<option value="Pereira">Pereira</option>
-								<option value="Popayan">Popayán</option>
-								<option value="Santa-marta">Santa Marta</option>
-								<option value="Villavicencio">Villavicencio</option>
-								<option value="indefinida">otro</option>
-								<!-- Agregar más ciudades según sea necesario -->
-							</select>
-						</div>
-						<div class="input-data">
-							<label for="genderCarebeneficiary">Género del beneficiario</label>
-							<select id="genderCarebeneficiary" name="gender" required>
-								<option value="">--Selecciona una opción--</option>
-								<option value="Femenino">Femenino</option>
-								<option value="Masculino">Masculino</option>
-							</select>
-						</div>
-						<div class="input-data">
-							<label for="scheduleCarebeneficiary"
-								>Selecciona la jornada laboral</label
-							>
-							<select id="scheduleCarebeneficiary" name="schedule" required>
-								<option value="">--Selecciona una opción--</option>
-								<option value="Por horas">Trabajo por horas</option>
-								<option value="Medio tiempo">Medio tiempo</option>
-								<option value="Tiempo completo">Tiempo completo</option>
-							</select>
-						</div>
-						<div class="input-data textarea">
-							<label for="experienceCarebeneficiary"
-								>Cuéntanos acerca del beneficiario, sus desafíos o requisitos
-								para tomar el servicio</label
-							>
-							<textarea id="experienceCarebeneficiary"></textarea>
-						</div>
-						<div id="opciones_Cuidado">
-							<label for="skillsCarebeneficiary"
-								>Selecciona tus necesidades y requisitos para recibir el
-								servicio:</label
-							>
+    <main>
+      <div class="preloader">
+        <img src="../multimedia/logo.png" alt="logo-app" />
+      </div>
+      <div class="container">
+        <div class="text">
+          <h1>Registro del beneficiario</h1>
+        </div>
+        <form id="hvFormCarebeneficiary" action="" method="post">
+          <div class="form-row">
+            <div class="input-data">
+              <label for="yourPicCarebeneficiary">Foto del beneficiario</label>
+              <input
+                type="file"
+                id="yourPicCarebeneficiary"
+                name="yourPic"
+                accept="image/*"
+                placeholder="Sube tu foto"
+                required
+              />
+            </div>
+            <div class="input-data">
+              <label class="lbl" for="nameCarebeneficiary"
+                >Nombre completo del beneficiario</label
+              >
+              <input
+                class="input"
+                type="text"
+                id="nameCarebeneficiary"
+                name="name"
+                placeholder="Nombre completo"
+                required
+              />
+            </div>
+            <div class="input-data">
+              <label class="lbl" for="emailCarebeneficiary"
+                >Correo de contacto</label
+              >
+              <input
+                class="input"
+                type="email"
+                id="emailCarebeneficiary"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              />
+            </div>
+            <div class="input-data">
+              <label class="lbl" for="password">Contraseña</label>
+              <input
+                class="input"
+                type="password"
+                id="password"
+                name="idNumber"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <div class="input-data">
+              <label class="lbl" for="confirmPassword"
+                >Confirmar contraseña</label
+              >
+              <input
+                class="input"
+                type="password"
+                id="confirmPassword"
+                name="idNumber"
+                placeholder="Confirmar contraseña"
+                required
+              />
+            </div>
+            <div class="input-data">
+              <label class="lbl" for="idNumberCarebeneficiary"
+                >Número de identificación del beneficiario</label
+              >
+              <input
+                class="input"
+                type="number"
+                id="idNumberCarebeneficiary"
+                name="idNumber"
+                placeholder="Número de identificación"
+                required
+              />
+            </div>
+            <div class="input-data">
+              <label class="lbl" for="ageCarebeneficiary"
+                >Edad del beneficiario</label
+              >
+              <input
+                class="input"
+                type="number"
+                id="ageCarebeneficiary"
+                name="age"
+                min="1"
+                placeholder="Edad"
+                required
+              />
+            </div>
+            <div class="input-data">
+              <label for="cityCarebeneficiary"
+                >¿Dónde se prestará el servicio?</label
+              >
+              <select
+                id="cityCarebeneficiary"
+                name="city"
+                placeholder="Ciudad:"
+                required
+              >
+                <option value="">--Selecciona una ciudad--</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Bogota">Bogotá</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Cali">Cali</option>
+                <option value="Cartagena">Cartagena</option>
+                <option value="Cucuta">Cúcuta</option>
+                <option value="Ibague">Ibagué</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Medellin">Medellín</option>
+                <option value="Pasto">Pasto</option>
+                <option value="Pereira">Pereira</option>
+                <option value="Popayan">Popayán</option>
+                <option value="Santa-marta">Santa Marta</option>
+                <option value="Villavicencio">Villavicencio</option>
+                <option value="indefinida">otro</option>
+                <!-- Agregar más ciudades según sea necesario -->
+              </select>
+            </div>
+            <div class="input-data">
+              <label for="genderCarebeneficiary">Género del beneficiario</label>
+              <select id="genderCarebeneficiary" name="gender" required>
+                <option value="">--Selecciona una opción--</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
+              </select>
+            </div>
+            <div class="input-data">
+              <label for="scheduleCarebeneficiary"
+                >Selecciona la jornada laboral</label
+              >
+              <select id="scheduleCarebeneficiary" name="schedule" required>
+                <option value="">--Selecciona una opción--</option>
+                <option value="Por horas">Trabajo por horas</option>
+                <option value="Medio tiempo">Medio tiempo</option>
+                <option value="Tiempo completo">Tiempo completo</option>
+              </select>
+            </div>
+            <div class="input-data textarea">
+              <label for="experienceCarebeneficiary"
+                >Cuéntanos acerca del beneficiario, sus desafíos o requisitos
+                para tomar el servicio</label
+              >
+              <textarea id="experienceCarebeneficiary"></textarea>
+            </div>
+            <div id="opciones_Cuidado">
+              <label for="skillsCarebeneficiary"
+                >Selecciona tus necesidades y requisitos para recibir el
+                servicio:</label
+              >
 
-							<div class="checkbox-list">
-								<label for="driving"
-									><input
-										type="checkbox"
-										value="Saber conducir"
-										id="drivingC"
-									/>
-									Saber conducir
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="healthProfessional"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Profesional de la salud"
-										id="healthProfessionalC"
-									/>
-									Profesional de la salud
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="limitedMobility"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Experiencia con personas con movilidad limitada"
-										id="limitedMobilityC"
-									/>
-									Usuario con movilidad limitada
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="ownVehicle"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Vehículo propio del cuidadore"
-										id="ownVehicleC"
-									/>
-									Vehículo propio del cuidador
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="cooking"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Saber cocinar"
-										id="cookingC"
-									/>
-									Saber cocinar
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="woundCare"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Cuidado de heridas"
-										id="woundCareC"
-									/>
-									Cuidado de heridas
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="hygieneServices"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Servicios de higiene"
-										id="hygieneServicesC"
-									/>
-									Servicios de higiene
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="firstAid"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Primeros auxilios"
-										id="firstAidC"
-									/>
-									Primeros auxilios
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="emotionalSupport"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Acompañamiento y soporte emocional"
-										id="emotionalSupportC"
-									/>
-									Acompañamiento y soporte emocional
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="accompanimentToAppointments"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Acompañamiento a citas"
-										id="accompanimentToAppointmentsC"
-									/>
-									Acompañamiento a citas
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="constantCompanionship"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Compañía constante"
-										id="constantCompanionshipC"
-									/>
-									Compañía constante
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="medicationAdministration"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Administración de medicamentos"
-										id="medicationAdministrationC"
-									/>
-									Administración de medicamentos
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="nutrition"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Nutrición"
-										id="nutritionC"
-									/>
-									Nutrición
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="recreationalCompanionship"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Actividades lúdicas o fisioterapia"
-										id="recreationalCompanionshipC"
-									/>
-									Actividades lúdicas o fisioterapia
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="palliativeCare"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Cuidados paliativos"
-										id="palliativeCareC"
-									/>
-									Cuidados paliativos
-								</label>
-							</div>
-							<div class="checkbox-list">
-								<label for="postOperativeCare"
-									><input
-										type="checkbox"
-										name="skills"
-										value="Cuidados postoperatorios"
-										id="postOperativeCareC"
-									/>
-									Cuidados postoperatorios
-								</label>
-							</div>
-						</div>
-						<div class="submit-btn">
-							<button
-								class="inner"
-								type="submit"
-								id="btn_submitCarebeneficiary"
-							></button>
-						</div>
-					</div>
-					<div class="d-flex flex-direction-column">
-						<img
-							class="iconEn"
-							src="/multimedia/iconoEnglish.png"
-							alt="iconEn"
-						/>
-						<img
-							class="iconSp"
-							src="/multimedia/iconoSpanish.png"
-							alt="iconSp"
-						/>
-					</div>
-				</form>
-			</div>
-			<div class="d-flex flex-direction-column">
-				<img class="iconEn" src="/multimedia/iconoEnglish.png" alt="iconEn" />
-				<img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp" />
-			</div>
-		</main>
+              <div class="checkbox-list">
+                <label for="driving"
+                  ><input
+                    type="checkbox"
+                    value="Saber conducir"
+                    id="drivingC"
+                  />
+                  Saber conducir
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="healthProfessional"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Profesional de la salud"
+                    id="healthProfessionalC"
+                  />
+                  Profesional de la salud
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="limitedMobility"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Experiencia con personas con movilidad limitada"
+                    id="limitedMobilityC"
+                  />
+                  Usuario con movilidad limitada
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="ownVehicle"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Vehículo propio del cuidadore"
+                    id="ownVehicleC"
+                  />
+                  Vehículo propio del cuidador
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="cooking"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Saber cocinar"
+                    id="cookingC"
+                  />
+                  Saber cocinar
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="woundCare"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Cuidado de heridas"
+                    id="woundCareC"
+                  />
+                  Cuidado de heridas
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="hygieneServices"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Servicios de higiene"
+                    id="hygieneServicesC"
+                  />
+                  Servicios de higiene
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="firstAid"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Primeros auxilios"
+                    id="firstAidC"
+                  />
+                  Primeros auxilios
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="emotionalSupport"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Acompañamiento y soporte emocional"
+                    id="emotionalSupportC"
+                  />
+                  Acompañamiento y soporte emocional
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="accompanimentToAppointments"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Acompañamiento a citas"
+                    id="accompanimentToAppointmentsC"
+                  />
+                  Acompañamiento a citas
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="constantCompanionship"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Compañía constante"
+                    id="constantCompanionshipC"
+                  />
+                  Compañía constante
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="medicationAdministration"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Administración de medicamentos"
+                    id="medicationAdministrationC"
+                  />
+                  Administración de medicamentos
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="nutrition"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Nutrición"
+                    id="nutritionC"
+                  />
+                  Nutrición
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="recreationalCompanionship"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Actividades lúdicas o fisioterapia"
+                    id="recreationalCompanionshipC"
+                  />
+                  Actividades lúdicas o fisioterapia
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="palliativeCare"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Cuidados paliativos"
+                    id="palliativeCareC"
+                  />
+                  Cuidados paliativos
+                </label>
+              </div>
+              <div class="checkbox-list">
+                <label for="postOperativeCare"
+                  ><input
+                    type="checkbox"
+                    name="skills"
+                    value="Cuidados postoperatorios"
+                    id="postOperativeCareC"
+                  />
+                  Cuidados postoperatorios
+                </label>
+              </div>
+            </div>
+            <div class="submit-btn">
+              <button
+                class="inner"
+                type="submit"
+                id="btn_submitCarebeneficiary"
+              ></button>
+            </div>
+          </div>
+          <div class="d-flex flex-direction-column">
+            <img
+              class="iconEn"
+              src="/multimedia/iconoEnglish.png"
+              alt="iconEn"
+            />
+            <img
+              class="iconSp"
+              src="/multimedia/iconoSpanish.png"
+              alt="iconSp"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="d-flex flex-direction-column">
+        <img class="iconEn" src="/multimedia/iconoEnglish.png" alt="iconEn" />
+        <img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp" />
+      </div>
+    </main>
 
-		<footer></footer>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-		<script src="./js/formCarebeneficiary.js"></script>
-		<script src="/idioma.js"></script>
-	</body>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/formCarebeneficiary.js"></script>
+    <script src="/idioma.js"></script>
+  </body>
 </html>
