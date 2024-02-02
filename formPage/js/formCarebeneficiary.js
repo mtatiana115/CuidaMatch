@@ -71,11 +71,24 @@ function getSkillsList() {
 
 //creo funcion y hago async fetch
 async function addUser() {
-	console.log(yourPicCarebeneficiary.files);
-	// const reader = new FileReader();
-	// return;
+	const fileCb = yourPicCarebeneficiary.files[0];
+	const formDataCb = new FormData();
+	formDataCb.append("file", fileCb);
+	formDataCb.append("upload_preset", "ofhdugqi");
+
+	const responseImgCb = await fetch(
+		"https://api.cloudinary.com/v1_1/dnftdsxo1/image/upload",
+		{
+			method: "POST",
+			body: formDataCb,
+		}
+	);
+
+	const dataImgCb = await responseImgCb.json();
+	console.log(dataImgCb);
+
 	const newUser = {
-		profilePicCb: yourPicCarebeneficiary.value,
+		profilePicCb: dataImgCb.url,
 		nameCb: nameCarebeneficiary.value,
 		emailCb: emailCarebeneficiary.value,
 		passwordCb: passwordCarebeneficiary.value,
