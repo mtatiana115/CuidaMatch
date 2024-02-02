@@ -8,7 +8,7 @@ footer {
     rgba(147, 62, 216, 1) 86%
   );
   
-
+  color: aliceblue;
 }
 
 .cont-cartas {
@@ -21,11 +21,12 @@ footer {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   width: calc(100% * 12);
-  min-width: 200px;
+  min-width: 30%;
   min-height: 200px;
   max-height: 250px;
   max-width: 250px;
   overflow-y: auto;
+  padding: 4%;
 }
 
 @keyframes scroll {
@@ -41,4 +42,10 @@ footer {
 
 .parte2 {
   border-top: 1px solid white;
+  
+}
+
+a {
+  color: aliceblue;
+  
 }

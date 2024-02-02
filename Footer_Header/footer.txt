@@ -1,9 +1,9 @@
     <div class="cont-cartas d-flex gap-4">
         <div class="card p-2 m-3">
           <div class="card-body p-2">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">COMENTARIO</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
+              Antony Miranda
             </h6>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -14,9 +14,9 @@
 
         <div class="card p-2 m-3">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">COMENTARIO</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
+              Alejandra Ramírez
             </h6>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -27,9 +27,9 @@
 
         <div class="card p-2 m-3">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">COMENTARIO</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
+              Esteban Bedoya
             </h6>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -40,9 +40,9 @@
 
         <div class="card p-2 m-3">
           <div class="card-body p-2">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">COMENTARIO</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
+              Miguel Espinal
             </h6>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -53,9 +53,9 @@
 
         <div class="card p-2 m-3">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">COMENTARIO</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
+              Keity Ortega
             </h6>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -66,9 +66,9 @@
 
         <div class="card p-2 m-3">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">COMENTARIO</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
-              Card subtitle
+              David Osorio
             </h6>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -80,7 +80,7 @@
 
       <div class="parte2 p-3">
         <h4>¡Suscríbete para no perderte las novedades!</h4>
-        <div class="d-flex flex-column flex-sm-row w-1 gap-3 m-2">
+        <div class="d-flex flex-column flex-sm-row w-1 gap-3 m-3">
           <label for="newsletter1" class="visually-hidden">Email address</label>
           <input
             id="newsletter1"
@@ -105,20 +105,20 @@
       <div>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary" href="#">Home</a>
+            <a class="nav-link px-2 p-5" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary" href="../pages/about.html" target="_blank">Nosotros</a>
+            <a class="nav-link px-2 p-5 " href="../pages/about.html" target="_blank">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary" href="../pages/blog.html" target="_blank">Blog</a>
+            <a class="nav-link px-2 p-5 " href="../pages/blog.html" target="_blank">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary" href="../pages/terms.html" target="_blank">Términos y condiciones</a>
+            <a class="nav-link px-2 p-5 " href="../pages/terms.html" target="_blank">Términos y condiciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary" href="../pages/policies.html" target="_blank">Políticas</a>
+            <a class="nav-link px-2 p-5 " href="../pages/policies.html" target="_blank">Políticas</a>
           </li>
         </ul>
-        <p class="text-center text-body-secondary">© 2024 CuidaMatch, Inc</p>
+        <p class="text-center ">© 2024 CuidaMatch, Inc</p>
       </div>
