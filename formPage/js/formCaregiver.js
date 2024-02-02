@@ -64,8 +64,24 @@ function getSkillsList() {
 
 //creo funcion y hago async fetch
 async function addUser() {
+	const file = yourPicCaregiver.files[0];
+	const formData = new FormData();
+	formData.append("file", file);
+	formData.append("upload_preset", "ofhdugqi");
+
+	const responseImg = await fetch(
+		"https://api.cloudinary.com/v1_1/dnftdsxo1/image/upload",
+		{
+			method: "POST",
+			body: formData,
+		}
+	);
+
+	const dataImg = await responseImg.json();
+	console.log(dataImg);
+
 	const newUserCg = {
-		profilePicCg: yourPicCaregiver.value,
+		profilePicCg: dataImg.url,
 		nameCg: nameCaregiver.value,
 		emailCg: emailCaregiver.value,
 		passwordCg: passwordCaregiver.value,
