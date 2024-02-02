@@ -3,14 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link rel="stylesheet" href="../css/generalize.css" />
 		<link rel="stylesheet" href="./css/styleprofile.css" />
 		<title>Perfil</title>
 	</head>
 	<body>
 		<div class="preloader">
-			<img src="../multimedia/logo.png" alt="logo-app" 
+			<img src="../multimedia/logo.png" alt="logo-app" />
 		</div>
 		<section>
 			<div class="container" id="container">
@@ -19,6 +18,7 @@
 						<img
 							src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixlib=rb-0.3.5&s=9358d797b2e1370884aa51b0ab94f706&auto=format&fit=crop&w=200&q=80%20500w"
 							class="thumbnail"
+							id="imgCaregiver"
 						/>
 						<h3 class="name" id="nameUserCg"></h3>
 						<p class="title" id="professionCg"></p>
@@ -72,23 +72,13 @@
 						<h4 class="headin-4">Mi experiencia</h4>
 						<p class="description" id="experienceCg"></p>
 					</div>
-					<button type="button" class="btn" id="btn-editar">Editar</button>
 				</div>
 			</div>
 
 			<a href="../mainPage/main.html" class="btn-regresar">Conocer personas</a>
 		</section>
-		
-		<div class="d-flex flex-direction-column">
-
-			<img class="iconEn"  src="/multimedia/iconoEnglish.png" alt="iconEn">
-			<img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp">
-	  
-		</div>
-
 
 		<script src="js/profileCaregiver.js"></script>
-		<script src="../traduccion.js"></script>
-		
+		<script src="/idioma.js"></script>
 	</body>
 </html>
