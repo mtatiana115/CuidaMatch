@@ -28,7 +28,6 @@ aside {
 			rgba(101, 51, 172, 1) 79%,
 			rgba(147, 62, 216, 1) 86%
 		);
-		border-radius: 25px;
 		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
 		overflow: hidden;
 		padding: 15px;

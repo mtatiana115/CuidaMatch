@@ -332,13 +332,16 @@ body {
 	margin: 0 20px;
 }
 
-.btn-regresar {
+.btn-match {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
 	text-decoration: none;
 	color: gray;
-	font-size: 50px;
+	font-size: 200%;
+	border: solid blue;
+	border-radius: 10%;
+	padding: 0.5%;
 }
 
 .iconEn  {
