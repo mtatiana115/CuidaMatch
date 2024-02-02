@@ -11,6 +11,9 @@ const aboutMeCg = document.querySelector("#aboutMeCg");
 const skillsCg = document.querySelector("#skillsCg");
 const experienceCg = document.querySelector("#experienceCg");
 
+
+
+
 //estrellas
 document.addEventListener("DOMContentLoaded", function () {
 	setTimeout(function () {
@@ -42,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	getUser();
 });
 
+
 async function getUser() {
 	const userIdCaregiver = localStorage.getItem("userIdCg");
 	console.log(userIdCaregiver);
@@ -57,6 +61,7 @@ async function getUser() {
 		console.error("Error:", error);
 	}
 }
+
 
 function actualizarPerfil(data) {
 	if (!data) {
@@ -76,4 +81,35 @@ function actualizarPerfil(data) {
 		});
 		//profilepic
 	}
+
+	editar();
+}
+
+const lista_datos = [];
+let usuarioEliminar;
+let actualizando = false;
+
+function editar(){
+
+	const btnEditar = document.querySelector("#btn-editar");
+
+	btnEditar.forEach((boton) =>{
+		boton.addEventListener("click", (event) =>{
+			const datoEditar = boton.getAttribute("nombre-usuario");
+			const usuarioEditar = lista_datos.find(
+				(usuario) => usuario.dato == datoEditar
+			);
+
+			nameUserCg.value = usuarioEditar.name;
+			ageDisplayCg.value = usuarioEditar.age;
+			cityCg.value = usuarioEditar.city;
+			experienceCg.value = usuarioEditar.experience;
+			genderCg.value = usuarioEditar.gender;
+			professionCg.value = usuarioEditar.profession;
+			workScheduleCg.value = usuarioEditar.workSchedule;
+			actualizando = true;
+
+			datoEliminar = datoEditar;
+		});
+	});
 }
