@@ -450,7 +450,7 @@ main {
 	cursor: pointer;
 }
 
-	.iconSp{
+.iconSp{
 	position: fixed;
 	z-index: 2;
 	right: 15px;
