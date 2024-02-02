@@ -4,16 +4,45 @@
 
 
 body{
+  background: rgb(214, 206, 206);
   height: 100vh;
-  overflow: auto;
-  background: rgb(73, 137, 255);
+  width: 100vw;
+  color: aliceblue;
 }
 
 .content {
-    max-width: 800px;
-    margin: 100px auto;
-    background-color: rgba(255, 255, 255, 0.9); 
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-  }
+  
+  margin: 10%;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  background: linear-gradient(
+    25deg,
+    rgba(0, 107, 192, 1) 0%,
+    rgba(0, 91, 113, 1) 0%,
+    rgba(101, 51, 172, 1) 79%,
+    rgba(147, 62, 216, 1) 86%
+  );
+}
+
+.iconEn  {
+  position: fixed;
+  z-index: 2;
+  right: 15px;
+  height: 7%;
+  margin-top: 5%;
+  bottom: 20%;
+  cursor: pointer;
+
+}
+
+.iconSp{
+  position: fixed;
+  z-index: 2;
+  right: 15px;
+  height: 7%;
+  bottom: 10%;
+  cursor: pointer;
+
+}

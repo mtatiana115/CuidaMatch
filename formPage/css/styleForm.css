@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
+
 .preloader {
 	position: fixed;
 	top: 0;
@@ -200,4 +201,24 @@ select option {
 	.submit-btn .input-data {
 		width: 40% !important;
 	}
+}
+
+.iconEn  {
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    height: 7%;
+    margin-top: 5%;
+    bottom: 20%;
+    cursor: pointer;
+
+}
+.iconSp{
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    height: 7%;
+    bottom: 10%;
+    cursor: pointer;
+
 }

@@ -11,15 +11,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    #iconEn, #iconSp{
-        position: fixed;
-        z-index: 3;
-        right: 20px;
-        height: 7%;
-    }
-    #iconEn{
-        margin-top: 5%;
-    }
+    
+  
 }
 
 main .login {
@@ -29,6 +22,7 @@ main .login {
     border-radius: 10px;
     text-align: center;
     font-size: 25px;
+    
 }
 
 main h1 {
@@ -48,5 +42,23 @@ main h1 {
     margin: 5px;
     border: none;
     color: white;
+}
+
+.iconEn  {
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    height: 7%;
+    margin-top: 5%;
+    bottom: 20%;
+    cursor: pointer;
+}
+.iconSp{
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    height: 7%;
+    bottom: 10%;
+    cursor: pointer;
 }
 

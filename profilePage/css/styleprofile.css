@@ -340,3 +340,24 @@ body {
 	color: gray;
 	font-size: 50px;
 }
+
+.iconEn  {
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    height: 7%;
+    margin-top: 5%;
+    bottom: 20%;
+    cursor: pointer;
+
+}
+
+.iconSp{
+    position: fixed;
+    z-index: 2;
+    right: 15px;
+    height: 7%;
+    bottom: 10%;
+    cursor: pointer;
+
+}
