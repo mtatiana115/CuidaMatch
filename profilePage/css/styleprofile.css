@@ -18,6 +18,13 @@ body {
   );
 }
 
+h1{
+	margin-bottom: 3%;
+	margin-top: 2%;
+	font-size: 350%;
+	color: white;
+}
+
 .customSlider {
 	opacity: 0;
 	display: none;
@@ -187,35 +194,16 @@ body {
 			margin-bottom: 1.3em;
 		}
 
-		.btn {
-			color: black;
-			font-weight: bold;
-			width: 130px;
-			height: 42px;
-			outline: none;
-			border: none;
-			display: block;
-			cursor: pointer;
-			font-weight: 300;
-			margin-left: auto;
-			margin-right: auto;
-			border-radius: 70px;
-			box-shadow: 0 13px 26px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.16);
-			background: purple-gradient;
-		}
-
 		
 	}
-
-	#btn-editar{
+	.btn {
 		color: black;
 		font-weight: bold;
 		width: 130px;
 		height: 42px;
 		outline: none;
 		border: none;
-		/* display: block; */
-		justify-content: center;
+		display: block;
 		cursor: pointer;
 		font-weight: 300;
 		margin-left: auto;
@@ -223,9 +211,12 @@ body {
 		border-radius: 70px;
 		box-shadow: 0 13px 26px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.16);
 		background: purple-gradient;
-		margin-top: 2% !important;
-		position: relative;
 	}
+
+	/* #btn-editar{
+	
+	} */
+
 
 	.social-icons {
 		display: flex;
