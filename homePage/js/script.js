@@ -83,8 +83,6 @@ async function logCuidador() {
     return;
   }
   console.log("Iniciando sesión...");
-  
-  obtenerInfo();
 }
 
 async function logBeneficiario() {
@@ -93,8 +91,6 @@ async function logBeneficiario() {
     return;
   }
   console.log("Iniciando sesión...");
-  
-  obtenerInfo()
 }
 
 async function validarCuidador() {
@@ -102,11 +98,11 @@ async function validarCuidador() {
     const response = await fetch(
       `${URLcuidador}?emailCg=${userEmail.value}&passwordCg=${userPassword.value}`
     );
-    
-    const data = await response.json();
-    const id = data[0].id;
-    
 
+    const data = await response.json();
+    const id = data[0].idCg;
+    localStorage.setItem("userIdCg", id);
+    window.location.href = "../profilePage/profileCaregiver.html";
     return data.length;
   } catch (error) {
     return false;
@@ -119,8 +115,10 @@ async function validarBeneficiario() {
       `${URLbeneficiarios}?emailCb=${userEmail.value}&passwordCb=${userPassword.value}`
     );
     const data = await response.json();
-    const id = data[0].id;
-
+    const id = data[0].idCb;
+    localStorage.setItem("userId", id);
+    window.location.href = "../profilePage/profileCarebeneficiary.html";
+    console.log(id);
     return data.length;
   } catch (error) {
     return false;
@@ -139,12 +137,3 @@ function showAlert(msg) {
     showConfirmButton: false,
   });
 }
-
-function  obtenerInfo() {
-  const autenticacion = localStorage.getItem("isAuthenticated");
-  if (autenticacion == "true") {
-    window.location.href = "../../mainPage/main.html";
-  }
-  
-}
-
