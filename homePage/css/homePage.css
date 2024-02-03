@@ -62,3 +62,13 @@ main h1 {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px){
+    main h1 {
+        font-size: 40px;
+        padding: 15px;
+    }
+
+    main .login {
+        font-size: 18px;
+    }
+}

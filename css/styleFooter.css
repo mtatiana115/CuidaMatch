@@ -49,3 +49,10 @@ a {
   color: aliceblue;
   
 }
+
+@media only screen and (max-width: 768px) {
+  .cont-cartas .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
