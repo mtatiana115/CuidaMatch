@@ -46,8 +46,8 @@ hvFormCarebeneficiary.addEventListener("submit", (event) => {
 //validar Id y contraseña 
 
 function comprobarContraseñas() {
-	const regexp_password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
-
+	const regexp_password = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/;
+  
     if (passwordCarebeneficiary.value !== confirmPasswordCarebeneficiary.value) {
         showAlert("Las contraseñas deben ser iguales");
         return false;

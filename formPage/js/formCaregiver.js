@@ -40,7 +40,7 @@ hvFormCaregiver.addEventListener("submit", (event) => {
 //validar Id, contraseñas y  correo  
 
 function comprobarContraseñas() {
-	const regexp_password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+	const regexp_password = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/;
 
     if (passwordCaregiver.value !== confirmPasswordCaregiver.value) {
         showAlert("Las contraseñas deben ser iguales");

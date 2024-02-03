@@ -212,6 +212,36 @@
       "professionCg": "123132321123",
       "experienceCg": "123213231213",
       "skillsCg": []
+    },
+    {
+      "id": "57657567",
+      "nameCg": "angeli",
+      "emailCg": "daniela@example.com",
+      "passwordCg": "12345678l",
+      "confirmPasswordCg": "12345678l",
+      "idCg": "57657567",
+      "ageCg": "5456",
+      "cityCg": "Pereira",
+      "genderCg": "Femenino",
+      "scheduleCg": "Medio tiempo",
+      "professionCg": "46456456",
+      "experienceCg": "45645646",
+      "skillsCg": []
+    },
+    {
+      "id": "576575674",
+      "nameCg": "angeli",
+      "emailCg": "danielda@example.com",
+      "passwordCg": "12345678l",
+      "confirmPasswordCg": "12345678l",
+      "idCg": "576575674",
+      "ageCg": "5456",
+      "cityCg": "Barranquilla",
+      "genderCg": "Femenino",
+      "scheduleCg": "Por horas",
+      "professionCg": "46456456",
+      "experienceCg": "45645646",
+      "skillsCg": []
     }
   ],
   "beneficiarios": [
