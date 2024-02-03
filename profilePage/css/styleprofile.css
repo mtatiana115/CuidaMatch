@@ -1,8 +1,8 @@
 body {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	display: flex;
-	position: relative;
+	/* position: relative; */
 	background: #eeeeec;
 	align-items: center;
 	flex-direction: column;
@@ -19,8 +19,8 @@ body {
 }
 
 h1{
-	margin-bottom: 3%;
-	margin-top: 2%;
+	/* margin-bottom: 3%;
+	margin-top: 2%; */
 	font-size: 350%;
 	color: white;
 }
@@ -324,9 +324,9 @@ h1{
 }
 
 .btn-match {
-	position: absolute;
+	/* position: absolute;
 	right: 20px;
-	bottom: 20px;
+	bottom: 20px; */
 	text-decoration: none;
 	font-size: 200%;
 	background: linear-gradient(115deg, #13355d 10%, #4578de 90%);
@@ -339,6 +339,8 @@ h1{
 	text-shadow: #393939 5px 2px;
 	background: linear-gradient(115deg, #39135d 10%, #751a89 90%);
 }
+
+
 
 .iconEn  {
     position: fixed;
