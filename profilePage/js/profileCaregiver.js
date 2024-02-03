@@ -44,31 +44,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	btnEnviarCambios.addEventListener("click", async(event)=>{
 		
-		// const skillsModificate = opciones_CuidadoInputModal.querySelector("input").filter( input => {
-		// 	input.checked
-		// })
-
+		
 		try {
-			// console.log(`${url}/${userIdCaregiver}`);
+
+			const skillsModificate = []
+
+			const response = await fetch(`${url}/${userIdCaregiver}`);
+
+			const data = await response.json();
+
+			opciones_CuidadoInputModal.querySelectorAll("input").forEach((input)=>{
+				if(input.checked){
+					skillsModificate.push(input.value)
+				}
+			})
+
 			await fetch(`${url}/${userIdCaregiver}`,{
 				method: "PUT",
 				headers: {
 					"Content-Type" : "application/json",
 				},
 				body: JSON.stringify({
-					"profilePicCg": data.profilePicCg,
+					"profilePicCg": await data.profilePicCg,
      				"nameCg": nameInputModal.value,
-      				"emailCg": "santi@gmail.com",
-      				"passwordCg": "hola",
-      				"confirmPasswordCg": "hola",
-      				"idCg": "0989",
+      				"emailCg": await data.emailCg,
+      				"passwordCg": await data.passwordCg,
+      				"confirmPasswordCg": await data.confirmPasswordCg,
+      				"idCg": data.idCg,
       				"ageCg": ageInputModal.value,
       				"cityCg":  cityInputModal.value,
       				"genderCg": genderInputModal.value,
       				"scheduleCg": scheduleInputModal.value,
-      				"professionCg": "Abogado",
+      				"professionCg": await data.professionCg,
       				"experienceCg": experienceInputModal.value,
-      				"skillsCg": ["Tengo vehículo propio","Sé cocinar","Cuidado de heridas","Primeros auxilios"]
+      				"skillsCg": skillsModificate
 				})
 			}
 			
@@ -104,7 +113,6 @@ async function getUser() {
 		// console.log(`${url}/${userIdCaregiver}`);
 		const response = await fetch(`${url}/${userIdCaregiver}`);
 		const data = await response.json();
-		console.log(data);
 
 		//actualizar perfil despues de obtener los datos
 		actualizarPerfil(data);
