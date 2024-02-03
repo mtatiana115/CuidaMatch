@@ -37,15 +37,50 @@ hvFormCaregiver.addEventListener("submit", (event) => {
 	validateUserId();
 });
 
-//validar Id
+//validar Id, contraseñas y  correo  
+
+function comprobarContraseñas() {
+	const regexp_password = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+
+    if (passwordCaregiver.value !== confirmPasswordCaregiver.value) {
+        showAlert("Las contraseñas deben ser iguales");
+        return false;
+    }
+    if (!regexp_password.test(passwordCaregiver.value)) {
+        showAlert("Contraseña no válida")
+        return false;
+    };
+
+    return true;
+}
+
+async function validateEmail() {
+    try {
+        const response = await fetch(`${urlCg}?emailCg=${emailCaregiver.value}`);
+        const data = await response.json();
+        return data.length;
+    } catch (error) {
+        return false;
+    }
+}
+
 async function validateUserId() {
+	if (!comprobarContraseñas()) {
+		return;
+	}
+	
+	if (await validateEmail()) {
+		showAlert("Este email ya se encuentra registrado.");
+		return;
+	}
+	
 	const userIdCg = idNumberCaregiver.value;
 	const response = await fetch(urlCg);
 	const data = await response.json();
 	const isDuplicate = data.some((user) => user.idCg === userIdCg);
 
 	if (isDuplicate) {
-		alert("El número Id ingresado ya existe.");
+		showAlert("El número Id ingresado ya existe.");
 	} else {
 		getSkillsList();
 	}
@@ -121,4 +156,17 @@ function getUsers() {
 	fetch(urlCg)
 		.then((respuesta) => respuesta.json())
 		.then((data) => console.log(data));
+}
+
+function showAlert(msg) {
+    Swal.fire({
+        title: 'Error!',
+        text: msg,
+        icon: 'error',
+        confirmButtonText: 'Ir de nuevo',
+        timer: 2000,
+        toast: "true",
+        position: "bottom-right",
+        showConfirmButton: false
+    })
 }
