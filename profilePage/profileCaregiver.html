@@ -1,17 +1,4 @@
 
- Conversación abierta. 1 mensaje sin leer.
-
-Ir al contenido
-Uso de Gmail con lectores de pantalla
-
-1 de 154
-profileCaregiver
-Recibidos
-
-Valeria henao mejía <valehm248@gmail.com>
-9:04 (hace 12 minutos)
-para mí
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -79,7 +66,7 @@ para mí
           <h3 class="name">Acerca de mí</h3>
           <br />
           <div>
-            <h4 class="headin-4">Mis intereses</h4>
+            <h4 class="headin-4">Mis habilidades</h4>
             <p class="description" id="skillsCg"></p>
           </div>
           <br />
@@ -88,17 +75,18 @@ para mí
             <h4 class="headin-4">Mi experiencia</h4>
             <p class="description" id="experienceCg"></p>
           </div>
-          <!-- <button type="button" class=" Vale" id="btn-editar">Editar</button> -->
-          <!-- Button trigger modal -->
+          
           <button
             type="button"
             class="btn btn-primary "
+            id="editar"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
+            id-usuario=""
           >
             Editar
           </button>
-      <p id="holi"></p>
+     
           <!-- Modal -->
           <div
             class="modal fade"
@@ -121,59 +109,287 @@ para mí
                   ></button>
                 </div>
                 <div class="modal-body">
-          <form id="cambios">
-            
-            <div class="mb-3">
-              <label for="nombre-editar" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre-editar" aria-describedby="emailHelp">
-            </div>
-
-            <div class="mb-3">
-              <label for="edad-editar" class="form-label">Edad</label>
-              <input type="text" class="form-control" id="edad-editar">
-            </div>
-
-            <div class="mb-3">
-              <label for="genero-editar" class="form-label">Género</label>
-              <input type="text" class="form-control" id="genero-editar">
-            </div>
-
-            <div class="mb-3">
-              <label for="ciudad-editar" class="form-label">Ciudad</label>
-              <input type="text" class="form-control" id="ciudad-editar">
-            </div> 
-
-            <div class="mb-3">
-              <label for="horarioTrabajo-editar" class="form-label">Horario de trabajo</label>
-              <input type="text" class="form-control" id="horarioTrabajo-editar">
-            </div>
-
-            <div class="mb-3">
-              <label for="intereses-editar" class="form-label">Intereses</label>
-              <input type="text" class="form-control" id="intereses-editar">
-            </div>
-
-            <div class="mb-3">
-              <label for="experiencia-editar" class="form-label">Experiencia</label>
-              <input type="text" class="form-control" id="experiencia-editar">
-            </div>
-            
-            <button type="submit" class="btn btn-primary" click ="Hola" >
-              Guardar Cambios
-            </button>
-          </form>
-        </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-          id = "close"
-                    data-bs-dismiss="modal"
+          
+            <form id="cambios">
+              
+                <div class="input-data">
+                  <label class="lbl" for="nameCaregiver"
+                    >Tu nombre completo es</label
                   >
-                    Cerrar
-                  </button>
-
+                  <input
+                    class="input"
+                    type="text"
+                    id="nameCaregiver"
+                    name="name"
+                    placeholder="Nombre completo"
+                    required
+                  />
                 </div>
+              
+                <div class="input-data">
+                  <label class="lbl" for="ageCaregiver">Tu edad es</label>
+                  <input
+                    class="input"
+                    type="number"
+                    id="ageCaregiver"
+                    name="age"
+                    min="1"
+                    placeholder="Edad"
+                    required
+                  />
+                </div>
+                <div class="input-data">
+                  <label for="cityCaregiver">¿Dónde se prestará el servicio?</label>
+                  
+                  <select
+                    id="cityCaregiver"
+                    name="city"
+                    placeholder="Ciudad"
+                    required
+                  >
+                    <option value="">--Selecciona una ciudad--</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Bogota">Bogotá</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Cucuta">Cúcuta</option>
+                    <option value="Ibague">Ibagué</option>
+                    <option value="Manizales">Manizales</option>
+                    <option value="Medellin">Medellín</option>
+                    <option value="Pasto">Pasto</option>
+                    <option value="Pereira">Pereira</option>
+                    <option value="Popayan">Popayán</option>
+                    <option value="Santa-marta">Santa Marta</option>
+                    <option value="Villavicencio">Villavicencio</option>
+                    <option value="indefinida">otro</option>
+                    <!-- Agregar más ciudades según sea necesario -->
+                  </select>
+                </div>
+                <div class="input-data">
+                  <label for="genderCaregiver">Género</label>
+                  
+                  <select id="genderCaregiver" name="gender" required>
+                    <option value="">--Selecciona una opción--</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                  </select>
+                </div>
+                <div class="input-data">
+                  <label for="scheduleCaregiver"
+                    >Selecciona la jornada laboral</label
+                  >
+                
+                  <select id="scheduleCaregiver" name="schedule" required>
+                    <option value="">--Selecciona una opción--</option>
+                    <option value="Por horas">Trabajo por horas</option>
+                    <option value="Medio tiempo">Medio tiempo</option>
+                    <option value="Tiempo completo">Tiempo completo</option>
+                  </select>
+                </div>
+                
+                <div class="input-data textarea">
+                  <label for="experienceCaregiver"
+                    >Una descripción acerca de ti</label
+                  >
+                  
+                  <textarea id="experienceCaregiver"></textarea>
+
+                  <div id="opciones_Cuidado">
+                    <label for="skillsCaregiver"
+                      >Según tu experiencia, selecciona las áreas en las que puedes
+                      brindar el servicio:</label
+                    >
+                    <div class="checkbox-list">
+                      <label for="drivingC"
+                        ><input
+                          type="checkbox"
+                          value="Saber conducir"
+                          id="drivingC"
+                        />
+                        Saber conducir
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="healthProfessionalC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Profesional de la salud"
+                          id="healthProfessionalC"
+                        />
+                        Soy profesional de la salud
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="limitedMobilityC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Usuario con movilidad limitada"
+                          id="limitedMobilityC"
+                        />
+                        Usuario con movilidad limitada
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="ownVehicleC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Tengo vehículo propio"
+                          id="ownVehicleC"
+                        />
+                        Tengo vehículo propio
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="cookingC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Sé cocinar"
+                          id="cookingC"
+                        />
+                        Sé cocinar
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="woundCareC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Cuidado de heridas"
+                          id="woundCareC"
+                        />
+                        Cuidado de heridas
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="hygieneServicesC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Servicios de higiene"
+                          id="hygieneServicesC"
+                        />
+                        Servicios de higiene
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="firstAidC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Primeros auxilios"
+                          id="firstAidC"
+                        />
+                        Primeros auxilios
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="emotionalSupportC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Acompañamiento y soporte emocional"
+                          id="emotionalSupportC"
+                        />
+                        Acompañamiento y soporte emocional
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="accompanimentToAppointmentsC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Acompañamiento a citas"
+                          id="accompanimentToAppointmentsC"
+                        />
+                        Acompañamiento a citas
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="constantCompanionshipC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Compañía constante"
+                          id="constantCompanionshipC"
+                        />
+                        Compañía constante
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="medicationAdministrationC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Administración de medicamentos"
+                          id="medicationAdministrationC"
+                        />
+                        Administración de medicamentos
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="nutritionC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Nutrición"
+                          id="nutritionC"
+                        />
+                        Nutrición
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="recreationalCompanionshipC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Actividades lúdicas o fisioterapia"
+                          id="recreationalCompanionshipC"
+                        />
+                        Actividades lúdicas o fisioterapia
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="palliativeCareC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Cuidados paliativos"
+                          id="palliativeCareC"
+                        />
+                        Cuidados paliativos
+                      </label>
+                    </div>
+                    <div class="checkbox-list">
+                      <label for="postOperativeCareC"
+                        ><input
+                          type="checkbox"
+                          name="skills"
+                          value="Cuidados postoperatorios"
+                          id="postOperativeCareC"
+                        />
+                        Cuidados postoperatorios
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="submit-btn">
+                  <button
+                    class="inner"
+                    type="submit"
+                    id="btn_submitCarebeneficiary"
+                  >Enviar</button>
+                </div
+              </div>
+            </form>
+            
+        </div>
+                
               </div>
             </div>
           </div>
@@ -194,7 +410,7 @@ para mí
       crossorigin="anonymous"
     ></script>
     <script src="js/profileCaregiver.js"></script>
-    <script src="/idioma.js"></script>
+    <!-- <script src="/idioma.js"></script> -->
   </body>
 </html>
 
