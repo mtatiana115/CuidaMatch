@@ -11,23 +11,20 @@ const aboutMeCg = document.querySelector("#aboutMeCg");
 const skillsCg = document.querySelector("#skillsCg");
 const experienceCg = document.querySelector("#experienceCg");
 const imgCaregiver = document.querySelector("#imgCaregiver")
-// const holi = document.getElementById("holi")
+
+
 
 //Selectores de Editar
-
-// const nombreEditar = document.getElementById("nombre-editar");
-// const edadEditar = document.getElementById("edad-editar");
-// const generoEditar = document.getElementById("genero-editar");
-// const ciudadEditar = document.getElementById("ciudad-editar");
-// const horarioTrabajoEditar = document.getElementById("horarioTrabajo-editar");
-// const interesesEditar = document.getElementById("intereses-editar");
-// const experienciaEditar = document.getElementById("experiencia-editar");
-// const formCambios = document.getElementById("cambios");
-
-
-
-
-
+const btnEnviarCambios = document.querySelector("#btn_submitCarebeneficiary")
+const nameInputModal = document.getElementById("nameCaregiver");
+const ageInputModal = document.getElementById("ageCaregiver");
+const cityInputModal = document.getElementById("cityCaregiver");
+const genderInputModal = document.getElementById("genderCaregiver");
+const scheduleInputModal = document.getElementById("scheduleCaregiver");
+const experienceInputModal = document.getElementById("experienceCaregiver");
+const opciones_CuidadoInputModal = document.getElementById("opciones_Cuidado");
+const edicion = false
+const userIdCaregiver = localStorage.getItem("userIdCg");
 
 //estrellas
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,6 +42,44 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
+	btnEnviarCambios.addEventListener("click", async(event)=>{
+		
+		// const skillsModificate = opciones_CuidadoInputModal.querySelector("input").filter( input => {
+		// 	input.checked
+		// })
+
+		try {
+			// console.log(`${url}/${userIdCaregiver}`);
+			await fetch(`${url}/${userIdCaregiver}`,{
+				method: "PUT",
+				headers: {
+					"Content-Type" : "application/json",
+				},
+				body: JSON.stringify({
+					"profilePicCg": data.profilePicCg,
+     				"nameCg": nameInputModal.value,
+      				"emailCg": "santi@gmail.com",
+      				"passwordCg": "hola",
+      				"confirmPasswordCg": "hola",
+      				"idCg": "0989",
+      				"ageCg": ageInputModal.value,
+      				"cityCg":  cityInputModal.value,
+      				"genderCg": genderInputModal.value,
+      				"scheduleCg": scheduleInputModal.value,
+      				"professionCg": "Abogado",
+      				"experienceCg": experienceInputModal.value,
+      				"skillsCg": ["Tengo vehículo propio","Sé cocinar","Cuidado de heridas","Primeros auxilios"]
+				})
+			}
+			
+			);
+	
+			//actualizar perfil despues de obtener los datos
+		} catch (error) {
+			console.error("Error:", error);
+		}
+	})
+
 	function updateRating(value) {
 		stars.forEach((star) => {
 			const starValue = parseInt(star.getAttribute("data-value"));
@@ -61,8 +96,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 async function getUser() {
-	const userIdCaregiver = localStorage.getItem("userIdCg");
+	
 	console.log(userIdCaregiver);
 	try {
 		// console.log(`${url}/${userIdCaregiver}`);
@@ -95,62 +131,32 @@ function actualizarPerfil(data) {
 		data.skillsCg.forEach((element) => {
 			skillsCg.innerHTML += `<li>${element}</li>`;
 		});
-		//profilepic
-		// holi.setAttribute("dataid", `${data.idCg}`)
-	}
 
-	
-	// editar();
-}
-
-
-
-// function editar(){
-
-// nombreEditar.value = nameUserCg.textContent;
-// edadEditar.value = ageDisplayCg.textContent;
-// generoEditar.value = genderCg.textContent;
-// ciudadEditar.value = cityCg.textContent;
-// horarioTrabajoEditar.value = workScheduleCg.textContent;
-
-
-
-// formCambios.addEventListener("submit", (event)=>{
-// 	event.preventDefault();
-// 	document.getElementById("close").click();
-// 	actualizarBaseDatos();
-// 	getUser();
-// });
-// };
-
-// async function actualizarBaseDatos(){
-// 	const userIdCaregiver = localStorage.getItem("userIdCg");
-// 	await fetch (`${url}/${userIdCaregiver}`,{
-// 		method: "PUT",
-// 		headers: {
-// 			"Content-Type": "application/json"
-// 		},
-// 		body: JSON.stringify({
-// 	"idCg": "123456",
-      
-//       "nameCg": "Valeria Henao",
-      
-//       "passwordCg": "12356",
-      
-//       "idCg": "123456",
-//       "ageCg": "28",
-//       "cityCg": "Medellin",
-//       "genderCg": "Femenino",
-//       "scheduleCg": "Por horas",
-//       "professionCg": "Psicologia",
-//       "experienceCg": "toda la vida",
-//       "skillsCg": [
-//         "Acompañamiento a citas",
-//         "Compañía constante",
-//         "Actividades lúdicas o fisioterapia",
-//         "Cuidados postoperatorios"
-//       ]
 		
-// 	})
-// });
-// }
+		nameInputModal.value = data.nameCg;
+		ageInputModal.value = data.ageCg;
+		experienceInputModal.textContent = data.experienceCg;
+		selectValue(cityInputModal, data.cityCg);
+		selectValue(genderInputModal, data.genderCg)
+		selectValue(scheduleInputModal, data.scheduleCg)
+
+		opciones_CuidadoInputModal.querySelectorAll("input").forEach((input)=>{
+			if(data.skillsCg.includes(input.value)){
+				input.checked = "true"
+			}
+		})
+	}	
+};
+
+function selectValue(select, dataValue){
+	options = select.querySelectorAll("option");
+	
+	options.forEach((option)=>{
+		if(option.value == dataValue ) {
+			option.selected = "true"
+		}
+	})
+};
+
+
+
