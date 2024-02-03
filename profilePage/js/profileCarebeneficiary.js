@@ -11,7 +11,6 @@ const experience = document.querySelector("#experience");
 const imgprofile = document.querySelector("#imgprofile");
 const btnEditar = document.querySelector("#btn-editar");
 
-
 //estrellas
 document.addEventListener("DOMContentLoaded", function () {
 	setTimeout(function () {

@@ -1,91 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" href="../multimedia/logo.png" />
-    <link rel="stylesheet" href="./css/main.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="icon" href="../multimedia/logo.png" />
+		<link rel="stylesheet" href="./css/main.css" />
 
-    <title>CuidaMatch</title>
-  </head>
+		<title>CuidaMatch</title>
+	</head>
 
-  <body>
-    <div class="preloader">
-      <img src="../multimedia/logo.png" alt="logo-app" />
-    </div>
+	<body>
+		<div class="preloader">
+			<img src="../multimedia/logo.png" alt="logo-app" />
+		</div>
 
-    <aside>
-      <div class="chat-container">
-        <h2>MATCHES</h2>
-        <div>
-          <h3>Aquí va el perfil</h3>
-        </div>
-        <ul class="chat">
-          <li class="message left">
-            <img
-              class="logo"
-              src="https://randomuser.me/api/portraits/women/17.jpg"
-              alt=""
-            />
-            <p>Haz click para chatear</p>
-          </li>
-          <li class="message right">
-            <img
-              class="logo"
-              src="https://i.pinimg.com/736x/b9/46/bc/b946bc94a91599c4f5aca0e1705f80ae.jpg"
-              alt=""
-            />
-            <p>Haz click para chatear</p>
-          </li>
-          <li class="message left">
-            <img
-              class="logo"
-              src="https://hips.hearstapps.com/ellees.h-cdn.co/assets/16/35/1024x1024/square-original-573cdd52ba3fpareja-sexo-mente-ok-tu-rostro-habla-por-ti-12718540-1-esl-es-tu-rostro-habla-por-ti-jpg.jpg?resize=1200:*"
-              alt=""
-            />
-            <p>Haz click para chatear</p>
-          </li>
-          <li class="message right">
-            <img
-              class="logo"
-              src="https://img.freepik.com/foto-gratis/disparo-cabeza-hombre-atractivo-sonriendo-complacido-mirando-intrigado-pie-sobre-fondo-azul_1258-65468.jpg"
-              alt=""
-            />
-            <p>Haz click para chatear</p>
-          </li>
-          <li class="message left">
-            <img
-              class="logo"
-              src="https://www.dzoom.org.es/wp-content/uploads/2019/10/retratos-personas-mayores-ancianos-vejez-retrato-exterior-luz-natural2-734x1101.jpg"
-              alt=""
-            />
-            <p>Haz click para chatear</p>
-          </li>
-          <li class="message right">
-            <img
-              class="logo"
-              src="https://randomuser.me/api/portraits/men/67.jpg"
-              alt=""
-            />
-            <p>Haz click para chatear</p>
-          </li>
-        </ul>
-      </div>
-    </aside>
+		<aside>
+			<div class="chat-container">
+				<div class="title-chats">
+					<h2>MATCHES</h2>
+					<h3>Aquí va el perfil</h3>
+				</div>
 
-    <main id="mainCg"></main>
-    <div class="d-flex flex-direction-column fixed-top">
-      <img class="iconEn" src="/multimedia/iconoEnglish.png" alt="iconEn" />
-      <img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp" />
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/mainCaregiver.js"></script>
-    <script src="../traduccion.js"></script>
-  </body>
+				<div class="content-chats">
+					<ul class="chat"></ul>
+				</div>
+			</div>
+		</aside>
+
+		<main id="mainCg"></main>
+		<div class="d-flex flex-direction-column fixed-top">
+			<img class="iconEn" src="/multimedia/iconoEnglish.png" alt="iconEn" />
+			<img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp" />
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="./js/mainCaregiver.js"></script>
+		<script src="../traduccion.js"></script>
+	</body>
 </html>

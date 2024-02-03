@@ -62,10 +62,10 @@ async function printUsers() {
 						</div>
 					</div>
 					<div class="buttons">
-						<button class="dislike" onclick="dislikeAction(this)">
+						<button class="dislike" data-id="${user.id}" onclick="dislikeAction(this)">
 							No me gusta
 						</button>
-						<button class="like" onclick="likeAction(this)">Me gusta</button>
+						<button class="like" data-id="${user.id}" onclick="likeAction(this)">Me gusta</button>
 					</div>
 				</div>
 			</div>
@@ -74,8 +74,27 @@ async function printUsers() {
 }
 
 // Cards Animations
-function likeAction(button) {
-	const card = button.closest(".card");
+async function likeAction(btn) {
+	const chat = document.querySelector(".chat");
+
+	const idCg = btn.getAttribute("data-id");
+
+	const respuesta = await fetch(`${urlCg}/${idCg}`);
+	const data = await respuesta.json();
+	console.log(data);
+
+	chat.innerHTML += `
+	<li class="message">
+		<img
+			class="logo"
+			src="${data.profilePicCg}"
+			alt=""
+		/>
+		<p class="nameChat">Haz click para chatear con <strong>${data.nameCg}</strong></p>
+	</li>
+	`;
+
+	const card = btn.closest(".card");
 	card.classList.add("like-animation");
 	setTimeout(() => {
 		card.remove();

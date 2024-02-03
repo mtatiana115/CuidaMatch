@@ -10,9 +10,7 @@ const workScheduleCg = document.querySelector("#workScheduleCg");
 const aboutMeCg = document.querySelector("#aboutMeCg");
 const skillsCg = document.querySelector("#skillsCg");
 const experienceCg = document.querySelector("#experienceCg");
-
-
-
+const imgCaregiver = document.querySelector("#imgCaregiver");
 
 //estrellas
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	getUser();
 });
 
-
 async function getUser() {
 	const userIdCaregiver = localStorage.getItem("userIdCg");
 	console.log(userIdCaregiver);
@@ -62,13 +59,12 @@ async function getUser() {
 	}
 }
 
-
 function actualizarPerfil(data) {
 	if (!data) {
 		console.log("Usuario no encontrado");
 	} else {
 		console.log("Actualizando:", data);
-
+		imgCaregiver.src = data.profilePicCg;
 		nameUserCg.textContent = data.nameCg;
 		ageDisplayCg.textContent = data.ageCg;
 		cityCg.textContent = data.cityCg;
@@ -89,12 +85,11 @@ const lista_datos = [];
 let usuarioEliminar;
 let actualizando = false;
 
-function editar(){
-
+function editar() {
 	const btnEditar = document.querySelector("#btn-editar");
 
-	btnEditar.forEach((boton) =>{
-		boton.addEventListener("click", (event) =>{
+	btnEditar.forEach((boton) => {
+		boton.addEventListener("click", (event) => {
 			const datoEditar = boton.getAttribute("nombre-usuario");
 			const usuarioEditar = lista_datos.find(
 				(usuario) => usuario.dato == datoEditar
