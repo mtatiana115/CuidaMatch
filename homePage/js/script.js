@@ -12,6 +12,8 @@ const userEmail = document.getElementById("exampleInputEmail1");
 const userPassword = document.getElementById("exampleInputPassword1");
 const URLcuidador = "http://localhost:3001/cuidadores";
 const URLbeneficiarios = "http://localhost:3001/beneficiarios";
+const autenticadorCb = localStorage.getItem("userId");
+const autenticadorCg = localStorage.getItem("userIdCg");
 
 //preloader + eventos
 document.addEventListener("DOMContentLoaded", function () {
@@ -43,6 +45,12 @@ cboxCliente.addEventListener("change", function () {
 });
 
 ir_Regristro.addEventListener("click", function () {
+  
+  if (autenticadorCb || autenticadorCg ) {
+    showAlert("Tienes una sesión iniciada, cierra sesión para continuar");
+    return;
+  }
+  
   if (cboxCliente.checked) {
     window.location.href = "../formPage/carebeneficiaryForm.html";
   } else if (cboxCuidador.checked) {
@@ -62,6 +70,12 @@ ir_Regristro.addEventListener("click", function () {
 // cargar
 login.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  if (autenticadorCb || autenticadorCg ) {
+    showAlert("Tienes una sesión iniciada, cierra sesión para continuar");
+    return;
+  }
+  
   if (cboxCuidadorlog.checked) {
     logCuidador();
   } else if (cboxClientelog.checked) {
