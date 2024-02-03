@@ -68,6 +68,9 @@
                     >Políticas</a
                   >
                 </li>
+                <li class="nav-item">
+                  <button id="cerrarSesion" onclick="cerrarSesion()">Cerrar Sesión</button>
+                </li>
               </ul>
             </div>
           </div>

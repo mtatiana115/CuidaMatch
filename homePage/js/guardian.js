@@ -1,3 +1,5 @@
+const cerrarSesionbtn = document.querySelector("#cerrarSesion");
+
 function guardianCb() {
   const isAuthenticatedCb = localStorage.getItem("userId");
   const path = window.location.pathname;
@@ -30,5 +32,5 @@ function cerrarSesion() {
   window.location.href = "index.html";
 }
 
-  guardianCb();
-  guardianCg();
+guardianCb();
+guardianCg();

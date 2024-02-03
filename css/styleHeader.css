@@ -49,3 +49,14 @@
 .nav-item a {
   color: #fff;
 }
+
+#cerrarSesion{
+  color: #fff;
+  border: none;
+  background: none;
+}
+
+#cerrarSesion:hover{
+  color: black;
+}
+
