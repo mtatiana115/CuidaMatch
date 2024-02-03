@@ -1,89 +1,200 @@
+
+ Conversación abierta. 1 mensaje sin leer.
+
+Ir al contenido
+Uso de Gmail con lectores de pantalla
+
+1 de 154
+profileCaregiver
+Recibidos
+
+Valeria henao mejía <valehm248@gmail.com>
+9:04 (hace 12 minutos)
+para mí
+
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/generalize.css" />
-		<link rel="stylesheet" href="./css/styleprofile.css" />
-		<link rel="icon" href="../multimedia/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/generalize.css" />
+    <link rel="stylesheet" href="./css/styleprofile.css" />
+    <title>Perfil</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <img src="../multimedia/logo.png" alt="logo-app" />
+    </div>
+    <h1 class="title">Soy Cuidador</h1>
+    <section>
+      <div class="container" id="container">
+        <div class="wrapper">
+          <div class="profile">
+            <img
+              src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixlib=rb-0.3.5&s=9358d797b2e1370884aa51b0ab94f706&auto=format&fit=crop&w=200&q=80%20500w"
+              class="thumbnail"
+              id="imgCaregiver"
+            />
+            <h3 class="name" id="nameUserCg"></h3>
+            <p class="title" id="professionCg"></p>
+            <div class="rating-container" id="rating-container">
+              <!-- Se crean 5 estrellas con un ícono de estrella Unicode (☆) -->
+              <div class="star" data-value="1">&#9733;</div>
+              <div class="star" data-value="2">&#9733;</div>
+              <div class="star" data-value="3">&#9733;</div>
+              <div class="star" data-value="4">&#9733;</div>
+              <div class="star" data-value="5">&#9733;</div>
+            </div>
 
-		<title>Perfil</title>
-	</head>
-	<body>
-		<div class="preloader">
-			<img src="../multimedia/logo.png" alt="logo-app" />
-		</div>
-		<h1 class="title">Soy Cuidador</h1>
-		<section>
-			<div class="container" id="container">
-				<div class="wrapper">
-					<div class="profile">
-						<img src="" class="thumbnail" id="imgCaregiver" />
-						<h3 class="name" id="nameUserCg"></h3>
-						<p class="title" id="professionCg"></p>
-						<div class="rating-container" id="rating-container">
-							<!-- Se crean 5 estrellas con un ícono de estrella Unicode (☆) -->
-							<div class="star" data-value="1">&#9733;</div>
-							<div class="star" data-value="2">&#9733;</div>
-							<div class="star" data-value="3">&#9733;</div>
-							<div class="star" data-value="4">&#9733;</div>
-							<div class="star" data-value="5">&#9733;</div>
-						</div>
+            <button type="button" class="btn">Dame una calificación</button>
+          </div>
 
-						<button type="button" class="btn">Dame una calificación</button>
-					</div>
+          <div class="social-icons">
+            <div class="info">
+              <div class="icon">
+                <h4 id="ageDisplayCg"></h4>
+                <p>Edad</p>
+              </div>
 
-					<div class="social-icons">
-						<div class="info">
-							<div class="icon">
-								<h4 id="ageDisplayCg"></h4>
-								<p>Edad</p>
-							</div>
+              <div class="icon">
+                <h4 id="cityCg"></h4>
+                <p>Ciudad</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="icon">
+                <h4 id="genderCg"></h4>
+                <p>Género</p>
+              </div>
 
-							<div class="icon">
-								<h4 id="cityCg"></h4>
-								<p>Ciudad</p>
-							</div>
-						</div>
-						<div class="info">
-							<div class="icon">
-								<h4 id="genderCg"></h4>
-								<p>Género</p>
-							</div>
+              <div class="icon">
+                <h4 id="workScheduleCg"></h4>
+                <p>Horario de trabajo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <h3 class="name">Acerca de mí</h3>
+          <br />
+          <div>
+            <h4 class="headin-4">Mis intereses</h4>
+            <p class="description" id="skillsCg"></p>
+          </div>
+          <br />
+          <br />
+          <div>
+            <h4 class="headin-4">Mi experiencia</h4>
+            <p class="description" id="experienceCg"></p>
+          </div>
+          <!-- <button type="button" class=" Vale" id="btn-editar">Editar</button> -->
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary "
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Editar
+          </button>
+      <p id="holi"></p>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title fs-5" id="exampleModalLabel">
+                    Editar datos
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+          <form id="cambios">
+            
+            <div class="mb-3">
+              <label for="nombre-editar" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre-editar" aria-describedby="emailHelp">
+            </div>
 
-							<div class="icon">
-								<h4 id="workScheduleCg"></h4>
-								<p>Horario de trabajo</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="wrapper">
-					<h3 class="name">Acerca de mí</h3>
-					<br />
-					<div>
-						<h4 class="headin-4">Mis intereses</h4>
-						<p class="description" id="skillsCg"></p>
-					</div>
-					<br />
-					<br />
-					<div>
-						<h4 class="headin-4">Mi experiencia</h4>
-						<p class="description" id="experienceCg"></p>
-					</div>
-					<button type="button" class="btn" id="btn-editar">Editar</button>
-				</div>
-			</div>
+            <div class="mb-3">
+              <label for="edad-editar" class="form-label">Edad</label>
+              <input type="text" class="form-control" id="edad-editar">
+            </div>
 
-		</section>
-		<a href="../mainPage/mainCarebeneficiary.html" class="btn-match"
-			>Haz Match</a
-		>
-		<div>
-			<img class="iconEn" src="/multimedia/iconoEnglish.png" alt="iconEn" />
-			<img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp" />
-		</div>
-		<script src="js/profileCaregiver.js"></script>
-		<script src="/idioma.js"></script>
-	</body>
+            <div class="mb-3">
+              <label for="genero-editar" class="form-label">Género</label>
+              <input type="text" class="form-control" id="genero-editar">
+            </div>
+
+            <div class="mb-3">
+              <label for="ciudad-editar" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="ciudad-editar">
+            </div> 
+
+            <div class="mb-3">
+              <label for="horarioTrabajo-editar" class="form-label">Horario de trabajo</label>
+              <input type="text" class="form-control" id="horarioTrabajo-editar">
+            </div>
+
+            <div class="mb-3">
+              <label for="intereses-editar" class="form-label">Intereses</label>
+              <input type="text" class="form-control" id="intereses-editar">
+            </div>
+
+            <div class="mb-3">
+              <label for="experiencia-editar" class="form-label">Experiencia</label>
+              <input type="text" class="form-control" id="experiencia-editar">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" click ="Hola" >
+              Guardar Cambios
+            </button>
+          </form>
+        </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+          id = "close"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="../mainPage/mainCarebeneficiary.html" class="btn-match"
+        >Haz Match</a
+      >
+    </section>
+    <div class="d-flex flex-direction-column">
+      <img class="iconEn" src="/multimedia/iconoEnglish.png" alt="iconEn" />
+      <img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp" />
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/profileCaregiver.js"></script>
+    <script src="/idioma.js"></script>
+  </body>
 </html>
+
