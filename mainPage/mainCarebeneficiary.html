@@ -32,13 +32,77 @@
 				</div>
 			</div>
 		</aside>
+		<section>
+			<div class="filter">
+				<div class="container-fluid fondo">
+					<div class="busqueda">
+						<form class="gx-3 gy-2 align-items-center filasForm">
+							<div class="col-sm-4">
+								<select class="form-select" id="nombre">
+									<option value="">Filtrar por género</option>
+									<option value="Masculino">Masculino</option>
+									<option value="Femenino">Femenino</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<select class="form-select" id="edad">
+									<option value="">Filtrar por edad</option>
+									<option value="18-30">18-30</option>
+									<option value="31-40">31-40</option>
+									<option value="41-50">41-50</option>
+									<option value="51-60">51-60</option>
+									<option value="60+">60+</option>
+								</select>
+							</div>
+							<div class="col-sm-4">
+								<select class="form-select" id="minimo">
+									<option value="">Filtrar por habilidades</option>
+									<option value="Saber conducir">Saber conducir</option>
+									<option value="Profesional de la salud">
+										Profesional de la salud
+									</option>
+									<option
+										value="Experiencia con personas con movilidad limitada"
+									>
+										Experiencia con personas con movilidad limitada
+									</option>
+									<option value="Vehículo propio del cuidador">
+										Vehículo propio del cuidador
+									</option>
+									<option value="cooking">Cooking</option>
+									<option value="woundCare">Wound Care</option>
+									<option value="hygieneServices">Hygiene Services</option>
+									<option value="firstAid">First Aid</option>
+									<option value="emotionalSupport">Emotional Support</option>
+									<option value="accompanimentToAppointments">
+										Accompaniment to Appointments
+									</option>
+									<option value="constantCompanionship">
+										Constant Companionship
+									</option>
+									<option value="medicationAdministration">
+										Medication Administration
+									</option>
+									<option value="nutrition">Nutrition</option>
+									<option value="recreationalCompanionship">
+										Recreational Companionship
+									</option>
+									<option value="palliativeCare">Palliative Care</option>
+									<option value="postOperativeCare">Post-Operative Care</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<main id="mainCb"></main>
 		<div class="d-flex flex-direction-column fixed-top">
 			<img class="iconEn" src="/multimedia/iconoEnglish.png" alt="iconEn" />
 			<img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp" />
 		</div>
-		<script src="../homePage/js/guardian.js"></script>
+		<!-- <script src="../homePage/js/guardian.js"></script> -->
 		<script src="./js/mainCarebeneficiary.js"></script>
 		<script src="../traduccion.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
