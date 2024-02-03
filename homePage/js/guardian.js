@@ -1,13 +1,12 @@
-const privateRoutes = ["mainCarebeneficiary.html","mainCaregiver.html"];
-
 function guardianCb() {
   const isAuthenticatedCb = localStorage.getItem("userId");
   const path = window.location.pathname;
   const routeActu = path.substring(path.lastIndexOf("/") + 1);
+  const privateRoutes = ["mainCarebeneficiary.html","profileCarebeneficiary.html"];
 
-  if (privateRoutes.includes(routeActu) && !isAuthenticatedCb) {
+  if (privateRoutes.includes(routeActu) && isAuthenticatedCb == null) {
     alert("No tienes permisos");
-    window.location.href = "index.html";
+    window.location.href = "../homePage/index.html";
     
   }
 }
@@ -16,10 +15,11 @@ function guardianCg() {
   const isAuthenticatedCg = localStorage.getItem("userIdCg");
   const path = window.location.pathname;
   const routeActu = path.substring(path.lastIndexOf("/") + 1);
-
-  if (privateRoutes.includes(routeActu) && !isAuthenticatedCg) {
+  const privateRoutes = ["mainCaregiver.html","profileCaregiver.html"];
+  
+  if (privateRoutes.includes(routeActu) && isAuthenticatedCg == null) {
     alert("No tienes permisos");
-    window.location.href = "index.html";
+    window.location.href = "../homePage/index.html";
     
   }
 }
@@ -30,7 +30,5 @@ function cerrarSesion() {
   window.location.href = "index.html";
 }
 
-document.addEventListener("DOMContentLoaded",()=>{
   guardianCb();
   guardianCg();
-})
