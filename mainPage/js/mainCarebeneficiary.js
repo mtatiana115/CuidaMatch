@@ -61,10 +61,10 @@ async function printUsers() {
 						</div>
 					</div>
 					<div class="buttons">
-						<button class="dislike" onclick="dislikeAction(this)">
+						<button class="dislike" data-id="${user.id}" onclick="dislikeAction(this)">
 							No me gusta
 						</button>
-						<button class="like" onclick="likeAction(this)">Me gusta</button>
+						<button class="like" data-id="${user.id}" onclick="likeAction(this)">Me gusta</button>
 					</div>
 				</div>
 			</div>
@@ -73,30 +73,36 @@ async function printUsers() {
 }
 
 // Cards Animations
-function likeAction(button) {
-	console.dir(button.closest(".card"));
-	const card = button.closest(".card");
+async function likeAction(btn) {
+	const chat = document.querySelector(".chat");
+	const idCb = btn.getAttribute("data-id");
+
+	const respuesta = await fetch(`${url}/${idCb}`);
+	const data = await respuesta.json();
+	console.log(data);
+
+	chat.innerHTML += `
+	<li class="message">
+		<img
+			class="logo"
+			src="${data.profilePicCb}"
+			alt=""
+		/>
+		<p class="nameChat">Haz click para chatear con <strong>${data.nameCb}</strong></p>
+	</li>
+	`;
+
+	const card = btn.closest(".card");
 	card.classList.add("like-animation");
 	setTimeout(() => {
 		card.remove();
-	}, 500);
+	}, 1000);
 }
 
-let contador = 0;
 function dislikeAction(button) {
 	const card = button.closest(".card");
-	const iDcard = document.querySelector("main");
 	card.classList.add("dislike-animation");
 	setTimeout(() => {
 		card.remove();
-	}, 500);
-
-	// const response = await fetch(url);
-	// const data = await response.json();
-	// console.log(data);
-	// console.log(data[contador]);
-
-	// console.log(contador);
-
-	// contador++;
+	}, 1000);
 }

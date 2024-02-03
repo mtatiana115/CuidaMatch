@@ -76,7 +76,6 @@ async function printUsers() {
 // Cards Animations
 async function likeAction(btn) {
 	const chat = document.querySelector(".chat");
-
 	const idCg = btn.getAttribute("data-id");
 
 	const respuesta = await fetch(`${urlCg}/${idCg}`);
@@ -98,7 +97,7 @@ async function likeAction(btn) {
 	card.classList.add("like-animation");
 	setTimeout(() => {
 		card.remove();
-	}, 500);
+	}, 1000);
 }
 
 function dislikeAction(button) {
@@ -106,5 +105,5 @@ function dislikeAction(button) {
 	card.classList.add("dislike-animation");
 	setTimeout(() => {
 		card.remove();
-	}, 500);
+	}, 1000);
 }
