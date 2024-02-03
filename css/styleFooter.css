@@ -20,7 +20,7 @@ footer {
 .cont-cartas .card {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
-  width: calc(100% * 12);
+  /* width: calc(100% * 12); */
   min-width: 30%;
   min-height: 200px;
   max-height: 250px;
@@ -35,8 +35,8 @@ footer {
     transform: translateX(-100vw);
   }
   100% {
-    -webkit-transform: translateX(100vw);
-    transform: translateX(100vw);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
