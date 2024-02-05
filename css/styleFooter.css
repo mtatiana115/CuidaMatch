@@ -50,6 +50,10 @@ a {
   
 }
 
+.text-center{
+  margin-bottom: 0 !important;
+}
+
 @media only screen and (max-width: 768px) {
   .cont-cartas .card {
     min-width: 100%;
