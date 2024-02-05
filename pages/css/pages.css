@@ -26,23 +26,11 @@ body{
   );
 }
 
-.iconEn  {
-  position: fixed;
-  z-index: 2;
-  right: 15px;
-  height: 7%;
-  margin-top: 5%;
-  bottom: 20%;
-  cursor: pointer;
-
-}
-
-.iconSp{
+.iconIdioma {
   position: fixed;
   z-index: 2;
   right: 15px;
   height: 7%;
   bottom: 10%;
   cursor: pointer;
-
 }

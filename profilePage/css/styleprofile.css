@@ -340,25 +340,13 @@ h1{
 }
 
 
-.iconEn  {
-    position: fixed;
-    z-index: 2;
-    right: 15px;
-    height: 7%;
-    margin-top: 5%;
-    bottom: 20%;
-    cursor: pointer;
-
-}
-
-.iconSp{
-    position: fixed;
-    z-index: 2;
-    right: 15px;
-    height: 7%;
-    bottom: 10%;
-    cursor: pointer;
-
+.iconIdioma {
+	position: fixed;
+	z-index: 2;
+	right: 15px;
+	height: 7%;
+	bottom: 10%;
+	cursor: pointer;
 }
   
 #cambios {
