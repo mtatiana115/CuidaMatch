@@ -22,7 +22,7 @@ const scheduleInputModal = document.getElementById("scheduleCarebeneficiary")
 const experienceInputModal = document.getElementById("experienceCarebeneficiary")
 const opciones_CuidadoInputModal = document.getElementById("opciones_Cuidado")
 const edicion = false
-const userIdCarebeneficiary = localStorage.getItem("UserIdCb")
+const userIdCarebeneficiary = localStorage.getItem("userId")
 
 //estrellas
 document.addEventListener("DOMContentLoaded", function () {
@@ -104,14 +104,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function getUser() {
 
-	// const userId = localStorage.getItem("userId");
 	console.log(userIdCarebeneficiary);
 	try {
 		// console.log(`${url}/${userIdCarebeneficiary}`);
 		const response = await fetch(`${url}/${userIdCarebeneficiary}`);
 		const data = await response.json();
-		// console.log(data);
-
+		console.log(data);
 		//actualizar perfil despues de obtener los datos
 		actualizarPerfil(data);
 	} catch (error) {
@@ -120,7 +118,7 @@ async function getUser() {
 }
 
 function actualizarPerfil(data) {
-	console.log(data);
+	// console.log(data);
 	if (!data) {
 		console.log("Usuario no encontrado");
 	} else {
