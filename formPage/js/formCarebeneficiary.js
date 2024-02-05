@@ -151,7 +151,7 @@ async function addUser() {
   const data = await response.json();
   console.log(data);
   // Obtengo el ID del nuevo usuario del input idNumberCarebeneficiary
-  // const userId = idNumberCarebeneficiary.value;
+  const userId = idNumberCarebeneficiary.value;
 
   //almaceno ID en localstorage
   localStorage.setItem("userId", newUser.id);

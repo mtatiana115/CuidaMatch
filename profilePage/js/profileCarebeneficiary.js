@@ -11,6 +11,19 @@ const experience = document.querySelector("#experience");
 const imgprofile = document.querySelector("#imgprofile");
 const btnEditar = document.querySelector("#btn-editar");
 
+//Selectores de editar
+
+const btnEnviarCambios = document.querySelector("#btn_submitCarebeneficiary")
+const nameInputModal = document.getElementById("nameCarebeneficiary")
+const ageInputModal = document.getElementById("ageCarebeneficiary")
+const cityInputModal = document.getElementById("cityCarebeneficiary")
+const genderInputModal = document.getElementById("genderCarebeneficiary")
+const scheduleInputModal = document.getElementById("scheduleCarebeneficiary")
+const experienceInputModal = document.getElementById("experienceCarebeneficiary")
+const opciones_CuidadoInputModal = document.getElementById("opciones_Cuidado")
+const edicion = false
+const userIdCarebeneficiary = localStorage.getItem("UserIdCb")
+
 //estrellas
 document.addEventListener("DOMContentLoaded", function () {
 	setTimeout(function () {
@@ -27,6 +40,51 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
+	btnEnviarCambios.addEventListener("click", async(event) =>{
+		try {
+			const skillsModificate = []
+
+			const response = await fetch(`${url}/${userIdCarebeneficiary}`);
+
+			const data = await response.json();
+
+			opciones_CuidadoInputModal.querySelectorAll("input").forEach((input) => {
+				if(input.checked){
+					skillsModificate.push(input.value)
+				}
+			})
+
+			await fetch(`${url}/${userIdCarebeneficiary}`,{
+				method: "PUT",
+				headers: {
+					"Content-Type" : "application/json",
+				},
+				body: JSON.stringify({
+					
+					"profilePicCb": await data.profilePicCb,
+					"nameCb": nameInputModal.value,
+					"emailCb": await data.emailCb,
+      				"passwordCb": await data.passwordCb,
+      				"confirmPasswordCb": await data.confirmPasswordCb,
+      				"idCb": data.idCb,
+      				"ageCb": ageInputModal.value,
+      				"cityCb":  cityInputModal.value,
+      				"genderCb": genderInputModal.value,
+      				"scheduleCb": scheduleInputModal.value,
+      				"professionCb": await data.professionCb,
+      				"experienceCb": experienceInputModal.value,
+      				"skillsCb": skillsModificate
+				})
+			}
+			
+			);
+
+			//actualizar perfil después de obtener los datos
+		} catch (error) {
+			console.log("Error", error);
+		}
+	})
+
 	function updateRating(value) {
 		stars.forEach((star) => {
 			const starValue = parseInt(star.getAttribute("data-value"));
@@ -42,16 +100,17 @@ document.addEventListener("DOMContentLoaded", function () {
 	getUser();
 });
 
+
+
 async function getUser() {
-	// const userId = "018";
-	// localStorage.setItem("userId", "002")
-	const userId = localStorage.getItem("userId");
-	console.log(userId);
+
+	// const userId = localStorage.getItem("userId");
+	console.log(userIdCarebeneficiary);
 	try {
-		console.log(`${url}/${userId}`);
-		const response = await fetch(`${url}/${userId}`);
+		// console.log(`${url}/${userIdCarebeneficiary}`);
+		const response = await fetch(`${url}/${userIdCarebeneficiary}`);
 		const data = await response.json();
-		console.log(data);
+		// console.log(data);
 
 		//actualizar perfil despues de obtener los datos
 		actualizarPerfil(data);
@@ -76,6 +135,30 @@ function actualizarPerfil(data) {
 		data.skillsCb.forEach((element) => {
 			skills.innerHTML += `<li>${element}</li>`;
 		});
-		// como subir la foto
+		
+
+		nameInputModal.value = data.nameCb;
+		ageInputModal.value = data.ageCb;
+		experienceInputModal.textContent = data.experienceCb;
+		selectValue(cityInputModal, data.cityCb);
+		selectValue(genderInputModal, data.genderCb);
+		selectValue(scheduleInputModal, data.scheduleCb);
+
+
+		opciones_CuidadoInputModal.querySelectorAll("input").forEach((input)=>{
+			if(data.skillsCb.includes(input.value)){
+				input.checked = "true"
+			}
+		})
 	}
-}
+};
+
+function selectValue(select, dataValue){
+	options = select.querySelectorAll("option");
+
+	options.forEach((option) =>{
+		if(option.value == dataValue){
+			option.selected = "true"
+		}
+	})
+};

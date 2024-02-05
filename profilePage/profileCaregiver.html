@@ -24,7 +24,6 @@
               id="imgCaregiver"
             />
             <h3 class="name" id="nameUserCg"></h3>
-            <p class="title" id="professionCg"></p>
             <div class="rating-container" id="rating-container">
               <!-- Se crean 5 estrellas con un ícono de estrella Unicode (☆) -->
               <div class="star" data-value="1">&#9733;</div>
@@ -34,7 +33,7 @@
               <div class="star" data-value="5">&#9733;</div>
             </div>
 
-            <button type="button" class="btn">Dame una calificación</button>
+            <button type="button" class="botones">Dame una calificación</button>
           </div>
 
           <div class="social-icons">
@@ -78,7 +77,7 @@
           
           <button
             type="button"
-            class="btn btn-primary "
+            class="botones"
             id="editar"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
@@ -380,13 +379,13 @@
                 
               </div>
             </form>
-            <div class="submit-btn">
-              <button
-                class="inner"
-                type="submit"
-                id="btn_submitCarebeneficiary"
-              >Enviar</button>
-            </div>
+            <!-- <div class="submit-btn"> -->
+            <button
+              class="btn-enviarModal"
+              type="submit"
+              id="btn_submitCarebeneficiary"
+            >Enviar</button>
+            <!-- </div> -->
             
         </div>
                 
@@ -396,10 +395,9 @@
         </div>
       </div>
 
-      <a href="../mainPage/mainCarebeneficiary.html" class="btn-match"
-        >Haz Match</a
-      >
     </section>
+    <a href="../mainPage/mainCarebeneficiary.html" class="btn-match"
+        >Haz Match</a>
     <div class="d-flex flex-direction-column">
       <img class="iconEn" src="/multimedia/iconoEnglish.png" alt="iconEn" />
       <img class="iconSp" src="/multimedia/iconoSpanish.png" alt="iconSp" />
@@ -410,7 +408,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/profileCaregiver.js"></script>
-    <!-- <script src="/idioma.js"></script> -->
   </body>
 </html>
 

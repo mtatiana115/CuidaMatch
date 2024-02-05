@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			const response = await fetch(`${url}/${userIdCaregiver}`);
 
 			const data = await response.json();
+		
 
 			opciones_CuidadoInputModal.querySelectorAll("input").forEach((input)=>{
 				if(input.checked){
