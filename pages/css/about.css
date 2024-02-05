@@ -81,24 +81,6 @@ body {
   }
 }
 
-@container card (min-width: 380px) {
-  .article-wrapper {
-    display: block;
-    gap: 16px;
-  }
-  .article-body {
-    padding: 2%;
-  }
-  figure {
-    width: 100%;
-    height: 100%;
-  }
-  figure img {
-    height: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-  }
-}
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
