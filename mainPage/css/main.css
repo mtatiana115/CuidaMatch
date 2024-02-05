@@ -10,6 +10,10 @@ body {
 	position: relative;
 }
 
+#section_main{
+	display: inline-block;
+}
+
 aside {
 	height: 100%;
 
@@ -19,7 +23,16 @@ aside {
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		text-align: center;
-		font-size: 70px;
+		font-size: 50px;
+	}
+
+	.perfil{
+		#btn-perfil{
+			font-size: 30px;
+			color: #000;
+			text-decoration: none;
+			font-weight: bolder;
+		}
 	}
 
 	.chat-container {
@@ -243,6 +256,7 @@ main {
 	text-align: center;
 	font-size: 2em;
 	cursor: pointer;
+	-webkit-user-select: none;
 	user-select: none;
 }
 
@@ -473,7 +487,10 @@ main {
 }
 
 .filasForm {
-	width: 100%;
+	position:absolute;
+	top: 0%;
+	z-index: 2;
+	
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;

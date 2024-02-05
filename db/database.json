@@ -242,6 +242,41 @@
       "professionCg": "46456456",
       "experienceCg": "45645646",
       "skillsCg": []
+    },
+    {
+      "id": "123123123123123123123",
+      "nameCg": "santiago",
+      "emailCg": "andresx1277@gmail.com",
+      "passwordCg": "12345678j",
+      "confirmPasswordCg": "12345678j",
+      "idCg": "123123123123123123123",
+      "ageCg": "11233",
+      "cityCg": "Popayan",
+      "genderCg": "Femenino",
+      "scheduleCg": "Por horas",
+      "professionCg": "123123123132",
+      "experienceCg": "1231233",
+      "skillsCg": [
+        "Profesional de la salud"
+      ]
+    },
+    {
+      "id": "123213132213",
+      "nameCg": "adwadw",
+      "emailCg": "wdawdaw@gmail.com",
+      "passwordCg": "12345678k",
+      "confirmPasswordCg": "12345678k",
+      "idCg": "123213132213",
+      "ageCg": "213",
+      "cityCg": "Popayan",
+      "genderCg": "Masculino",
+      "scheduleCg": "Medio tiempo",
+      "professionCg": "132123213",
+      "experienceCg": "123123",
+      "skillsCg": [
+        "Usuario con movilidad limitada",
+        "Tengo vehículo propio"
+      ]
     }
   ],
   "beneficiarios": [
@@ -622,6 +657,34 @@
       "skillsCb": [
         "Profesional de la salud"
       ]
+    },
+    {
+      "id": "123123123123",
+      "nameCb": "adad",
+      "emailCb": "adada@gmail.com",
+      "passwordCb": "12345678k",
+      "confirmPasswordCb": "12345678k",
+      "idCb": "123123123123",
+      "ageCb": "2132",
+      "cityCb": "Popayan",
+      "genderCb": "Masculino",
+      "scheduleCb": "Por horas",
+      "experienceCb": "dawdawdawdawd",
+      "skillsCb": []
+    },
+    {
+      "id": "123123123123123",
+      "nameCb": "awdawdawdwad",
+      "emailCb": "andresx1277@gmail.com",
+      "passwordCb": "12345678l",
+      "confirmPasswordCb": "12345678l",
+      "idCb": "123123123123123",
+      "ageCb": "123",
+      "cityCb": "Santa-marta",
+      "genderCb": "Femenino",
+      "scheduleCb": "Medio tiempo",
+      "experienceCb": "123123213123123",
+      "skillsCb": []
     }
   ]
 }
