@@ -207,7 +207,7 @@ select {
   color: #fff;
 }
 option {
-  color: black;
+  color: #fff;
 }
 
 @media (max-width: 700px) {
@@ -233,4 +233,16 @@ option {
   .submit-btn .input-data {
     width: 40% !important;
   }
+}
+
+.checkbox-list{
+  color: #fff;
+}
+
+#opciones_Cuidado label{
+  color: #fff;
+}
+
+#experienceCarebeneficiary{
+  color: #fff;
 }
