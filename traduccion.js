@@ -71,10 +71,10 @@ export async function UtilizarIdiomaActual() {
 }
 
 //Selectores
-const btnEspañol = document.getElementById("iconSp");
-const btnEnglish = document.getElementById("iconEn");
+const btnEspañol = document.querySelector(".iconSp");
+const btnEnglish = document.querySelector(".iconEn");
 
-//>Eventos
+//Eventos
 btnEspañol.addEventListener("click", () => {
   TraducirPagina()
 });
