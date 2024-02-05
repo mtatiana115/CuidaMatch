@@ -231,7 +231,6 @@ main {
   margin: 0 10px;
   margin-bottom: 20px;
   font-size: 1rem;
-  cursor: pointer;
 }
 
 .buttons .dislike {
@@ -509,7 +508,81 @@ main {
   width: auto;
 }
 
-@media only screen and (max-width: 1000px) {
-  /* aside {
-  } */
+#contenido_footer {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  aside {
+    display: none;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    all: unset;
+    display: inherit;
+  }
+
+  .busqueda {
+    width: 100vw;
+  }
+
+  .filasForm select {
+    font-size: 10px;
+  }
+
+  .wrapper {
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card img {
+    width: 70px !important;
+    height: 70px !important;
+    border-bottom: 1px solid #eee;
+  }
+
+  .star {
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  #contenido_footer {
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(
+      25deg,
+      rgba(0, 107, 192, 1) 0%,
+      rgba(0, 91, 113, 1) 0%,
+      rgba(101, 51, 172, 1) 79%,
+      rgba(147, 62, 216, 1) 86%
+    );
+    display: flex;
+  }
+
+  #contenido_footer i {
+    font-size: 30px;
+    color: #eee;
+  }
+
+  #contenido_footer .botones-cel {
+    cursor: pointer;
+
+    .checkbi:checked .bi.bi-chat-fill {
+      color: red !important;
+    }
+  }
 }

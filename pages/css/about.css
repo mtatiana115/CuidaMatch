@@ -81,7 +81,7 @@ body {
   }
 }
 
-@container card (min-width: 380px) {
+/* @container card (min-width: 380px) {
   .article-wrapper {
     display: block;
     gap: 16px;
@@ -98,7 +98,7 @@ body {
     aspect-ratio: 1;
     object-fit: cover;
   }
-}
+} */
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
