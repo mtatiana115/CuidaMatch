@@ -15,21 +15,26 @@ document.addEventListener("DOMContentLoaded", function () {
 	loadUsers();
 });
 
+btnChat.addEventListener("click", (event) => {
+	event.preventDefault();
+	sendMessage();
+});
+
 //cerrar sesión
 function cerrarSesion() {
-  const verificarExistenciaCbId = localStorage.getItem("userId");
-  const verificarExistenciaCgId = localStorage.getItem("userIdCg");
+	const verificarExistenciaCbId = localStorage.getItem("userId");
+	const verificarExistenciaCgId = localStorage.getItem("userIdCg");
 
-  if ((verificarExistenciaCbId || verificarExistenciaCgId)==null) {
-    alert("No tienes sesión que cerrar");
-    return;
-  }
-  localStorage.removeItem("userId");
-  localStorage.removeItem("userIdCg");
-  window.location.href = "index.html";
+	if ((verificarExistenciaCbId || verificarExistenciaCgId) == null) {
+		alert("No tienes sesión que cerrar");
+		return;
+	}
+	localStorage.removeItem("userId");
+	localStorage.removeItem("userIdCg");
+	window.location.href = "index.html";
 }
-cerrarsesion.addEventListener("click",()=>{
-  cerrarSesion();
+cerrarsesion.addEventListener("click", () => {
+	cerrarSesion();
 });
 
 // Event listeners para los elementos <select>
@@ -118,7 +123,7 @@ function printUsers(data) {
                             <div class="star" data-value="4">&#9733;</div>
                             <div class="star" data-value="5">&#9733;</div>
                         </div>
-                        <button type="button" class="btn">Give me a rating</button>
+                        <button type="button" class="btn"></button>
                     </div>
                     <div class="social-icons">
                         <div class="info">
@@ -185,10 +190,6 @@ function dislikeAction(button) {
 	setTimeout(() => {
 		card.remove();
 	}, 1000);
-
-function openChatModal() {
-	const chatModal = new bootstrap.Modal(document.getElementById("chatModal"));
-	chatModal.show();
 }
 
 function sendMessage() {
@@ -211,13 +212,13 @@ function sendMessage() {
 }
 
 async function findProfile(button) {
-  const contenedorInfo = document.querySelector("#FindprofileContainer");
+	const contenedorInfo = document.querySelector("#FindprofileContainer");
 
-  const idCb = button.getAttribute("data-id");
-  const respuesta = await fetch(`${url}/${idCb}`);
-  const data = await respuesta.json();
+	const idCb = button.getAttribute("data-id");
+	const respuesta = await fetch(`${url}/${idCb}`);
+	const data = await respuesta.json();
 
-  contenedorInfo.innerHTML = `
+	contenedorInfo.innerHTML = `
 		<div
       class="modal fade"
       id="infoProfile"
@@ -254,7 +255,6 @@ async function findProfile(button) {
       </div>
     </div>
 	`;
-  console.log(data);
-  console.log(contenedorInfo);
-}
+	console.log(data);
+	console.log(contenedorInfo);
 }
