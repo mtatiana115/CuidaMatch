@@ -12,9 +12,8 @@ const skillsCg = document.querySelector("#skillsCg");
 const experienceCg = document.querySelector("#experienceCg");
 const imgCaregiver = document.querySelector("#imgCaregiver")
 
-
-
 //Selectores de Editar
+
 const btnEnviarCambios = document.querySelector("#btn_submitCarebeneficiary")
 const nameInputModal = document.getElementById("nameCaregiver");
 const ageInputModal = document.getElementById("ageCaregiver");
@@ -43,8 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	btnEnviarCambios.addEventListener("click", async(event)=>{
-		
-		
 		try {
 
 			const skillsModificate = []
@@ -114,7 +111,7 @@ async function getUser() {
 		// console.log(`${url}/${userIdCaregiver}`);
 		const response = await fetch(`${url}/${userIdCaregiver}`);
 		const data = await response.json();
-
+		console.log(data);
 		//actualizar perfil despues de obtener los datos
 		actualizarPerfil(data);
 	} catch (error) {
