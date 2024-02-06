@@ -488,20 +488,23 @@ main {
   cursor: pointer;
 }
 
-#container-main{
+/* #container-main {
   display: flex;
-}
+  justify-content: center;
+  align-items: center;
+} */
 
 .filasForm {
+  width: 60%;
   position: absolute;
   top: 0;
+  right: 10%;
   display: flex;
   justify-content: flex-start;
   /* flex-wrap: wrap; */
   background-color: #f2f1f2;
   padding: 1rem;
   border-radius: 1rem;
-  width: auto;
 }
 
 #contenido_footer {
@@ -552,9 +555,9 @@ main {
     font-size: 20px;
   }
 
-.btn-chat {
-	border: none;
-}
+  .btn-chat {
+    border: none;
+  }
 
   #contenido_footer {
     position: absolute;
@@ -580,6 +583,5 @@ main {
 
   #contenido_footer .botones-cel {
     cursor: pointer;
-
   }
 }
