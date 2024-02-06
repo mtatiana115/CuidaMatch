@@ -1,22 +1,17 @@
 @import url(../../css/generalize.css);
 
-body {
-	width: 100vw;
-	max-height: 100vh;
-	display: flex;
-	background: rgb(214, 206, 206);
-	align-items: center;
-
-	position: relative;
-}
-
-#section_main {
-	display: inline-block;
-}
-
 aside {
+	width: 25%;;
 	height: 100%;
-
+	background: linear-gradient(
+			25deg,
+			rgba(0, 107, 192, 1) 0%,
+			rgba(0, 91, 113, 1) 0%,
+			rgba(101, 51, 172, 1) 79%,
+			rgba(147, 62, 216, 1) 86%
+		);
+		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+	overflow-y: scroll;
 	h2 {
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 		color: #fff;
@@ -26,39 +21,22 @@ aside {
 		font-size: 50px;
 	}
 
-	.perfil {
-		display: flex;
-		justify-content: center;
-		#btn-perfil {
-			align-content: center;
-			background: linear-gradient(115deg, #43d7e5 10%, #4a82f2 90%);
-			font-weight: bold;
-			width: 30%;
-			padding: 0.5em;
-			text-decoration: none;
-			border-radius: 8px;
-			color: #000;
-		}
+	#btn-perfil {
+		
+		background: linear-gradient(115deg, #43d7e5 10%, #4a82f2 90%);
+		font-weight: bold;
+		padding: 0.5em;
+		text-decoration: none;
+		border-radius: 8px;
+		color: #000;
+	
 	}
-
-	.chat-container {
-		background: linear-gradient(
-			25deg,
-			rgba(0, 107, 192, 1) 0%,
-			rgba(0, 91, 113, 1) 0%,
-			rgba(101, 51, 172, 1) 79%,
-			rgba(147, 62, 216, 1) 86%
-		);
-		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
-		width: 360px;
-		height: 130%;
-	}
-
 	.chat {
-		height: 80vh;
+		height: 100%;
 		list-style-type: none;
 		padding: 10px;
 		margin: 0;
+		overflow: hidden;
 		overflow-y: scroll;
 		display: flex;
 		flex-direction: column;
@@ -85,7 +63,6 @@ aside {
 		box-shadow: 0px 15px 5px 0px rgba(0, 0, 0, 0.5);
 		position: relative;
 		margin-bottom: 30px;
-		/* width: max-content; */
 	}
 
 	.message:nth-child(odd) {
@@ -119,28 +96,29 @@ aside {
 	}
 }
 
-.__heading .heading-1 {
-	text-align: center;
-	padding: 10%;
+/* Filtro por edad, género o ciudad */
+.filasForm {
+	width: 60%;
+	position: absolute;
+	top: 0;
+	right: 10%;
+	display: flex;
+	justify-content: flex-start;
+	background-color: #f2f1f2;
+	padding: 1rem;
+	border-radius: 1rem;
 }
+/* Aquí termina el filtro */
 
 #container-main {
 	display: contents;
 }
 
 main {
-	width: 100%;
-	height: 100%;
-	/* margin-top: 20px;
-	min-width: 25%;
-	max-width: 40vw;
-	height: 100%; */
-	/* width: 350px;
-	height: 500px; */
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* position: relative; */
 	margin: auto;
 
 	.__form {
@@ -195,116 +173,21 @@ main {
 		rgba(101, 51, 172, 0.3) 79%,
 		rgba(147, 62, 216, 0.3) 86%
 	);
-	/* width: 100%;
-	padding: 10%;
-	margin: 20%; */
 	border-radius: 10px;
 }
 
+
+/* Estilos de las tarjetas  */
 .card {
 	margin: 0 auto;
 	top: 13%;
+	right: 25%;
 	width: 30%;
 	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 	position: absolute;
-	/* overflow: hidden; */
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	/* width: 350px; */
-
 	text-align: center;
-}
-
-.like-animation {
-	transform: translateY(-150%) rotate(10deg);
-	opacity: 0;
-}
-
-.dislike-animation {
-	transform: translateY(150%) rotate(-10deg);
-	opacity: 0;
-}
-
-.card img {
-	width: 100%;
-	height: auto;
-	border-bottom: 1px solid #eee;
-}
-
-.card h2 {
-	margin: 10px 0;
-	font-size: 1.5rem;
-}
-
-.card p {
-	margin: 10px 0 20px;
-	color: #666;
-}
-
-.buttons button {
-	padding: 10px;
-	margin: 0 10px;
-	margin-bottom: 20px;
-	font-size: 1rem;
-}
-
-.buttons .dislike {
-	background-color: #ff4f4f;
-	color: #fff;
-	border: none;
-}
-
-.buttons .like {
-	background-color: #4caf50;
-	color: #fff;
-	border: none;
-}
-
-.buttons .findProfile {
-	text-decoration: none;
-	background-color: gray;
-	color: #fff;
-	border: none;
-}
-
-.headin-4 {
-	text-align: center;
-	margin: 10px;
-}
-
-.description {
-	text-align: center;
-	font-size: 14px;
-}
-
-.rating-container {
-	text-align: center;
-	font-size: 2em;
-	cursor: pointer;
-	-webkit-user-select: none;
-	user-select: none;
-}
-
-.star {
-	display: inline-block;
-	margin-right: 5px;
-}
-
-.star:hover,
-.star.active {
-	color: gold;
-}
-
-.btn {
-	color: black;
-}
-
-.info {
-	margin: 10px;
-}
-
-.icon {
-	margin: 0 20px;
 }
 
 .wrapper {
@@ -313,7 +196,6 @@ main {
 	background: #fdfeff;
 	transition: background 0.6s ease;
 	border-radius: 10px;
-	/* padding: 20px 20px 20px 20px; */
 	box-shadow: 0 8px 40px rgba(#000000, 0.2);
 
 	.top-icons {
@@ -472,6 +354,107 @@ main {
 		}
 	}
 }
+/* Aquí terminan los estilos de las tarjetas */
+
+/* Ajustes de contenido interno */
+.__heading .heading-1 {
+	text-align: center;
+	padding: 10%;
+}
+
+.like-animation {
+	transform: translateY(-150%) rotate(10deg);
+	opacity: 0;
+}
+
+.dislike-animation {
+	transform: translateY(150%) rotate(-10deg);
+	opacity: 0;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #eee;
+}
+
+.card h2 {
+	margin: 10px 0;
+	font-size: 1.5rem;
+}
+
+.card p {
+	margin: 10px 0 20px;
+	color: #666;
+}
+
+.buttons button {
+	padding: 10px;
+	margin: 0 10px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+}
+
+.buttons .dislike {
+	background-color: #ff4f4f;
+	color: #fff;
+	border: none;
+}
+
+.buttons .like {
+	background-color: #4caf50;
+	color: #fff;
+	border: none;
+}
+
+.buttons .findProfile {
+	text-decoration: none;
+	background-color: gray;
+	color: #fff;
+	border: none;
+}
+
+.headin-4 {
+	text-align: center;
+	margin: 10px;
+}
+
+.description {
+	text-align: center;
+	font-size: 14px;
+}
+
+.rating-container {
+	text-align: center;
+	font-size: 2em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.star {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.star:hover,
+.star.active {
+	color: gold;
+}
+
+.btn {
+	color: black;
+}
+
+.info {
+	margin: 10px;
+}
+
+.icon {
+	margin: 0 20px;
+}
+
+
 
 .container {
 	display: grid;
@@ -501,26 +484,9 @@ main {
 	bottom: 20%;
 	cursor: pointer;
 }
+/* Aquí terminan los estilos del contenido interno */
 
-/* #container-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-.filasForm {
-	width: 60%;
-	position: absolute;
-	top: 0;
-	right: 10%;
-	display: flex;
-	justify-content: flex-start;
-	/* flex-wrap: wrap; */
-	background-color: #f2f1f2;
-	padding: 1rem;
-	border-radius: 1rem;
-}
-
+/* Contenedor que ayuda a la responsividad del celular */
 #contenido_footer {
 	display: none;
 }
@@ -530,16 +496,10 @@ main {
 		display: none;
 	}
 
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	main {
+	/* main {
 		all: unset;
 		display: inherit;
-	}
+	} */
 
 	.busqueda {
 		width: 100vw;
