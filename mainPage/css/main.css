@@ -1,5 +1,10 @@
 @import url(../../css/generalize.css);
 
+body{
+	overflow:hidden
+}
+
+
 aside {
 	width: 25%;;
 	height: 100%;
