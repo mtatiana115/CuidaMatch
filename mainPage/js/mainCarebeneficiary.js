@@ -3,6 +3,7 @@ const url = "http://localhost:3001/beneficiarios";
 const genderSelect = document.querySelector("#nombre");
 const ageSelect = document.querySelector("#edad");
 const citySelect = document.querySelector("#ciudad");
+const cerrarsesion = document.querySelector("#sesionCerrar");
 
 document.addEventListener("DOMContentLoaded", function () {
 	// Preloader
@@ -12,6 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Cargar usuarios al inicio
 	loadUsers();
+});
+
+//cerrar sesión
+function cerrarSesion() {
+  const verificarExistenciaCbId = localStorage.getItem("userId");
+  const verificarExistenciaCgId = localStorage.getItem("userIdCg");
+
+  if ((verificarExistenciaCbId || verificarExistenciaCgId)==null) {
+    alert("No tienes sesión que cerrar");
+    return;
+  }
+  localStorage.removeItem("userId");
+  localStorage.removeItem("userIdCg");
+  window.location.href = "index.html";
+}
+cerrarsesion.addEventListener("click",()=>{
+  cerrarSesion();
 });
 
 // Event listeners para los elementos <select>
@@ -128,7 +146,7 @@ function printUsers(data) {
                         <button class="dislike" data-id="${user.idCb}" onclick="dislikeAction(this)">
                             No me gusta
                         </button>
-                        <button class="like" data-id="${user.idCb}" onclick="likeAction(this)">Me gusta</button>
+                        <button class="like" data-id="${user.idCb}" onclick='likeAction(this)'>Me gusta</button>
                     </div>
                 </div>
             </div>
@@ -238,4 +256,5 @@ async function findProfile(button) {
 	`;
   console.log(data);
   console.log(contenedorInfo);
+}
 }

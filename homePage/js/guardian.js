@@ -1,4 +1,17 @@
-const cerrarSesionbtn = document.querySelector("#cerrarSesion");
+function cerrarSesion() {
+  const verificarExistenciaCbId = localStorage.getItem("userId");
+  const verificarExistenciaCgId = localStorage.getItem("userIdCg");
+
+  if ((verificarExistenciaCbId || verificarExistenciaCgId)==null) {
+    alert("No tienes sesión que cerrar");
+    return;
+  }
+  localStorage.removeItem("userId");
+  localStorage.removeItem("userIdCg");
+  window.location.href = "index.html";
+}
+
+
 
 function guardianCb() {
   const isAuthenticatedCb = localStorage.getItem("userId");
@@ -26,18 +39,5 @@ function guardianCg() {
   }
 }
 
-function cerrarSesion() {
-  const verificarExistenciaCbId = localStorage.getItem("userId");
-  const verificarExistenciaCgId = localStorage.getItem("userIdCg");
-
-  if ((verificarExistenciaCbId || verificarExistenciaCgId)==null) {
-    alert("No tienes sesión que cerrar");
-    return;
-  }
-  localStorage.removeItem("userId");
-  localStorage.removeItem("userIdCg");
-  window.location.href = "index.html";
-}
-
-guardianCb();
-guardianCg();
+  guardianCb();
+  guardianCg();

@@ -123,6 +123,7 @@ aside {
 }
 
 main {
+  margin-top: 20px;
   min-width: 25%;
   max-width: 40vw;
   height: 100%;
@@ -477,7 +478,7 @@ main {
   }
 }
 
-.iconEn {
+.iconIdioma {
   position: fixed;
   z-index: 2;
   right: 15px;
@@ -487,13 +488,8 @@ main {
   cursor: pointer;
 }
 
-.iconSp {
-  position: fixed;
-  z-index: 2;
-  right: 15px;
-  height: 7%;
-  bottom: 10%;
-  cursor: pointer;
+#container-main{
+  display: flex;
 }
 
 .filasForm {
@@ -512,7 +508,7 @@ main {
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   aside {
     display: none;
   }
@@ -585,8 +581,5 @@ main {
   #contenido_footer .botones-cel {
     cursor: pointer;
 
-    .checkbi:checked .bi.bi-chat-fill {
-      color: red !important;
-    }
   }
 }
