@@ -23,7 +23,7 @@ async function printUsers() {
 							src="${user.profilePicCb}"
 							class="thumbnail"
 						/>
-						// <h3 class="name">${user.nameCb}</h3>
+						<h3 class="name">${user.nameCb}</h3>
 						<div class="rating-container" id="rating-container">
 							<!-- Se crean 5 estrellas con un ícono de estrella Unicode (☆) -->
 							<div class="star" data-value="1">&#9733;</div>
@@ -66,7 +66,7 @@ async function printUsers() {
 						</button>
 						<button class="like" data-id="${user.id}" onclick="likeAction(this)">Me gusta</button>
 						<button type="button" class="findProfile" data-id="${user.id}" onclick="findProfile(this)" data-toggle="modal" data-target="#infoProfile">
-							Ver perfil
+							Ver más
 						</button>
 					</div>
 				</div>
@@ -124,7 +124,7 @@ async function findProfile(button) {
       tabindex="-1"
       role="dialog"
       aria-labelledby="infoProfile"
-      aria-hidden="true"
+      aria-hidden="false"
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
