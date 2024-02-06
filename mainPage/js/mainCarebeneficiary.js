@@ -15,11 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	loadUsers();
 });
 
-btnChat.addEventListener("click", (event) => {
-	event.preventDefault();
-	sendMessage();
-});
-
 //cerrar sesión
 function cerrarSesion() {
 	const verificarExistenciaCbId = localStorage.getItem("userId");
