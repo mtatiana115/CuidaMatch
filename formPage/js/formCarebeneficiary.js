@@ -1,4 +1,6 @@
 const urlBase = "http://localhost:3001/beneficiarios";
+
+//almacenará las habilidades seleccionadas por le usuario
 let selectedSkillsList = [];
 
 //selectores
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 1000);
 });
 
+
 hvFormCarebeneficiary.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -70,17 +73,21 @@ async function validateEmail() {
   }
 }
 
+//Valida si el ID ingresado por el usuario existe en la base de datos
 async function validateUserId() {
   
+  //comprueba contraseña
   if (!comprobarContraseñas()) {
 		return;
 	}
 	
+  //comprueba el email 
 	if (await validateEmail()) {
 		showAlert("Este email ya se encuentra registrado.");
 		return;
 	}
 
+  //si el email no está registrado hace un fetch para obtener la lista de usuarios y verifica si el ID ya existe 
   const userId = idNumberCarebeneficiary.value;
   const response = await fetch(urlBase);
   const data = await response.json();
@@ -93,19 +100,21 @@ async function validateUserId() {
   }
 }
 
+//Obtiene las habilidades seleccionadas y las almacena en la variable selectedSkillsList
 function getSkillsList() {
   const checkboxList = document.querySelectorAll(
     '.checkbox-list input[name="skills"]'
   );
+
+  //selecciono todos los checkboxlist y filtro los checkeados y obtengo sus valores.
   selectedSkillsList = Array.from(checkboxList)
     .filter((checkbox) => checkbox.checked)
     .map((checkbox) => checkbox.value);
 
   addUser();
 }
-// console.log(selectedSkillsList);
 
-//creo funcion y hago async fetch
+//hago fetch para enviar la información del usuario creando un nuevo objeto.
 async function addUser() {
   const fileCb = yourPicCarebeneficiary.files[0];
   const formDataCb = new FormData();
@@ -165,6 +174,7 @@ function getUsers() {
     .then((data) => console.log(data));
 }
 
+//mensaje de alerta por si algo sale mal.
 function showAlert(msg) {
   Swal.fire({
       title: 'Error!',

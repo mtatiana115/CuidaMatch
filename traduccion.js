@@ -1,4 +1,4 @@
-//variables
+//variables 
 const URLBase = "https://api.mymemory.translated.net/";
 
 /**
@@ -8,6 +8,8 @@ const URLBase = "https://api.mymemory.translated.net/";
  * @param {Idioma en el que desea traducir el texto} idiomaTraducir
  * @returns
  */
+
+//Se hace fetch para obtener el texto traducido, en caso de que no lo traduzca retorna "false"
 async function traducir(texto, idiomaTexto, idiomaTraducir) {
   const URL = `${URLBase}?q=${texto}&langpair=${idiomaTexto}|${idiomaTraducir}`;
   try {

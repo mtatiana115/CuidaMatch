@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
+	//Llamo el btn que realiza la función de enviar los datos editados. Dentro del try se declara un array vacío para almacenar las habilidades.
 	btnEnviarCambios.addEventListener("click", async(event) =>{
 		try {
 			const skillsModificate = []
@@ -49,12 +50,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			const data = await response.json();
 
+			//se usa querySelectorAll para traer los selectores. Se recorre y verifica cuál fue marcado y los va agregando al array vacío.
 			opciones_CuidadoInputModal.querySelectorAll("input").forEach((input) => {
 				if(input.checked){
 					skillsModificate.push(input.value)
 				}
 			})
 
+			//Se utiliza fetch para modificar en la base de datos los datos que cambien
 			await fetch(`${url}/${userIdCarebeneficiary}`,{
 				method: "PUT",
 				headers: {
@@ -107,12 +110,17 @@ async function getUser() {
 
 	console.log(userIdCarebeneficiary);
 	try {
-		// console.log(`${url}/${userIdCarebeneficiary}`);
+
+		//se realiza fetch para obtener los datos del usuario por medio de su ID utilizando la url.
 		const response = await fetch(`${url}/${userIdCarebeneficiary}`);
+
+		//con .json() los datos se convierten en formato json y se almacenan en data.
 		const data = await response.json();
 		console.log(data);
-		//actualizar perfil despues de obtener los datos
+
+		//actualizar perfil después de obtener los datos
 		actualizarPerfil(data);
+
 	} catch (error) {
 		console.error("Error:", error);
 	}
