@@ -3,7 +3,6 @@ const url = "http://localhost:3001/cuidadores";
 
 const nameUserCg = document.querySelector("#nameUserCg");
 const ageDisplayCg = document.querySelector("#ageDisplayCg");
-const professionCg = document.querySelector("#professionCg");
 const cityCg = document.querySelector("#cityCg");
 const genderCg = document.querySelector("#genderCg");
 const workScheduleCg = document.querySelector("#workScheduleCg");
@@ -133,7 +132,6 @@ function actualizarPerfil(data) {
 		cityCg.textContent = data.cityCg;
 		experienceCg.textContent = data.experienceCg;
 		genderCg.textContent = data.genderCg;
-		professionCg.textContent = data.professionCg;
 		workScheduleCg.textContent = data.scheduleCg;
 		data.skillsCg.forEach((element) => {
 			skillsCg.innerHTML += `<li>${element}</li>`;

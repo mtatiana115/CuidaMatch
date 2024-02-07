@@ -1,3 +1,4 @@
+// Este js inserta el header y footer a los HTML
 export function  exportar() {
     document.addEventListener("DOMContentLoaded",()=>{
         const header = document.querySelector("header");

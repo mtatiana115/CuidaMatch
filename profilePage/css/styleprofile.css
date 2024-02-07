@@ -130,7 +130,7 @@ h1{
 		}
 	}
 	.profile {
-		margin-top: 2.2em;
+		
 		position: relative;
 
 		&:after {
@@ -452,31 +452,6 @@ h1{
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		text-align: left;
 	  }
-
-	  
-	  @media (width <= 700px) {
-
-
-		.container .text {
-		  font-size: 30px;
-		}
-	  
-		.container form {
-		  padding: 10px 0 0 0;
-		}
-	  
-		.container form .form-row {
-		  display: block;
-		}
-	  
-		form .form-row .input-data {
-		  margin: 35px 0 !important;
-		}
-	  
-		.submit-btn .input-data {
-		  width: 40% !important;
-		}
-	  }
 	  
 	  option {
 		color: black;
@@ -493,10 +468,6 @@ h1{
 	margin-left: 45%;
 	margin-bottom: 1.5%;
 }
-
-/* #btn-cerrarSesion{
-
-} */
 
 @media screen and (max-width: 760px) {
 	body {

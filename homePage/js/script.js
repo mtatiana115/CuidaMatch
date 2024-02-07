@@ -43,7 +43,7 @@ cboxCliente.addEventListener("change", function () {
     cboxCuidador.checked = false;
   }
 });
-
+// Lógica de registro
 ir_Regristro.addEventListener("click", function () {
   
   if (autenticadorCb || autenticadorCg ) {
@@ -65,8 +65,7 @@ ir_Regristro.addEventListener("click", function () {
     });
   }
 });
-// termina eventos
-
+// aquí termina el registro
 // cargar
 login.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -90,13 +89,17 @@ login.addEventListener("submit", function (event) {
     });
   }
 });
+// termina eventos
 
+// validaciones de inicio de sesion
 async function logCuidador() {
   if (!(await validarCuidador())) {
     showAlert("El email no se encuentra registrado.");
     return;
   }
-  console.log("Iniciando sesión...");
+  else if (await validarCuidador()){
+    window.location.href = "../profilePage/profileCaregiver.html";
+  }
 }
 
 async function logBeneficiario() {
@@ -104,7 +107,9 @@ async function logBeneficiario() {
     showAlert("El email no se encuentra registrado.");
     return;
   }
-  console.log("Iniciando sesión...");
+  else if (await validarBeneficiario()){
+    window.location.href = "../profilePage/profileCarebeneficiary.html";
+  }
 }
 
 async function validarCuidador() {
@@ -116,7 +121,6 @@ async function validarCuidador() {
     const data = await response.json();
     const id = data[0].idCg;
     localStorage.setItem("userIdCg", id);
-    window.location.href = "../profilePage/profileCaregiver.html";
     return data.length;
   } catch (error) {
     return false;
@@ -131,7 +135,6 @@ async function validarBeneficiario() {
     const data = await response.json();
     const id = data[0].idCb;
     localStorage.setItem("userId", id);
-    window.location.href = "../profilePage/profileCarebeneficiary.html";
     console.log(id);
     return data.length;
   } catch (error) {
