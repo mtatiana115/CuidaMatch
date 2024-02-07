@@ -3,7 +3,7 @@ const url = "http://localhost:3001/beneficiarios";
 const genderSelect = document.querySelector("#nombre");
 const ageSelect = document.querySelector("#edad");
 const citySelect = document.querySelector("#ciudad");
-const cerrarsesion = document.querySelector("#sesionCerrar");
+const btnCerrarSesion = document.getElementById("btn-cerrarSesion");
 
 document.addEventListener("DOMContentLoaded", function () {
 	// Preloader
@@ -15,22 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	loadUsers();
 });
 
-//cerrar sesión
-function cerrarSesion() {
-	const verificarExistenciaCbId = localStorage.getItem("userId");
-	const verificarExistenciaCgId = localStorage.getItem("userIdCg");
-
-	if ((verificarExistenciaCbId || verificarExistenciaCgId) == null) {
-		alert("No tienes sesión que cerrar");
-		return;
-	}
-	localStorage.removeItem("userId");
-	localStorage.removeItem("userIdCg");
-	window.location.href = "index.html";
-}
-cerrarsesion.addEventListener("click", () => {
-	cerrarSesion();
-});
 
 // Event listeners para los elementos <select>
 genderSelect.addEventListener("change", function (event) {
@@ -253,3 +237,7 @@ async function findProfile(button) {
 	console.log(data);
 	console.log(contenedorInfo);
 }
+
+btnCerrarSesion.addEventListener("click", ()=>{
+	cerrarSesion()
+})

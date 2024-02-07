@@ -3,7 +3,8 @@ const urlCg = "http://localhost:3001/cuidadores";
 const genderSelectCg = document.querySelector("#nombreCg");
 const ageSelectCg = document.querySelector("#edadCg");
 const citySelectCg = document.querySelector("#ciudadCg");
-const cerrarsesion = document.querySelector("#sesionCerrar");
+const btnCerrarSesion = document.getElementById("btn-cerrarSesion");
+
 
 document.addEventListener("DOMContentLoaded", function () {
 	//preloader
@@ -15,22 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	loadUsers();
 });
 
-//cerrar Sesión
-// function cerrarSesion() {
-// 	const verificarExistenciaCgId = localStorage.getItem("userId");
-// 	const verificarExistenciaCgId = localStorage.getItem("userIdCg");
-
-// 	if ((verificarExistenciaCgId || verificarExistenciaCgId) == null) {
-// 		alert("No tienes sesión que cerrar");
-// 		return;
-// 	}
-// 	localStorage.removeItem("userId");
-// 	localStorage.removeItem("userIdCg");
-// 	window.location.href = "index.html";
-// }
-cerrarsesion.addEventListener("click", () => {
-	cerrarSesion();
-});
 
 // Event listeners para los elementos <select>
 genderSelectCg.addEventListener("change", function (event) {
@@ -253,3 +238,7 @@ async function findProfile(button) {
 	console.log(data);
 	console.log(contenedorInfo);
 }
+
+btnCerrarSesion.addEventListener("click", ()=>{
+	cerrarSesion()
+})

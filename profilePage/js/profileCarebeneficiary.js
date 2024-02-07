@@ -162,6 +162,7 @@ function selectValue(select, dataValue){
 	})
 };
 
+
 btnCerrarSesion.addEventListener("click", ()=>{
 	cerrarSesion()
 })

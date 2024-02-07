@@ -25,9 +25,10 @@ aside {
 		font-size: 30px;
 	}
 
-	.perfil {
+	.botones {
 		display: flex;
 		justify-content: center;
+		margin-top: 5%;
 
 		#btn-perfil {
 			background: linear-gradient(115deg, #43d7e5 10%, #4a82f2 90%);
@@ -36,6 +37,16 @@ aside {
 			text-decoration: none;
 			border-radius: 8px;
 			color: #000;
+		}
+		#btn-cerrarSesion{
+			background: linear-gradient(115deg, #43d7e5 10%, #4a82f2 90%);
+			font-weight: bold;
+			padding: 0.5em;
+			text-decoration: none;
+			border: none;
+			border-radius: 8px;
+			color: #000;
+			margin-left: 10%;
 		}
 	}
 	.chat {
