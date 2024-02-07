@@ -10,6 +10,7 @@ const skills = document.querySelector("#skills");
 const experience = document.querySelector("#experience");
 const imgprofile = document.querySelector("#imgprofile");
 const btnEditar = document.querySelector("#btn-editar");
+const btnCerrarSesion = document.getElementById("btn-cerrarSesion")
 
 //Selectores de editar
 
@@ -160,3 +161,7 @@ function selectValue(select, dataValue){
 		}
 	})
 };
+
+btnCerrarSesion.addEventListener("click", ()=>{
+	cerrarSesion()
+})

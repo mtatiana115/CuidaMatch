@@ -11,6 +11,7 @@ const aboutMeCg = document.querySelector("#aboutMeCg");
 const skillsCg = document.querySelector("#skillsCg");
 const experienceCg = document.querySelector("#experienceCg");
 const imgCaregiver = document.querySelector("#imgCaregiver")
+const btnCerrarSesion = document.getElementById("btn-cerrarSesion")
 
 //Selectores de Editar
 
@@ -164,5 +165,7 @@ function selectValue(select, dataValue){
 	})
 };
 
-
+btnCerrarSesion.addEventListener("click", ()=>{
+	cerrarSesion()
+})
 

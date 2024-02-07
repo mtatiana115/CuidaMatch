@@ -38,7 +38,7 @@
               <div class="star" data-value="5">&#9733;</div>
             </div>
 
-            <button type="button" class="botones">Dame una calificación</button>
+            <button type="button" class="botones" id="btn-calificacion"><p>Dame una calificación</p></button>
           </div>
 
           <div class="social-icons">
@@ -80,16 +80,18 @@
             <p class="description" id="experienceCg"></p>
           </div>
 
-          <button
+          <div>
+            <button
             type="button"
             class="botones"
-            id="editar"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             id-usuario=""
-          >
-            Editar
-          </button>
+            >
+              Editar
+            </button>
+            <button class="botones" id="btn-cerrarSesion">Cerrar sesión</button>
+          </div>
 
           <!-- Modal -->
           <div
@@ -413,5 +415,7 @@
     ></script>
     <script src="js/profileCaregiver.js"></script>
     <script type="module" src="../traduccion.js"></script>
+    <script src="/homePage/js/guardian.js"></script>
+
   </body>
 </html>

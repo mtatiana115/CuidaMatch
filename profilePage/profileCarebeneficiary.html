@@ -41,7 +41,7 @@
               <div class="star" data-value="5">&#9733;</div>
             </div>
 
-            <button type="button" class="botones">Dame una calificación</button>
+            <button type="button" class="botones" id="btn-calificacion"><p>Dame una calificación</p></button>
           </div>
 
           <div class="social-icons">
@@ -83,16 +83,19 @@
             <h4 class="headin-4">Acerca de mí</h4>
             <p class="description" id="experience"></p>
           </div>
-          <button
+          <div>
+            <button
             type="button"
             class="botones"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             id-usuario=""
-          >
-            Editar
-          </button>
-
+            >
+              Editar
+            </button>
+            <button class="botones" id="btn-cerrarSesion">Cerrar sesión</button>
+          </div>
+          
           <!-- Modal -->
           <div
             class="modal fade"
@@ -420,5 +423,7 @@
     ></script>
     <script src="js/profileCarebeneficiary.js"></script>
     <script type="module" src="../traduccion.js"></script>
+		<script src="/homePage/js/guardian.js"></script>
+
   </body>
 </html>
