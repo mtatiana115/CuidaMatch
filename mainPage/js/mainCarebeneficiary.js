@@ -54,7 +54,7 @@ async function loadUsers() {
 		.filter(filterByGender);
 	console.log(dataFilter);
 
-	console.log("bogota".includes("Bogotá"));
+	console.log("Bogota".includes("Bogotá"));
 	printUsers(dataFilter);
 }
 
