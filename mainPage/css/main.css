@@ -16,6 +16,30 @@ aside {
 	);
 	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
 	overflow-y: scroll;
+	
+	::-webkit-scrollbar {
+		width: 6px;
+		border-radius: 50px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: #000000a5;
+		border-radius: 100px;
+	}
+
+	::-webkit-scrollbar-button {
+		background: transparent;
+	}
+
+	::-webkit-scrollbar {
+		width: 10px;
+		background: rgba(255, 255, 255, 0.5); 
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: rgba(255, 255, 255, 0.1); 
+	}
+
 	h2 {
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 		color: #fff;
@@ -56,23 +80,8 @@ aside {
 		margin: 0;
 		margin-top: 5%;
 		overflow: hidden;
-		overflow-y: scroll;
 		display: flex;
 		flex-direction: column;
-	}
-
-	.chat::-webkit-scrollbar {
-		width: 6px;
-		border-radius: 50px;
-	}
-
-	.chat::-webkit-scrollbar-thumb {
-		background-color: #000000a5;
-		border-radius: 100px;
-	}
-
-	.chat::-webkit-scrollbar-button {
-		background: transparent;
 	}
 
 	.message {
@@ -481,10 +490,19 @@ main {
 		display: none;
 	}
 
-	/* main {
+	main {
 		all: unset;
-		display: inherit;
-	} */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card{
+		position: absolute;
+		right: unset !important;
+		top: 10%;
+		width: auto;
+	}
 
 	.busqueda {
 		width: 100vw;
@@ -496,11 +514,14 @@ main {
 
 	.wrapper {
 		width: 300px;
-		height: 550px;
+		height: 500px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
+		flex-wrap: wrap;
+		align-content: space-between;
 	}
 
 	.card img {
